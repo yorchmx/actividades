@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -281,7 +281,7 @@
 
         <body class="light-black accent-4">
 
-        <!-- Proyecto Start -->
+        <!-- Proyecto Adultos Start -->
        
         <div class="pt-5">
 
@@ -303,7 +303,7 @@
                     <div class="view overlay">
                         <img 
                         class="card-img-top"
-                        src="./img/1.jpg" 
+                        src="./img/9.jpg" 
                         alt="Card image cap" 
                         />
                         <a href="#!">
@@ -314,7 +314,7 @@
                     <!-- Card content -->
                     <div class="card-body">
                         <!-- Title -->
-                        <h4 class="card-title">Bádminton</h4>
+                        <h4 class="card-title">Fitness Club </h4>
                         <!-- Text -->
                         <p class="card-text">
                            <!--Some quick example text to build on the card title and make up the bulk of the card´s content.->> 
@@ -333,7 +333,7 @@
                     <div class="view overlay">
                         <img 
                         class="card-img-top"
-                        src="./img/2.jpg" 
+                        src="./img/10.jpg" 
                         alt="Card image cap" 
                         />
                         <a href="#!">
@@ -344,7 +344,7 @@
                     <!-- Card content -->
                     <div class="card-body">
                         <!-- Title -->
-                        <h4 class="card-title">Ballet</h4>
+                        <h4 class="card-title">Acua Fitness</h4>
                         <!-- Text -->
                         <p class="card-text">
                          <!--Some quick example text to build on the card title and make up the bulk of the card´s content.->>   
@@ -363,7 +363,7 @@
                     <div class="view overlay">
                         <img 
                         class="card-img-top"
-                        src="./img/3.jpg" 
+                        src="./img/11.jpg" 
                         alt="Card image cap" 
                         />
                         <a href="#!">
@@ -374,7 +374,7 @@
                     <!-- Card content -->
                     <div class="card-body">
                         <!-- Title -->
-                        <h4 class="card-title">Básquetbol Infantil</h4>
+                        <h4 class="card-title">BodyPump</h4>
                         <!-- Text -->
                         <p class="card-text">
                          <!--Some quick example text to build on the card title and make up the bulk of the card´s content.->>   
@@ -393,7 +393,7 @@
                     <div class="view overlay">
                         <img 
                         class="card-img-top"
-                        src="./img/4.jpg" 
+                        src="./img/12.jpg" 
                         alt="Card image cap" 
                         />
                         <a href="#!">
@@ -404,7 +404,7 @@
                     <!-- Card content -->
                     <div class="card-body">
                         <!-- Title -->
-                        <h4 class="card-title">Box Infantil</h4>
+                        <h4 class="card-title">Box Fitness</h4>
                         <!-- Text -->
                         <p class="card-text">
                          <!--Some quick example text to build on the card title and make up the bulk of the card´s content.->>   
@@ -423,7 +423,7 @@
                     <div class="view overlay">
                         <img 
                         class="card-img-top"
-                        src="./img/5.jpg" 
+                        src="./img/13.jpg" 
                         alt="Card image cap" 
                         />
                         <a href="#!">
@@ -434,7 +434,7 @@
                     <!-- Card content -->
                     <div class="card-body">
                         <!-- Title -->
-                        <h4 class="card-title">Danza Aérea</h4>
+                        <h4 class="card-title">Indoor Cycling</h4>
                         <!-- Text -->
                         <p class="card-text">
                          <!--Some quick example text to build on the card title and make up the bulk of the card´s content.->>   
@@ -453,7 +453,7 @@
                     <div class="view overlay">
                         <img 
                         class="card-img-top"
-                        src="./img/6.jpg" 
+                        src="./img/14.jpg" 
                         alt="Card image cap" 
                         />
                         <a href="#!">
@@ -464,7 +464,7 @@
                     <!-- Card content -->
                     <div class="card-body">
                         <!-- Title -->
-                        <h4 class="card-title">Escalada</h4>
+                        <h4 class="card-title">Escalada Adultos</h4>
                         <!-- Text -->
                         <p class="card-text">
                          <!--Some quick example text to build on the card title and make up the bulk of the card´s content.->> 
@@ -483,7 +483,7 @@
                     <div class="view overlay">
                         <img 
                         class="card-img-top"
-                        src="./img/7.jpg" 
+                        src="./img/15.jpg" 
                         alt="Card image cap" 
                         />
                         <a href="#!">
@@ -494,7 +494,7 @@
                     <!-- Card content -->
                     <div class="card-body">
                         <!-- Title -->
-                        <h4 class="card-title">Gimnasia</h4>
+                        <h4 class="card-title">Dance Fitness</h4>
                         <!-- Text -->
                         <p class="card-text">
                          <!--Some quick example text to build on the card title and make up the bulk of the card´s content.->> 
@@ -513,7 +513,7 @@
                     <div class="view overlay">
                         <img 
                         class="card-img-top"
-                        src="./img/8.jpg" 
+                        src="./img/16.jpg" 
                         alt="Card image cap" 
                         />
                         <a href="#!">
@@ -524,7 +524,7 @@
                     <!-- Card content -->
                     <div class="card-body">
                         <!-- Title -->
-                        <h4 class="card-title">Natación</h4>
+                        <h4 class="card-title">Pilates Piso</h4>
                         <!-- Text -->
                         <p class="card-text">
                          <!--Some quick example text to build on the card title and make up the bulk of the card´s content.->> 
