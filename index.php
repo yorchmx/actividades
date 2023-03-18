@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Academias Infantiles Club France</title>
-    <link rel="stylesheet" href="/style/style.css">
+    <link rel="stylesheet" href="css/style.css">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;1,100;1,200&display=swap" rel="stylesheet"><link href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;1,100;1,200&display=swap" rel="stylesheet">
 
     <!-- Bootstrap core CSS -->
@@ -59,7 +59,7 @@
                            <!--Some quick example text to build on the card title and make up the bulk of the card´s content.->> 
                         </p>
                         <!-- Button -->
-                        <a href="#" class="btn blue-gradient">Pagar</a>
+                        <a href="actividadesninos/badminton.php" class="btn blue-gradient">Pagar</a>
                     </div>
                     </div>
                     </div>
@@ -113,7 +113,7 @@
                     <!-- Card content -->
                     <div class="card-body">
                         <!-- Title -->
-                        <h4 class="card-title">Básquetbol Infantil</h4>
+                        <h4 class="card-title">Básquet Infantil</h4>
                         <!-- Text -->
                         <p class="card-text">
                          <!--Some quick example text to build on the card title and make up the bulk of the card´s content.->>   
