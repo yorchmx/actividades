@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Academias Infantiles Club France</title>
     <link rel="stylesheet" href="css/style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;1,100;1,200&display=swap" rel="stylesheet"><link href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;1,100;1,200&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500&display=swap" rel="stylesheet">
 
     <!-- Bootstrap core CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.css" integrity="sha512-6g9IGCc67eh+xK03Z8ILcnKLbJnKBW+qpEdoUVD/4hBa2Ghiq5dQgeNOGWJfGoe9tdCRM4GpJMnsRXa2FDJp9Q==" crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -16,6 +16,18 @@
         rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/css/mdb.min.css" integrity="sha512-RO38pBRxYH3SoOprtPTD86JFOclM51/XTIdEPh5j8sj4tp8jmQIx26twG52UaLi//hQldfrh7e51WzP9wuP32Q==" crossorigin="anonymous" referrerpolicy="no-referrer" 
         />
 
+        <style>
+            .ho:hover {
+                text-shadow: none !important;
+                box-sizing: border-box !important;
+                cursor: pointer !important;
+                transition: all 0.3s ease !important;
+                -webkit-transform: scale(1.1) !important;
+                -ms-transform: scale(1.1) !important;
+                transform: scale(1.1) !important;
+                z-index: 2;
+            }
+        </style>
 </head>
 
 <body class="light-black accent-4">
@@ -35,7 +47,7 @@
             <div class="container pt-5">
             
                 <div class="row">
-                    <div class="col-lg-3 pb-5">
+                    <div class="col-lg-3 pb-5 wow fadeInLeft slow">
                         <!-- Card -->                                                                                                                           
                     <div class="card ho">
                     <!-- Card image -->
@@ -59,13 +71,13 @@
                            <!--Some quick example text to build on the card title and make up the bulk of the card´s content.->> 
                         </p>
                         <!-- Button -->
-                        <a href="actividadesninos/badminton.php" class="btn blue-gradient">Pagar</a>
+                        <a href="actividadesninos/badminton.php" class="btn blue-gradient">Comprar</a>
                     </div>
                     </div>
                     </div>
 
                     <!-- Card -->
-                    <div class="col-lg-3 pb-5">
+                    <div class="col-lg-3 pb-5 wow fadeInLeft slow">
                         <!-- Card -->
                     <div class="card ho">
                     <!-- Card image -->
@@ -89,13 +101,13 @@
                          <!--Some quick example text to build on the card title and make up the bulk of the card´s content.->>   
                         </p>
                         <!-- Button -->
-                        <a href="#" class="btn blue-gradient">Pagar</a>
+                        <a href="#" class="btn blue-gradient">Comprar</a>
                     </div>
                     </div>
 
                     <!-- Card -->
                     </div>
-                    <div class="col-lg-3 pb-5">
+                    <div class="col-lg-3 pb-5 wow fadeInRight slow">
                         <!-- Card -->
                     <div class="card ho">
                     <!-- Card image -->
@@ -119,13 +131,13 @@
                          <!--Some quick example text to build on the card title and make up the bulk of the card´s content.->>   
                         </p>
                         <!-- Button -->
-                        <a href="#" class="btn blue-gradient">Pagar</a>
+                        <a href="#" class="btn blue-gradient">Comprar</a>
                     </div>
                     </div>
 
                     <!-- Card -->
                     </div>
-                    <div class="col-lg-3 pb-5">
+                    <div class="col-lg-3 pb-5 wow fadeInRight slow">
                         <!-- Card -->
                     <div class="card ho">
                     <!-- Card image -->
@@ -149,13 +161,13 @@
                          <!--Some quick example text to build on the card title and make up the bulk of the card´s content.->>   
                         </p>
                         <!-- Button -->
-                        <a href="#" class="btn blue-gradient">Pagar</a>
+                        <a href="#" class="btn blue-gradient">Comprar</a>
                     </div>
                     </div>
 
                         <!-- Card -->
                     </div>
-                    <div class="col-lg-3 pb-5">
+                    <div class="col-lg-3 pb-5 wow fadeInDown slow">
                         <!-- Card -->
                     <div class="card ho">
                     <!-- Card image -->
@@ -179,13 +191,13 @@
                          <!--Some quick example text to build on the card title and make up the bulk of the card´s content.->>   
                         </p>
                         <!-- Button -->
-                        <a href="#" class="btn blue-gradient">Pagar</a>
+                        <a href="#" class="btn blue-gradient">Comprar</a>
                     </div>
                     </div>
 
                     <!-- Card -->
                     </div>
-                    <div class="col-lg-3 pb-5">
+                    <div class="col-lg-3 pb-5 wow fadeInLeft slow">
                         <!-- Card -->
                     <div class="card ho">
                     <!-- Card image -->
@@ -209,13 +221,13 @@
                          <!--Some quick example text to build on the card title and make up the bulk of the card´s content.->> 
                         </p>
                         <!-- Button -->
-                        <a href="#" class="btn blue-gradient">Pagar</a>
+                        <a href="#" class="btn blue-gradient">Comprar</a>
                     </div>
                     </div>
 
                     <!-- Card -->
                     </div>
-                    <div class="col-lg-3 pb-5">
+                    <div class="col-lg-3 pb-5 wow fadeInRight slow">
                         <!-- Card -->
                     <div class="card ho">
                     <!-- Card image -->
@@ -239,13 +251,13 @@
                          <!--Some quick example text to build on the card title and make up the bulk of the card´s content.->> 
                         </p>
                         <!-- Button -->
-                        <a href="#" class="btn blue-gradient">Pagar</a>
+                        <a href="#" class="btn blue-gradient">Comprar</a>
                     </div>
                     </div>
 
                     <!-- Card -->
                     </div>
-                    <div class="col-lg-3 pb-5">
+                    <div class="col-lg-3 pb-5 wow fadeInDown slow">
                         <!-- Card -->
                     <div class="card ho">
                     <!-- Card image -->
@@ -269,7 +281,7 @@
                          <!--Some quick example text to build on the card title and make up the bulk of the card´s content.->> 
                         </p>
                         <!-- Button -->
-                        <a href="#" class="btn blue-gradient">Pagar</a>
+                        <a href="#" class="btn blue-gradient">Comprar</a>
                     </div>
                     </div>
 
@@ -296,7 +308,7 @@
             <div class="container pt-5">
             
                 <div class="row">
-                    <div class="col-lg-3 pb-5">
+                <div class="col-lg-3 pb-5 wow fadeInUp slow">
                         <!-- Card -->
                     <div class="card ho">
                     <!-- Card image -->
@@ -320,13 +332,13 @@
                            <!--Some quick example text to build on the card title and make up the bulk of the card´s content.->> 
                         </p>
                         <!-- Button -->
-                        <a href="#" class="btn blue-gradient">Pagar</a>
+                        <a href="#" class="btn blue-gradient">Comprar</a>
                     </div>
                     </div>
                     </div>
 
                     <!-- Card -->
-                    <div class="col-lg-3 pb-5">
+                    <div class="col-lg-3 pb-5 wow fadeInLeft slow">
                         <!-- Card -->
                     <div class="card ho">
                     <!-- Card image -->
@@ -350,13 +362,13 @@
                          <!--Some quick example text to build on the card title and make up the bulk of the card´s content.->>   
                         </p>
                         <!-- Button -->
-                        <a href="#" class="btn blue-gradient">Pagar</a>
+                        <a href="#" class="btn blue-gradient">Comprar</a>
                     </div>
                     </div>
 
                     <!-- Card -->
                     </div>
-                    <div class="col-lg-3 pb-5">
+                    <div class="col-lg-3 pb-5 wow fadeInRight slow">
                         <!-- Card -->
                     <div class="card ho">
                     <!-- Card image -->
@@ -380,13 +392,13 @@
                          <!--Some quick example text to build on the card title and make up the bulk of the card´s content.->>   
                         </p>
                         <!-- Button -->
-                        <a href="#" class="btn blue-gradient">Pagar</a>
+                        <a href="#" class="btn blue-gradient">Comprar</a>
                     </div>
                     </div>
 
                     <!-- Card -->
                     </div>
-                    <div class="col-lg-3 pb-5">
+                    <div class="col-lg-3 pb-5 wow fadeInUp slow">
                         <!-- Card -->
                     <div class="card ho">
                     <!-- Card image -->
@@ -410,13 +422,13 @@
                          <!--Some quick example text to build on the card title and make up the bulk of the card´s content.->>   
                         </p>
                         <!-- Button -->
-                        <a href="#" class="btn blue-gradient">Pagar</a>
+                        <a href="#" class="btn blue-gradient">Comprar</a>
                     </div>
                     </div>
 
                         <!-- Card -->
                     </div>
-                    <div class="col-lg-3 pb-5">
+                    <div class="col-lg-3 pb-5 wow fadeInLeft slow">
                         <!-- Card -->
                     <div class="card ho">
                     <!-- Card image -->
@@ -440,13 +452,13 @@
                          <!--Some quick example text to build on the card title and make up the bulk of the card´s content.->>   
                         </p>
                         <!-- Button -->
-                        <a href="#" class="btn blue-gradient">Pagar</a>
+                        <a href="#" class="btn blue-gradient">Comprar</a>
                     </div>
                     </div>
 
                     <!-- Card -->
                     </div>
-                    <div class="col-lg-3 pb-5">
+                    <div class="col-lg-3 pb-5 wow fadeInLeft slow">
                         <!-- Card -->
                     <div class="card ho">
                     <!-- Card image -->
@@ -470,13 +482,13 @@
                          <!--Some quick example text to build on the card title and make up the bulk of the card´s content.->> 
                         </p>
                         <!-- Button -->
-                        <a href="#" class="btn blue-gradient">Pagar</a>
+                        <a href="#" class="btn blue-gradient">Comprar</a>
                     </div>
                     </div>
 
                     <!-- Card -->
                     </div>
-                    <div class="col-lg-3 pb-5">
+                    <div class="col-lg-3 pb-5 wow fadeInRight slow">
                         <!-- Card -->
                     <div class="card ho">
                     <!-- Card image -->
@@ -500,13 +512,13 @@
                          <!--Some quick example text to build on the card title and make up the bulk of the card´s content.->> 
                         </p>
                         <!-- Button -->
-                        <a href="#" class="btn blue-gradient">Pagar</a>
+                        <a href="#" class="btn blue-gradient">Comprar</a>
                     </div>
                     </div>
 
                     <!-- Card -->
                     </div>
-                    <div class="col-lg-3 pb-5">
+                    <div class="col-lg-3 pb-5 wow fadeInRight slow">
                         <!-- Card -->
                     <div class="card ho">
                     <!-- Card image -->
@@ -530,7 +542,7 @@
                          <!--Some quick example text to build on the card title and make up the bulk of the card´s content.->> 
                         </p>
                         <!-- Button -->
-                        <a href="#" class="btn blue-gradient">Pagar</a>
+                        <a href="#" class="btn blue-gradient">Comprar</a>
                     </div>
                     </div>
 
@@ -566,7 +578,7 @@
         </script> 
 
         <script>
-            $ (document) .ready(function (){
+            $ (document).ready(function () {
                 new WOW() .init();
             });
         </script>
