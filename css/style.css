@@ -1,9 +1,14 @@
-* {
+@import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;1,100;1,200&family=Montserrat:ital,wght@0,100;0,200;0,400;0,500;1,200;1,300&display=swap" rel="stylesheet');
 
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: Montserrat;
+}
+
+body {
+    background:     #020410;
 }
 
 .header {
@@ -12,7 +17,7 @@
     left: 0;
     width: 100%;
     padding: 25px 12.5%;
-    background: yellowgreen;
+    background: transparent;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -64,5 +69,37 @@
     outline: none;
     font-size: 16px;
     color: #e4e4e4;
+    padding-left: 10px;
 }
 
+.search-bar input::placeholder {
+    color: #e4e4e4;
+}
+
+.search-bar button {
+    width: 40px;
+    height: 100%;
+    background: transparent;
+    border: none;
+    outline: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+
+}
+
+.search-bar button i {
+    font-size: 22px;
+    color: #e4e4e4;
+}
+
+.container {
+    position: absolute;
+    width: 75%;
+    height: 550px;
+    background: url('background.jpg');
+    background-size: cover;
+    background-position: center;
+
+}

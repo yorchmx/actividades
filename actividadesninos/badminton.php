@@ -13,7 +13,7 @@
    
     <header class="header">
         <nav class="navbar">
-            <a href="#">Home</a>
+            <a href="#">Inicio</a>
             <a href="#">About</a>
             <a href="#">Services</a>
             <a href="#">Contact</a>    
@@ -25,6 +25,8 @@
         </form>
 
     </header>
+
+    <div class="container"></div>
     
 </body>
 </html>
