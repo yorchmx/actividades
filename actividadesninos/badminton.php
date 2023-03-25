@@ -1,3 +1,10 @@
+<?php
+$allowed_referer = "https://clubfrance.org.mx/academias/"; // URL permitida
+
+if(isset($_SERVER["HTTP_REFERER"]) && $_SERVER["HTTP_REFERER"] === $allowed_referer) {
+  // El referer es la URL permitida, se muestra el contenido de la página
+?>
+
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -9,6 +16,12 @@
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
+
+<?php
+    date_default_timezone_set('America/Mexico_City');
+    $currentDateTime = date('Y-m-d H:i:s');
+  ?>
+
 	<div class="container">
 		<div class="card">
 			<div class="left-column background1-left-column">
@@ -33,7 +46,7 @@
 
   					<label for="paquete">Paquetes mensuales:</label><br>
   					<select name="paquete" id="paquete" onchange="actualizarPrecio()" required><br>
-                        <option value="clase">Selecciona un paquete</option>
+                        <option disabled selected>Selecciona un paquete</option>
     					<option value="clase">Una Clase</option>
     					<option value="paquete1">Paquete 1 (Una hora a la semana)</option>
     					<option value="paquete2">Paquete 2 (Dos horas a la semana)</option>
@@ -49,6 +62,10 @@
     					$numero_aleatorio = rand(10000, 99999);
     					echo '<input type="hidden" name="num_aleatorio" value="'. $numero_aleatorio . '">';
   					?><br>
+
+                     <div class="input-box">
+                    <input type="datetime" id="fecha_registro" name="fecha_registro" value="<?=  $currentDateTime?>" placeholder="" >
+                    </div><br>
 
 					<button type="submit" class="button background1-left-column">Pagar</button>
 				</form>
@@ -93,3 +110,11 @@
 </body>
 
 </html>
+
+<?php
+} else {
+  // El referer no es la URL permitida, se redirecciona a otra página
+  header("Location: https://clubfrance.org.mx/academias/");
+  exit;
+}
+?>
