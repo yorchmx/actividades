@@ -17,6 +17,7 @@ $horario = "16:00 a 17:00 hrs.";
 ?>
 
 
+
 <!DOCTYPE html>
 <html lang="es" dir="ltr">
   <head>
@@ -242,35 +243,63 @@ $horario = "16:00 a 17:00 hrs.";
      </script>
   </form>
 
-  <script>
-				function actualizarPrecio() {
-  					const paqueteSelect = document.getElementById("paquete");
-  					const precioInput = document.getElementById("precio");
+<script>
+  
+  function actualizarPrecio() {
+  const paqueteSelect = document.getElementById("paquete");
+  const precioInput = document.getElementById("precio");
 
-  					switch (paqueteSelect.value) {
-    					case "Una Clase":
-      						precioInput.value = "$190.00";
-      						break;
-    					case "Paquete 1":
-      						precioInput.value = "$690.00";
-      						break;
-    					case "Paquete 2":
-      						precioInput.value = "$1,250.00";
-      						break;
-    					case "Paquete 3":
-      						precioInput.value = "$1,700.00";
-                        break;
-                        case "Paquete 4":
-                        precioInput.value = "$1,950.00";
-                        break;
-                        case "Paquete 5":
-                        precioInput.value = "$2,280.00";
-                        break;
-                        default:
-                        precioInput.value = "";
-    }
+  // Obtener la fecha actual
+  const hoy = new Date();
+  const diaDelMes = hoy.getDate();
+
+  switch (paqueteSelect.value) {
+    case "Una Clase":
+      precioInput.value = "$190.00";
+      break;
+    case "Paquete 1":
+      if (diaDelMes >= 11) {
+        precioInput.value = "$745.20"; // 8% más que $690.00
+      } else {
+        precioInput.value = "$690.00";
+      }
+      break;
+    case "Paquete 2":
+      if (diaDelMes >= 11) {
+        precioInput.value = "$1350.00"; // 8% más que $1,250.00
+      } else {
+        precioInput.value = "$1,250.00";
+      }
+      break;
+    case "Paquete 3":
+      if (diaDelMes >= 11) {
+        precioInput.value = "$1836.00"; // 8% más que $1,700.00
+      } else {
+        precioInput.value = "$1,700.00";
+      }
+      break;
+    case "Paquete 4":
+      if (diaDelMes >= 11) {
+        precioInput.value = "$2106.00"; // 8% más que $1,950.00
+      } else {
+        precioInput.value = "$1,950.00";
+      }
+      break;
+    case "Paquete 5":
+      if (diaDelMes >= 11) {
+        precioInput.value = "$2462.40"; // 8% más que $2,280.00
+      } else {
+        precioInput.value = "$2,280.00";
+      }
+      break;
+    default:
+      precioInput.value = "";
+  }
 }
-                </script>
+
+
+</script>
+
 
 </body>
 </html>
