@@ -11,12 +11,10 @@ if(isset($_SERVER["HTTP_REFERER"]) && $_SERVER["HTTP_REFERER"] === $allowed_refe
 
 <?php 
 $academia = "Bádminton";
-$profesor = "Andrez López";
+$profesor = "Andrés López";
 $dias = "Martes a Viernes";
 $horario = "16:00 a 17:00 hrs."; 
 ?>
-
-
 
 <!DOCTYPE html>
 <html lang="es" dir="ltr">
@@ -136,6 +134,16 @@ $horario = "16:00 a 17:00 hrs.";
         <?php 
             include_once "registro.php";
          ?>
+
+    <h5>¿Tienes apartado tu lugar en la clase? Antes de realizar el pago asegurate de apartar lugar con el profe:  <p style="color:#3e2093";><?php echo $profesor; ?></p></h5>
+        
+        <div class="input-field">
+        <select name="" id="" required><br>
+              <option disabled selected>Selecciona un opción</option>
+    					<option value="Sí">Sí</option>
+    					<option value="No">No</option>
+  					</select>
+      </div>
 
         <div id="mi-elemento">
             <input type="text" id="academia" name="academia" value="<?=$academia?>" placeholder="" readonly hidden>
