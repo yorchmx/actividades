@@ -1,14 +1,13 @@
 <?php
-
 if (!empty($_POST["btnregistrar"])) {
-    if ( !empty($_POST["academia"]) and !empty($_POST["profesor"]) and !empty($_POST["dias"]) and !empty($_POST["horario"]) and !empty($_POST["nombre_completo"]) and !empty($_POST["numero_usuario"]) and !empty($_POST["firma"])) {
 
-    include 'conexion.php';
+
 
     $academia = $_POST['academia'];
     $profesor = $_POST['profesor'];
     $dias = $_POST['dias'];
     $horario = $_POST['horario'];
+    $apartado = $_POST['apartado'];
     $nombre_completo = $_POST['nombre_completo'];
     $numero_usuario = $_POST['numero_usuario'];
     $email = $_POST['email'];
@@ -17,48 +16,27 @@ if (!empty($_POST["btnregistrar"])) {
     $folio = $_POST['folio'];
     $fecha_hora = $_POST['fecha_hora'];
     $reglamento = $_POST['reglamento'];
-    $firma = $_POST['firma'];
+    $firma = $_POST['firma'];  
 
-
-   /*
-    $file_name = $_FILES['file']['name'];
-    $file_tmp = $_FILES['file']['tmp_name'];
-    $file_name=$nombre_completo.'-pago';
-    $route = "pagos/".$file_name;
-
-    move_uploaded_file($file_tmp,$route);
-
-    $file_name2 = $_FILES['file2']['name'];
-    $file_tmp = $_FILES['file2']['tmp_name'];
-    $file_name2=$nombre_completo.'-constancia';
-    $route = "constancias/".$file_name2;
-
-    move_uploaded_file($file_tmp,$route);*/
-    
-
-
-
-    /* Registro Niños */
-
-$sql = $conexion->query( "INSERT INTO `infantiles` (`academia`, `profesor`, `dias`, `horario`, `nombre_completo`, `numero_usuario`, `email`, `paquete`, `precio`, `folio`,  `fecha_hora`, `reglamento`, `firma`) 
-                                            VALUES ('$academia', '$profesor', '$dias', '$horario', '$nombre_completo', '$numero_usuario', '$email', '$paquete', '$precio', '$folio', '$fecha_hora', '$reglamento', '$firma')");
-                           
-                 
-$sql_query = mysqli_query($conexion,$sql);
-
-
-if ($sql==1) {
-    echo '<div class="alert alert-success">El registro ha sido realizado exitosamente. A continuación sera redirigido para realizar el pago.</div>';
-   } else {
-    echo '<div class="alert alert-danger">Error al registrar los datos, intenta de nuevo.</div>';
-   }
-   
-
-}else{
-    echo '<div class="alert alert-warning">Alguno de los campos esta vacio</div>';
+    if (empty($academia) || empty($profesor) || empty($dias) || empty($horario) || empty($nombre_completo) || empty($numero_usuario) || empty($firma)) {
+        echo '<div class="alert alert-warning">Por favor, complete todos los campos requeridos</div>';
+    } else {
+        $mysqli = new mysqli("148.72.8.182", "academias", "Abrelata$7", "academias");
+        $mysqli->set_charset("utf8");
+        if ($mysqli->connect_error) {
+            die("Falló la conexión: " . $mysqli->connect_error);
+        }
+        $stmt = $mysqli->prepare("INSERT INTO `infantiles` (`academia`, `profesor`, `dias`, `horario`, `apartado`, `nombre_completo`, `numero_usuario`, `email`, `paquete`, `precio`, `folio`,  `fecha_hora`, `reglamento`, `firma`) 
+                                            VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)");
+        $stmt->bind_param("ssssssssssssss", $academia, $profesor, $dias, $horario, $apartado, $nombre_completo, $numero_usuario, $email, $paquete, $precio, $folio, $fecha_hora, $reglamento, $firma);
+        if ($stmt->execute()) {
+            echo '<div class="alert alert-success">Confirma tus datos.</div>';
+            // Redireccionar a la página deseada
+            header("Location: pay.php");
+            exit();
+        } else {
+            echo '<div class="alert alert-danger">Error al procesar la solicitud</div>';
+        }
+    }
 }
-}
-
 ?>
-
-   

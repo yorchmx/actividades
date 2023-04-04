@@ -1,12 +1,3 @@
-<?php
-/*
-$allowed_referer = "https://clubfrance.org.mx/academias/"; // URL permitida
-
-if(isset($_SERVER["HTTP_REFERER"]) && $_SERVER["HTTP_REFERER"] === $allowed_referer) {
-  // El referer es la URL permitida, se muestra el contenido de la página 
-  */
-?> 
-
 <!-- Variables -->
 
 <?php 
@@ -29,44 +20,7 @@ $horario = "16:00 a 17:00 hrs.";
 
        <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    
-    <!-- Script para pop up -->
 
-    <!--<script type="text/javascript">
-      function showImage() {
-        var img = document.createElement("img");
-        img.src = "../minicamp-febrero-2023/img/Autorizacion.jpg";
-        img.style.width = "100%";
-        img.style.height = "auto";
-
-        var closeBtn = document.createElement("span");
-        closeBtn.innerHTML = "&times;";
-        closeBtn.style.position = "absolute";
-        closeBtn.style.top = "10px";
-        closeBtn.style.right = "20px";
-        closeBtn.style.fontSize = "40px";
-        closeBtn.style.cursor = "pointer";
-        closeBtn.onclick = function() {
-          document.body.removeChild(modal);
-        };
-
-        var modal = document.createElement("div");
-        modal.style.position = "fixed";
-        modal.style.top = "0";
-        modal.style.left = "0";
-        modal.style.width = "35%";
-        modal.style.height = "35%";
-        modal.style.backgroundColor = "rgba(0, 0, 0, 0.5)";
-        modal.style.display = "flex";
-        modal.style.justifyContent = "center";
-        modal.style.alignItems = "center";
-        modal.style.zIndex = "1";
-        modal.appendChild(img);
-        modal.appendChild(closeBtn);
-
-        document.body.appendChild(modal);
-      }
-    </script> -->
 
 
    </head>
@@ -95,16 +49,9 @@ $horario = "16:00 a 17:00 hrs.";
           <div class="text-one">Av. Francia 75, Col. Florida</div>
           <div class="text-two">Álvaro Obregón, CDMX.</div>
         </div>
-       <!-- <div class="phone details">
-          <i class="fa-brands fa-whatsapp"></i>
-          <div class="topic">WhatsApp</div>
-          <div><a href="https://wa.me/5215532812300?text=¡Hola!+Quiero+informes+de+las+actividades+del+MiniCamp" target="_blank" >55 3281 2300</a></div>
-          </div>
-          <div class="phone details">
-          <i class="fa-solid fa-envelope"></i>
-          <div class="topic">Correo electrónico</div>
-          <a href=»mailto:deportes@clubfrance.org.mx»>ana.garcia@clubfrance.org.mx</a>
-        </div> -->
+      <footer>
+  <center> <p>© 2023 Club France. Todos los derechos reservados.</p></center> 
+  </footer>
       </div>
       <div class="right-side">
        
@@ -129,7 +76,7 @@ $horario = "16:00 a 17:00 hrs.";
 
 <br>
 
-  <form action="" method="POST" enctype="multipart/form-data">
+  <form action="pay.php" method="POST" enctype="multipart/form-data">
 
         <?php 
             include_once "registro.php";
@@ -138,7 +85,7 @@ $horario = "16:00 a 17:00 hrs.";
     <h5>¿Tienes apartado tu lugar en la clase? Antes de realizar el pago asegurate de apartar lugar con el profe:  <p style="color:#3e2093";><?php echo $profesor; ?></p></h5>
         
         <div class="input-field">
-        <select name="" id="" required><br>
+        <select name="apartado" id="apartado" required><br>
               <option disabled selected>Selecciona un opción</option>
     					<option value="Sí">Sí</option>
     					<option value="No">No</option>
@@ -198,24 +145,23 @@ $horario = "16:00 a 17:00 hrs.";
         <select name="paquete" id="paquete" onchange="actualizarPrecio()" required><br>
               <option disabled selected>Selecciona un paquete</option>
     					<option value="Una Clase">Una Clase</option>
-    					<option value="Paquete 1">Paquete 1 (Una hora a la semana)</option>
-    					<option value="Paquete 2">Paquete 2 (Dos horas a la semana)</option>
-    					<option value="Paquete 3">Paquete 3 (Tres horas a la semana)</option>
-    					<option value="Paquete 4">Paquete 4 (Cuatro horas a la semana)</option>
-    					<option value="Paquete 5">Paquete 5 (Cinco horas a la semana)</option>
+    					<option value="Paquete 1 (Una hora a la semana)">Paquete 1 (Una hora a la semana)</option>
+    					<option value="Paquete 2 (Dos horas a la semana)">Paquete 2 (Dos horas a la semana)</option>
+    					<option value="Paquete 3 (Tres horas a la semana)">Paquete 3 (Tres horas a la semana)</option>
+    					<option value="Paquete 4 (Cuatro horas a la semana)">Paquete 4 (Cuatro horas a la semana)</option>
+    					<option value="Paquete 5 (Cinco horas a la semana)">Paquete 5 (Cinco horas a la semana)</option>
   					</select>
-      </div>
+      </div><br>
 
       <h5>Precio:</h5>
           <div class="input-box">
           <input type="text" id="precio" name="precio" value="" placeholder="" readonly>
-      </div>
+          </div>
   
       
           
       <!--  <h5>Fecha y hora:</h5> -->
-       
-
+      
         <div class="col-md-12">
           <div class="form-group">
           <div class="custom-control custom-checkbox">
@@ -241,9 +187,12 @@ $horario = "16:00 a 17:00 hrs.";
 
       <br>
 
+
+      
       <div class="d-grid gap-2">
        <button type="submit" class="btn btn-primary" name="btnregistrar" value="ok" >Pagar</button>
       </div>
+      
      <br>
      
      <script>
@@ -263,41 +212,41 @@ $horario = "16:00 a 17:00 hrs.";
 
   switch (paqueteSelect.value) {
     case "Una Clase":
-      precioInput.value = "$190.00";
+      precioInput.value = "190.00";
       break;
-    case "Paquete 1":
+    case "Paquete 1 (Una hora a la semana)":
       if (diaDelMes >= 11) {
-        precioInput.value = "$745.20"; // 8% más que $690.00
+        precioInput.value = "745.20"; // 8% más que $690.00
       } else {
-        precioInput.value = "$690.00";
+        precioInput.value = "690.00";
       }
       break;
-    case "Paquete 2":
+    case "Paquete 2 (Dos horas a la semana)":
       if (diaDelMes >= 11) {
-        precioInput.value = "$1350.00"; // 8% más que $1,250.00
+        precioInput.value = "1350.00"; // 8% más que $1,250.00
       } else {
-        precioInput.value = "$1,250.00";
+        precioInput.value = "1250.00";
       }
       break;
-    case "Paquete 3":
+    case "Paquete 3 (Tres horas a la semana)":
       if (diaDelMes >= 11) {
-        precioInput.value = "$1836.00"; // 8% más que $1,700.00
+        precioInput.value = "1836.00"; // 8% más que $1,700.00
       } else {
-        precioInput.value = "$1,700.00";
+        precioInput.value = "1700.00";
       }
       break;
-    case "Paquete 4":
+    case "Paquete 4 (Cuatro horas a la semana)":
       if (diaDelMes >= 11) {
-        precioInput.value = "$2106.00"; // 8% más que $1,950.00
+        precioInput.value = "2106.00"; // 8% más que $1,950.00
       } else {
-        precioInput.value = "$1,950.00";
+        precioInput.value = "1950.00";
       }
       break;
-    case "Paquete 5":
+    case "Paquete 5 (Cinco horas a la semana)":
       if (diaDelMes >= 11) {
-        precioInput.value = "$2462.40"; // 8% más que $2,280.00
+        precioInput.value = "2462.40"; // 8% más que $2,280.00
       } else {
-        precioInput.value = "$2,280.00";
+        precioInput.value = "2280.00";
       }
       break;
     default:
@@ -311,13 +260,3 @@ $horario = "16:00 a 17:00 hrs.";
 
 </body>
 </html>
-
-<?php
-/*
-} else {
-  // El referer no es la URL permitida, se redirecciona a otra página
-  header("Location: https://clubfrance.org.mx/academias/");
-  exit;
-}
-*/
-?>
