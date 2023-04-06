@@ -1,18 +1,18 @@
 <!-- Variables -->
 
-<?php
-$lugar = "Canchas de Bádminton";
-$academia = "Bádminton";
-$profesor = "Andrés López";
-$dias = "Martes a Viernes";
-$horario = "16:00 a 17:00 hrs."; 
+<?php 
+$lugar = "Salón George Sand";
+$academia = "Ballet";
+$profesor = "Jazmín Jimenéz";
+$dias = "Lunes y Miércoles";
+$horario = "16:00 a 17:00 hrs.<br>17:00 a 18:00 hrs."; 
 ?>
 
 <!DOCTYPE html>
 <html lang="es" dir="ltr">
   <head>
     <meta charset="UTF-8">
-    <title>Bádminton</title>
+    <title>Ballet</title>
     <link rel="stylesheet" href="css/style.css">
     <!-- Fontawesome CDN Link -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"/>
@@ -21,6 +21,8 @@ $horario = "16:00 a 17:00 hrs.";
 
        <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+
 
    </head>
    
@@ -58,37 +60,22 @@ $horario = "16:00 a 17:00 hrs.";
       
 
 <center><img src="img/Logo.png" width="50%" height="50%"></center><br>
-<?php
-// Conectar a la base de datos
-$conn = mysqli_connect('148.72.8.182', 'academias', 'Abrelata$7', 'academias');
-$conn->set_charset("utf8");
+<h2>Actividades Infantiles</h2>
+<h3><?php echo $academia; ?></h3>
 
+      <!-- Botón para pop up -->
+    <!-- <button onclick="showImage()">Mostrar imagen de ejemplo</button> -->
+<div>
+      <h5>Profesor:</h5>
+      <h6><?php echo $profesor; ?></h6>
+      <h5>Días:</h5>
+      <h6><?php echo $dias; ?></h6>
+      <h5>Las clases se imparte de:</h5>
+      <h6><?php echo $horario; ?></h6>
+      <h5>Lugar:</h5>
+      <h6><?php echo $lugar; ?></h6>
 
-// Preparar la consulta SQL
-$sql = "SELECT * FROM actividades WHERE id = 1";
-
-// Ejecutar la consulta SQL
-$resultado = mysqli_query($conn, $sql);
-
-
-// Mostrar los datos
-while ($fila = mysqli_fetch_assoc($resultado)) {
-  echo 'Actividades Infantiles'. '<br>';
-echo ''.$fila['nombre_actividad'] . '<br>';
-
-echo '<h5>Profesor:</h5>' . $fila['nombre_profesor'] . '<br>';
-echo 'Las clases se imparte de: ' . $fila['dias'] . '<br>';
-echo 'Horario: ' . $fila['horario_grupo1'] . '<br>';
-echo 'Lugar: ' . $fila['lugar'] . '<br>';
-
-
-}
-
-// Cerrar la conexión a la base de datos
-mysqli_close($conn);
-
-?>
-
+</div>
 
 <br>
 
@@ -161,11 +148,8 @@ mysqli_close($conn);
         <select name="paquete" id="paquete" onchange="actualizarPrecio()" required><br>
               <option disabled selected>Selecciona un paquete</option>
     					<option value="Una Clase">Una Clase</option>
-    					<option value="Paquete 1 (Una hora a la semana)">Paquete 1 (Una hora a la semana)</option>
-    					<option value="Paquete 2 (Dos horas a la semana)">Paquete 2 (Dos horas a la semana)</option>
-    					<option value="Paquete 3 (Tres horas a la semana)">Paquete 3 (Tres horas a la semana)</option>
-    					<option value="Paquete 4 (Cuatro horas a la semana)">Paquete 4 (Cuatro horas a la semana)</option>
-    					<option value="Paquete 5 (Cinco horas a la semana)">Paquete 5 (Cinco horas a la semana)</option>
+    					<option value="Paquete 1 (Una clase a la semana)">Paquete 1 (Una clase a la semana)</option>
+    					<option value="Paquete 2 (Dos clases a la semana)">Paquete 2 (Dos clases a la semana)</option>
   					</select>
       </div><br>
 
@@ -202,7 +186,9 @@ mysqli_close($conn);
       </div>
 
       <br>
-    
+
+
+      
       <div class="d-grid gap-2">
        <button type="submit" class="btn btn-primary" name="btnregistrar" value="ok" >Pagar</button>
       </div>
@@ -226,43 +212,23 @@ mysqli_close($conn);
 
   switch (paqueteSelect.value) {
     case "Una Clase":
-      precioInput.value = "190.00";
+      precioInput.value = "140.00";
       break;
-    case "Paquete 1 (Una hora a la semana)":
+    case "Paquete 1 (Una clase a la semana)":
       if (diaDelMes >= 11) {
-        precioInput.value = "745.20"; // 8% más que $690.00
+        precioInput.value = "540.00"; // 8% más que $540.00
       } else {
-        precioInput.value = "690.00";
+        precioInput.value = "500.00";
       }
       break;
-    case "Paquete 2 (Dos horas a la semana)":
+    case "Paquete 2 (Dos clases a la semana)":
       if (diaDelMes >= 11) {
-        precioInput.value = "1350.00"; // 8% más que $1,250.00
+        precioInput.value = "885.60"; // 8% más que $885.60
       } else {
-        precioInput.value = "1250.00";
+        precioInput.value = "820.00";
       }
       break;
-    case "Paquete 3 (Tres horas a la semana)":
-      if (diaDelMes >= 11) {
-        precioInput.value = "1836.00"; // 8% más que $1,700.00
-      } else {
-        precioInput.value = "1700.00";
-      }
-      break;
-    case "Paquete 4 (Cuatro horas a la semana)":
-      if (diaDelMes >= 11) {
-        precioInput.value = "2106.00"; // 8% más que $1,950.00
-      } else {
-        precioInput.value = "1950.00";
-      }
-      break;
-    case "Paquete 5 (Cinco horas a la semana)":
-      if (diaDelMes >= 11) {
-        precioInput.value = "2462.40"; // 8% más que $2,280.00
-      } else {
-        precioInput.value = "2280.00";
-      }
-      break;
+   
     default:
       precioInput.value = "";
   }

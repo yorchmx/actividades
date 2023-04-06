@@ -87,7 +87,7 @@
                         src="./img/2.jpg" 
                         alt="Card image cap" 
                         />
-                        <a href="#!">
+                        <a href="actividadesninos/ballet.php">
                             <div class="mask rgba-white-slight"></div>
                         </a>
                     </div>
@@ -101,7 +101,7 @@
                          <!--Some quick example text to build on the card title and make up the bulk of the card´s content.->>   
                         </p>
                         <!-- Button -->
-                        <a href="#" class="btn blue-gradient">Comprar</a>
+                        <a href="actividadesninos/ballet.php" class="btn blue-gradient">Comprar</a>
                     </div>
                     </div>
 

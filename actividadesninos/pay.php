@@ -19,6 +19,7 @@ if (!empty($_POST["btnregistrar"])) {
     $fecha_hora = $_POST['fecha_hora'];
     $reglamento = $_POST['reglamento'];
     $firma = $_POST['firma'];
+    $lugar = $_POST['lugar'];
 
 
    /*
@@ -71,6 +72,7 @@ echo '<li>Número de usuario: '.$_POST['numero_usuario'].'</li>';
 echo '<li>Email: '.$_POST['email'].'</li>';
 echo '<li>Paquete: '.$_POST['paquete'].'</li>';
 echo '<li>Precio: '.$_POST['precio'].'</li>';
+echo '<li>Lugar: '.$_POST['lugar'].'</li>';
 
 ?>
 
