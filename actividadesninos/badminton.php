@@ -73,7 +73,7 @@ $resultado = mysqli_query($conn, $sql);
 
 // Mostrar los datos
 while ($fila = mysqli_fetch_assoc($resultado)) {
-  echo 'Actividades Infantiles'. '<br>';
+  echo '<h3><center>Actividades Infantiles</center></h3>  '. '<br>';
 echo ''.$fila['nombre_actividad'] . '<br>';
 
 echo '<h5>Profesor:</h5>' . $fila['nombre_profesor'] . '<br>';
