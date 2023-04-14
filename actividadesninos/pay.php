@@ -1,3 +1,40 @@
+<style>
+    .alert {
+        padding: 10px;
+        margin-bottom: 10px;
+        border: 1px solid transparent;
+        border-radius: 4px;
+    }
+
+    .alert-success {
+        color: #3c763d;
+        background-color: #dff0d8;
+        border-color: #d6e9c6;
+    }
+
+    .alert-danger {
+        color: #a94442;
+        background-color: #f2dede;
+        border-color: #ebccd1;
+    }
+
+    .alert-warning {
+        color: #8a6d3b;
+        background-color: #fcf8e3;
+        border-color: #faebcc;
+    }
+
+    ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+    }
+
+    li {
+        margin-bottom: 10px;
+    }
+</style>
+
 <?php
 
 if (!empty($_POST["btnregistrar"])) {
@@ -19,7 +56,8 @@ if (!empty($_POST["btnregistrar"])) {
     $fecha_hora = $_POST['fecha_hora'];
     $reglamento = $_POST['reglamento'];
     $firma = $_POST['firma'];
-    $lugar = $_POST['lugar'];
+    $concepto = $_POST['concepto'];
+
 
 
    /*
@@ -42,15 +80,15 @@ if (!empty($_POST["btnregistrar"])) {
 
     /* Registro Niños */
 
-$sql = $conexion->query( "INSERT INTO `infantiles` (`academia`, `profesor`, `dias`, `horario`, `apartado`, `nombre_completo`, `numero_usuario`, `email`, `paquete`, `precio`, `folio`,  `fecha_hora`, `reglamento`, `firma`) 
-                                            VALUES ('$academia', '$profesor', '$dias', '$horario', '$apartado', '$nombre_completo', '$numero_usuario', '$email', '$paquete', '$precio', '$folio', '$fecha_hora', '$reglamento', '$firma')");
+$sql = $conexion->query( "INSERT INTO `infantiles` (`academia`, `profesor`, `dias`, `horario`, `apartado`, `nombre_completo`, `numero_usuario`, `email`, `paquete`, `precio`, `folio`, `concepto`, `fecha_hora`, `reglamento`, `firma`) 
+                                            VALUES ('$academia', '$profesor', '$dias', '$horario', '$apartado', '$nombre_completo', '$numero_usuario', '$email', '$paquete', '$precio', '$folio', '$concepto', '$fecha_hora', '$reglamento', '$firma')");
                            
                  
 $sql_query = mysqli_query($conexion,$sql);
 
 
 if ($sql==1) {
-    echo '<div class="alert alert-success">El registro ha sido realizado exitosamente. A continuación verifica que los datos sean correctos.</div>';
+    echo '<div class="alert alert-success"><center>A continuación verifica que los datos sean correctos.</center></div>';
    } else {
     echo '<div class="alert alert-danger">Error al registrar los datos, intenta de nuevo.</div>';
    }
@@ -59,30 +97,33 @@ if ($sql==1) {
 }else{
     echo '<div class="alert alert-warning">Alguno de los campos esta vacio</div>';
 }
+
 }
-echo '<p>Los datos ingresados son:</p>';
+
+echo '<p><center>Los datos ingresados son:</center></p>';
 echo '<ul>';
-echo '<li>Academia: '.$_POST['academia'].'</li>';
-echo '<li>Profesor: '.$_POST['profesor'].'</li>';
-echo '<li>Días: '.$_POST['dias'].'</li>';
-echo '<li>Horario: '.$_POST['horario'].'</li>';
-echo '<li>Ya apartaste lugar con el profesor: '.$_POST['apartado'].'</li>';
-echo '<li>Nombre completo: '.$_POST['nombre_completo'].'</li>';
-echo '<li>Número de usuario: '.$_POST['numero_usuario'].'</li>';
-echo '<li>Email: '.$_POST['email'].'</li>';
-echo '<li>Paquete: '.$_POST['paquete'].'</li>';
-echo '<li>Precio: '.$_POST['precio'].'</li>';
-echo '<li>Lugar: '.$_POST['lugar'].'</li>';
+echo '<li><center><strong>Academia:</strong> '.$_POST['academia'].'</center></li>';
+echo '<li><center><strong>Ya apartaste lugar con el profesor:</strong> '.$_POST['apartado'].'</center></li>';
+echo '<li><center><strong>Profesor:</strong> '.$_POST['profesor'].'</center></li>';
+echo '<li><center><strong>Días:</strong> '.$_POST['dias'].'</center></li>';
+echo '<li><center><strong>Horarios:</strong> '.$_POST['horario'].'</center></li>';
+echo '<li><center><strong>Nombre completo:</strong> '.$_POST['nombre_completo'].'</center></li>';
+echo '<li><center><strong>Número de usuario del niño o niña:</strong> '.$_POST['numero_usuario'].'</center></li>';
+echo '<li><center><strong>Email:</strong> '.$_POST['email'].'</center></li>';
+echo '<li><center><strong>Paquete:</strong> '.$_POST['paquete'].'</center></li>';
+echo '<li><center><strong>Precio:</strong> '.$_POST['precio'].'</center></li>';
 
 ?>
-
+<br>
 <?php
 
 include 'conexion.php';
 
 $precio = $_POST['precio'];
 
-$concepto = "BADMINTON-";
+$concepto = $_POST['concepto'];
+
+//$concepto = "BADMINTON-";
 $id = uniqid('', true);
 $numero = substr($id, 0, 8);
 
@@ -117,3 +158,19 @@ echo $button;
 
 ?>
 
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <!-- Bootstrap CSS -->
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+     <link rel="stylesheet" href="style.css">
+    <title>Confirmación de datos</title>
+</head>
+<body>
+
+</body>
+</html>

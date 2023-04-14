@@ -1,11 +1,12 @@
 <!-- Variables -->
 
-<?php 
+<?php
 $lugar = "Salón George Sand";
 $academia = "Ballet";
-$profesor = "Jazmín Jimenéz";
+$concepto = "BALLET";
+$profesor = "Mónica Rivera";
 $dias = "Lunes y Miércoles";
-$horario = "16:00 a 17:00 hrs.<br>17:00 a 18:00 hrs."; 
+$horario = "16:00 a 17:00 horas y 17:00 horas a 18:00 horas"; 
 ?>
 
 <!DOCTYPE html>
@@ -22,7 +23,7 @@ $horario = "16:00 a 17:00 hrs.<br>17:00 a 18:00 hrs.";
        <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 
-
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
 
    </head>
    
@@ -60,22 +61,35 @@ $horario = "16:00 a 17:00 hrs.<br>17:00 a 18:00 hrs.";
       
 
 <center><img src="img/Logo.png" width="50%" height="50%"></center><br>
-<h2>Actividades Infantiles</h2>
-<h3><?php echo $academia; ?></h3>
+<?php
+// Conectar a la base de datos
+$conn = mysqli_connect('148.72.8.182', 'academias', 'Abrelata$7', 'academias');
+$conn->set_charset("utf8");
 
-      <!-- Botón para pop up -->
-    <!-- <button onclick="showImage()">Mostrar imagen de ejemplo</button> -->
-<div>
-      <h5>Profesor:</h5>
-      <h6><?php echo $profesor; ?></h6>
-      <h5>Días:</h5>
-      <h6><?php echo $dias; ?></h6>
-      <h5>Las clases se imparte de:</h5>
-      <h6><?php echo $horario; ?></h6>
-      <h5>Lugar:</h5>
-      <h6><?php echo $lugar; ?></h6>
 
-</div>
+// Preparar la consulta SQL
+$sql = "SELECT * FROM actividades WHERE id = 2";
+
+// Ejecutar la consulta SQL
+$resultado = mysqli_query($conn, $sql);
+
+
+// Mostrar los datos
+while ($fila = mysqli_fetch_assoc($resultado)) {
+  echo '<h3><center>Actividades Infantiles</center></h3>  '. '';
+  echo '<div style="text-align:center; font-weight:bold; font-size:27px;">' . $fila['nombre_actividad'] . '<br></div>';
+  echo '<span class="subtitulo">Profesor:</span> ' . $fila['nombre_profesor'] . '<br>';
+  echo '<span class="subtitulo">Las clases se imparten de:</span> ' . $fila['dias'] . '<br>';
+  echo '<span class="subtitulo">Horario:</span> ' . $fila['horario_grupo1'] . ' y ' . $fila['horario_grupo2'] . '<br>';
+  echo '<span class="subtitulo">Lugar:</span> ' . $fila['lugar'] . '<br>';
+  echo '<span class="subtitulo">Edades:</span> ' . $fila['edad'] . '<br>';
+}
+
+// Cerrar la conexión a la base de datos
+mysqli_close($conn);
+
+?>
+
 
 <br>
 
@@ -85,8 +99,8 @@ $horario = "16:00 a 17:00 hrs.<br>17:00 a 18:00 hrs.";
             include_once "registro.php";
          ?>
 
-    <h5>¿Tienes apartado tu lugar en la clase? Antes de realizar el pago asegurate de apartar lugar con el profe:  <p style="color:#3e2093";><?php echo $profesor; ?></p></h5>
-        
+    <h5>¿Has apartado tu lugar en la clase? Antes de realizar el pago, asegúrate de apartar tu lugar con el profesor:  <p style="color:#3e2093";><?php echo $profesor; ?></p></h5>
+           
         <div class="input-field">
         <select name="apartado" id="apartado" required><br>
               <option disabled selected>Selecciona un opción</option>
@@ -122,6 +136,10 @@ $horario = "16:00 a 17:00 hrs.<br>17:00 a 18:00 hrs.";
     					echo '<input type="text" id="folio" name="folio" value="'. $numero_aleatorio . '" placeholder="" readonly hidden>';
   					?><br>
         </div>
+
+        <div id="mi-elemento">
+        <input type="text" id="concepto" name="concepto" value="<?=$concepto?>" placeholder="" readonly hidden>
+        </div>
  
         <h5>Nombre del niño o niña:</h5>
         <div class="input-box">
@@ -136,10 +154,10 @@ $horario = "16:00 a 17:00 hrs.<br>17:00 a 18:00 hrs.";
         </div>
         
 
-        <h5>Correo eléctronico:</h5>
+        <h5>Correo electrónico:</h5>
         <div class="input-box">
         
-        <input id="email" name="email" type="email" placeholder="Correo eléctronico" required>
+        <input id="email" name="email" type="email" placeholder="Correo electrónico" required>
         </div>
 
         <h5>Paquetes:</h5>
@@ -148,8 +166,11 @@ $horario = "16:00 a 17:00 hrs.<br>17:00 a 18:00 hrs.";
         <select name="paquete" id="paquete" onchange="actualizarPrecio()" required><br>
               <option disabled selected>Selecciona un paquete</option>
     					<option value="Una Clase">Una Clase</option>
-    					<option value="Paquete 1 (Una clase a la semana)">Paquete 1 (Una clase a la semana)</option>
-    					<option value="Paquete 2 (Dos clases a la semana)">Paquete 2 (Dos clases a la semana)</option>
+    					<option value="Paquete 1 (Una hora a la semana)">Paquete 1 (Una hora a la semana)</option>
+    					<option value="Paquete 2 (Dos horas a la semana)">Paquete 2 (Dos horas a la semana)</option>
+    					<option value="Paquete 3 (Tres horas a la semana)">Paquete 3 (Tres horas a la semana)</option>
+    					<option value="Paquete 4 (Cuatro horas a la semana)">Paquete 4 (Cuatro horas a la semana)</option>
+    					<option value="Paquete 5 (Cinco horas a la semana)">Paquete 5 (Cinco horas a la semana)</option>
   					</select>
       </div><br>
 
@@ -166,9 +187,9 @@ $horario = "16:00 a 17:00 hrs.<br>17:00 a 18:00 hrs.";
           <div class="form-group">
           <div class="custom-control custom-checkbox">
               <input type="checkbox" class="custom-control-input" id="reglamento" name="reglamento" value="Sí" required >
-              <label class="custom-control-label" for="aviso">He Leido y Acepto el <a href="" target="_blank" class="text-danger">Reglamento</a></label>
+              <label class="custom-control-label" for="aviso">He Leído y Acepto el <a href="" target="_blank" class="text-danger">Reglamento</a></label>
               <div class="valid-feedback" >Campo Ok!</div>
-              <div class="invalid-feedback" >Debes aceptar los terminos</div>
+              <div class="invalid-feedback" >Debes aceptar los términos</div>
           </div>
           
       </div>
@@ -186,9 +207,7 @@ $horario = "16:00 a 17:00 hrs.<br>17:00 a 18:00 hrs.";
       </div>
 
       <br>
-
-
-      
+    
       <div class="d-grid gap-2">
        <button type="submit" class="btn btn-primary" name="btnregistrar" value="ok" >Pagar</button>
       </div>
@@ -199,6 +218,9 @@ $horario = "16:00 a 17:00 hrs.<br>17:00 a 18:00 hrs.";
         
      </script>
   </form>
+
+
+  
 
 <script>
   
@@ -212,23 +234,43 @@ $horario = "16:00 a 17:00 hrs.<br>17:00 a 18:00 hrs.";
 
   switch (paqueteSelect.value) {
     case "Una Clase":
-      precioInput.value = "140.00";
+      precioInput.value = "190.00";
       break;
-    case "Paquete 1 (Una clase a la semana)":
+    case "Paquete 1 (Una hora a la semana)":
       if (diaDelMes >= 11) {
-        precioInput.value = "540.00"; // 8% más que $540.00
+        precioInput.value = "745.20"; // 8% más que $690.00
       } else {
-        precioInput.value = "500.00";
+        precioInput.value = "690.00";
       }
       break;
-    case "Paquete 2 (Dos clases a la semana)":
+    case "Paquete 2 (Dos horas a la semana)":
       if (diaDelMes >= 11) {
-        precioInput.value = "885.60"; // 8% más que $885.60
+        precioInput.value = "1350.00"; // 8% más que $1,250.00
       } else {
-        precioInput.value = "820.00";
+        precioInput.value = "1250.00";
       }
       break;
-   
+    case "Paquete 3 (Tres horas a la semana)":
+      if (diaDelMes >= 11) {
+        precioInput.value = "1836.00"; // 8% más que $1,700.00
+      } else {
+        precioInput.value = "1700.00";
+      }
+      break;
+    case "Paquete 4 (Cuatro horas a la semana)":
+      if (diaDelMes >= 11) {
+        precioInput.value = "2106.00"; // 8% más que $1,950.00
+      } else {
+        precioInput.value = "1950.00";
+      }
+      break;
+    case "Paquete 5 (Cinco horas a la semana)":
+      if (diaDelMes >= 11) {
+        precioInput.value = "2462.40"; // 8% más que $2,280.00
+      } else {
+        precioInput.value = "2280.00";
+      }
+      break;
     default:
       precioInput.value = "";
   }
@@ -236,6 +278,7 @@ $horario = "16:00 a 17:00 hrs.<br>17:00 a 18:00 hrs.";
 
 
 </script>
+
 
 
 </body>

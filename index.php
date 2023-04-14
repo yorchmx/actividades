@@ -117,7 +117,7 @@
                         src="./img/3.jpg" 
                         alt="Card image cap" 
                         />
-                        <a href="#!">
+                        <a href="actividadesninos/basquetbolinfantil.php">
                             <div class="mask rgba-white-slight"></div>
                         </a>
                     </div>
@@ -131,7 +131,7 @@
                          <!--Some quick example text to build on the card title and make up the bulk of the card´s content.->>   
                         </p>
                         <!-- Button -->
-                        <a href="#" class="btn blue-gradient">Comprar</a>
+                        <a href="actividadesninos/basquetbolinfantil.php" class="btn blue-gradient">Comprar</a>
                     </div>
                     </div>
 
@@ -147,7 +147,7 @@
                         src="./img/4.jpg" 
                         alt="Card image cap" 
                         />
-                        <a href="#!">
+                        <a href="actividadesninos/boxinfantil.php">
                             <div class="mask rgba-white-slight"></div>
                         </a>
                     </div>
@@ -161,7 +161,7 @@
                          <!--Some quick example text to build on the card title and make up the bulk of the card´s content.->>   
                         </p>
                         <!-- Button -->
-                        <a href="#" class="btn blue-gradient">Comprar</a>
+                        <a href="actividadesninos/boxinfantil.php" class="btn blue-gradient">Comprar</a>
                     </div>
                     </div>
 
@@ -177,7 +177,7 @@
                         src="./img/5.jpg" 
                         alt="Card image cap" 
                         />
-                        <a href="#!">
+                        <a href="actividadesninos/danzaaerea.php">
                             <div class="mask rgba-white-slight"></div>
                         </a>
                     </div>
@@ -191,7 +191,7 @@
                          <!--Some quick example text to build on the card title and make up the bulk of the card´s content.->>   
                         </p>
                         <!-- Button -->
-                        <a href="#" class="btn blue-gradient">Comprar</a>
+                        <a href="actividadesninos/danzaaerea.php" class="btn blue-gradient">Comprar</a>
                     </div>
                     </div>
 
@@ -207,7 +207,7 @@
                         src="./img/6.jpg" 
                         alt="Card image cap" 
                         />
-                        <a href="#!">
+                        <a href="actividadesninos/escalada.php">
                             <div class="mask rgba-white-slight"></div>
                         </a>
                     </div>
@@ -221,7 +221,7 @@
                          <!--Some quick example text to build on the card title and make up the bulk of the card´s content.->> 
                         </p>
                         <!-- Button -->
-                        <a href="#" class="btn blue-gradient">Comprar</a>
+                        <a href="actividadesninos/escalada.php" class="btn blue-gradient">Comprar</a>
                     </div>
                     </div>
 
@@ -237,7 +237,7 @@
                         src="./img/7.jpg" 
                         alt="Card image cap" 
                         />
-                        <a href="#!">
+                        <a href="actividadesninos/gimnasia.php">
                             <div class="mask rgba-white-slight"></div>
                         </a>
                     </div>
@@ -251,7 +251,7 @@
                          <!--Some quick example text to build on the card title and make up the bulk of the card´s content.->> 
                         </p>
                         <!-- Button -->
-                        <a href="#" class="btn blue-gradient">Comprar</a>
+                        <a href="actividadesninos/gimnasia.php" class="btn blue-gradient">Comprar</a>
                     </div>
                     </div>
 
@@ -267,7 +267,7 @@
                         src="./img/8.jpg" 
                         alt="Card image cap" 
                         />
-                        <a href="#!">
+                        <a href="actividadesninos/natacion.php">
                             <div class="mask rgba-white-slight"></div>
                         </a>
                     </div>
@@ -281,7 +281,7 @@
                          <!--Some quick example text to build on the card title and make up the bulk of the card´s content.->> 
                         </p>
                         <!-- Button -->
-                        <a href="#" class="btn blue-gradient">Comprar</a>
+                        <a href="actividadesninos/natacion.php" class="btn blue-gradient">Comprar</a>
                     </div>
                     </div>
 
@@ -335,217 +335,8 @@
                         <a href="#" class="btn blue-gradient">Comprar</a>
                     </div>
                     </div>
-                    </div>
-
-                    <!-- Card -->
-                    <div class="col-lg-3 pb-5 wow fadeInLeft slow">
-                        <!-- Card -->
-                    <div class="card ho">
-                    <!-- Card image -->
-                    <div class="view overlay">
-                        <img 
-                        class="card-img-top"
-                        src="./img/10.jpg" 
-                        alt="Card image cap" 
-                        />
-                        <a href="#!">
-                            <div class="mask rgba-white-slight"></div>
-                        </a>
-                    </div>
-                    
-                    <!-- Card content -->
-                    <div class="card-body">
-                        <!-- Title -->
-                        <h4 class="card-title">Acua Fitness</h4>
-                        <!-- Text -->
-                        <p class="card-text">
-                         <!--Some quick example text to build on the card title and make up the bulk of the card´s content.->>   
-                        </p>
-                        <!-- Button -->
-                        <a href="#" class="btn blue-gradient">Comprar</a>
-                    </div>
-                    </div>
-
-                    <!-- Card -->
-                    </div>
-                    <div class="col-lg-3 pb-5 wow fadeInRight slow">
-                        <!-- Card -->
-                    <div class="card ho">
-                    <!-- Card image -->
-                    <div class="view overlay">
-                        <img 
-                        class="card-img-top"
-                        src="./img/11.jpg" 
-                        alt="Card image cap" 
-                        />
-                        <a href="#!">
-                            <div class="mask rgba-white-slight"></div>
-                        </a>
-                    </div>
-                    
-                    <!-- Card content -->
-                    <div class="card-body">
-                        <!-- Title -->
-                        <h4 class="card-title">BodyPump</h4>
-                        <!-- Text -->
-                        <p class="card-text">
-                         <!--Some quick example text to build on the card title and make up the bulk of the card´s content.->>   
-                        </p>
-                        <!-- Button -->
-                        <a href="#" class="btn blue-gradient">Comprar</a>
-                    </div>
-                    </div>
-
-                    <!-- Card -->
-                    </div>
-                    <div class="col-lg-3 pb-5 wow fadeInUp slow">
-                        <!-- Card -->
-                    <div class="card ho">
-                    <!-- Card image -->
-                    <div class="view overlay">
-                        <img 
-                        class="card-img-top"
-                        src="./img/12.jpg" 
-                        alt="Card image cap" 
-                        />
-                        <a href="#!">
-                            <div class="mask rgba-white-slight"></div>
-                        </a>
-                    </div>
-                    
-                    <!-- Card content -->
-                    <div class="card-body">
-                        <!-- Title -->
-                        <h4 class="card-title">Box Fitness</h4>
-                        <!-- Text -->
-                        <p class="card-text">
-                         <!--Some quick example text to build on the card title and make up the bulk of the card´s content.->>   
-                        </p>
-                        <!-- Button -->
-                        <a href="#" class="btn blue-gradient">Comprar</a>
-                    </div>
-                    </div>
-
-                        <!-- Card -->
-                    </div>
-                    <div class="col-lg-3 pb-5 wow fadeInLeft slow">
-                        <!-- Card -->
-                    <div class="card ho">
-                    <!-- Card image -->
-                    <div class="view overlay">
-                        <img 
-                        class="card-img-top"
-                        src="./img/13.jpg" 
-                        alt="Card image cap" 
-                        />
-                        <a href="#!">
-                            <div class="mask rgba-white-slight"></div>
-                        </a>
-                    </div>
-                    
-                    <!-- Card content -->
-                    <div class="card-body">
-                        <!-- Title -->
-                        <h4 class="card-title">Indoor Cycling</h4>
-                        <!-- Text -->
-                        <p class="card-text">
-                         <!--Some quick example text to build on the card title and make up the bulk of the card´s content.->>   
-                        </p>
-                        <!-- Button -->
-                        <a href="#" class="btn blue-gradient">Comprar</a>
-                    </div>
-                    </div>
-
-                    <!-- Card -->
-                    </div>
-                    <div class="col-lg-3 pb-5 wow fadeInLeft slow">
-                        <!-- Card -->
-                    <div class="card ho">
-                    <!-- Card image -->
-                    <div class="view overlay">
-                        <img 
-                        class="card-img-top"
-                        src="./img/14.jpg" 
-                        alt="Card image cap" 
-                        />
-                        <a href="#!">
-                            <div class="mask rgba-white-slight"></div>
-                        </a>
-                    </div>
-                    
-                    <!-- Card content -->
-                    <div class="card-body">
-                        <!-- Title -->
-                        <h4 class="card-title">Escalada Adultos</h4>
-                        <!-- Text -->
-                        <p class="card-text">
-                         <!--Some quick example text to build on the card title and make up the bulk of the card´s content.->> 
-                        </p>
-                        <!-- Button -->
-                        <a href="#" class="btn blue-gradient">Comprar</a>
-                    </div>
-                    </div>
-
-                    <!-- Card -->
-                    </div>
-                    <div class="col-lg-3 pb-5 wow fadeInRight slow">
-                        <!-- Card -->
-                    <div class="card ho">
-                    <!-- Card image -->
-                    <div class="view overlay">
-                        <img 
-                        class="card-img-top"
-                        src="./img/15.jpg" 
-                        alt="Card image cap" 
-                        />
-                        <a href="#!">
-                            <div class="mask rgba-white-slight"></div>
-                        </a>
-                    </div>
-                    
-                    <!-- Card content -->
-                    <div class="card-body">
-                        <!-- Title -->
-                        <h4 class="card-title">Dance Fitness</h4>
-                        <!-- Text -->
-                        <p class="card-text">
-                         <!--Some quick example text to build on the card title and make up the bulk of the card´s content.->> 
-                        </p>
-                        <!-- Button -->
-                        <a href="#" class="btn blue-gradient">Comprar</a>
-                    </div>
-                    </div>
-
-                    <!-- Card -->
-                    </div>
-                    <div class="col-lg-3 pb-5 wow fadeInRight slow">
-                        <!-- Card -->
-                    <div class="card ho">
-                    <!-- Card image -->
-                    <div class="view overlay">
-                        <img 
-                        class="card-img-top"
-                        src="./img/16.jpg" 
-                        alt="Card image cap" 
-                        />
-                        <a href="#!">
-                            <div class="mask rgba-white-slight"></div>
-                        </a>
-                    </div>
-                    
-                    <!-- Card content -->
-                    <div class="card-body">
-                        <!-- Title -->
-                        <h4 class="card-title">Pilates Piso</h4>
-                        <!-- Text -->
-                        <p class="card-text">
-                         <!--Some quick example text to build on the card title and make up the bulk of the card´s content.->> 
-                        </p>
-                        <!-- Button -->
-                        <a href="#" class="btn blue-gradient">Comprar</a>
-                    </div>
-                    </div>
-
+                    </div>        
+                        <br>
                     </div>
                 </div>
             </div>
@@ -582,6 +373,10 @@
                 new WOW() .init();
             });
         </script>
+
+<footer>
+  <center> <p>© 2023 Club France. Todos los derechos reservados.</p></center> 
+  </footer>
         
 </body>
 </html>
