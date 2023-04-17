@@ -318,7 +318,7 @@
                         src="./img/9.jpg" 
                         alt="Card image cap" 
                         />
-                        <a href="#!">
+                        <a href="actividadesninos/fitnessclub.php">
                             <div class="mask rgba-white-slight"></div>
                         </a>
                     </div>
@@ -332,7 +332,7 @@
                            <!--Some quick example text to build on the card title and make up the bulk of the card´s content.->> 
                         </p>
                         <!-- Button -->
-                        <a href="#" class="btn blue-gradient">Comprar</a>
+                        <a href="actividadesninos/fitnessclub.php" class="btn blue-gradient">Comprar</a>
                     </div>
                     </div>
                     </div>        
@@ -377,6 +377,29 @@
 <footer>
   <center> <p>© 2023 Club France. Todos los derechos reservados.</p></center> 
   </footer>
+
+  <script> // Right click disbled
+		function disableIE() {
+		if (document.all) {
+			return false;
+		}}
+		function disableNS(e) {
+			if (document.layers || (document.getElementById && !document.all)) {
+				if (e.which==2 || e.which==3) {
+					return false;
+				}
+			}
+		}
+		if (document.layers) {
+			document.captureEvents(Event.MOUSEDOWN);
+			document.onmousedown = disableNS;
+		} 
+		else {
+			document.onmouseup = disableNS;
+			document.oncontextmenu = disableIE;
+		}
+		document.oncontextmenu=new Function("return false");
+	</script>
         
 </body>
 </html>

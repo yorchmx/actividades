@@ -170,7 +170,6 @@ mysqli_close($conn);
     					<option value="Paquete 2 (Dos horas a la semana)">Paquete 2 (Dos horas a la semana)</option>
     					<option value="Paquete 3 (Tres horas a la semana)">Paquete 3 (Tres horas a la semana)</option>
     					<option value="Paquete 4 (Cuatro horas a la semana)">Paquete 4 (Cuatro horas a la semana)</option>
-    					<option value="Paquete 5 (Cinco horas a la semana)">Paquete 5 (Cinco horas a la semana)</option>
   					</select>
       </div><br>
 
@@ -234,41 +233,34 @@ mysqli_close($conn);
 
   switch (paqueteSelect.value) {
     case "Una Clase":
-      precioInput.value = "190.00";
+      precioInput.value = "140.00";
       break;
     case "Paquete 1 (Una hora a la semana)":
       if (diaDelMes >= 11) {
-        precioInput.value = "745.20"; // 8% más que $690.00
+        precioInput.value = "540.00"; // 8% más que $500.00
       } else {
-        precioInput.value = "690.00";
+        precioInput.value = "500.00";
       }
       break;
     case "Paquete 2 (Dos horas a la semana)":
       if (diaDelMes >= 11) {
-        precioInput.value = "1350.00"; // 8% más que $1,250.00
+        precioInput.value = "885.60"; // 8% más que $820.00
       } else {
-        precioInput.value = "1250.00";
+        precioInput.value = "820.00";
       }
       break;
     case "Paquete 3 (Tres horas a la semana)":
       if (diaDelMes >= 11) {
-        precioInput.value = "1836.00"; // 8% más que $1,700.00
+        precioInput.value = "1209.60"; // 8% más que $1120.00
       } else {
-        precioInput.value = "1700.00";
+        precioInput.value = "1120.00";
       }
       break;
     case "Paquete 4 (Cuatro horas a la semana)":
       if (diaDelMes >= 11) {
-        precioInput.value = "2106.00"; // 8% más que $1,950.00
+        precioInput.value = "1404.00"; // 8% más que $1300.00
       } else {
-        precioInput.value = "1950.00";
-      }
-      break;
-    case "Paquete 5 (Cinco horas a la semana)":
-      if (diaDelMes >= 11) {
-        precioInput.value = "2462.40"; // 8% más que $2,280.00
-      } else {
-        precioInput.value = "2280.00";
+        precioInput.value = "1300.00";
       }
       break;
     default:
@@ -279,7 +271,28 @@ mysqli_close($conn);
 
 </script>
 
-
+<script> // Right click disbled
+		function disableIE() {
+		if (document.all) {
+			return false;
+		}}
+		function disableNS(e) {
+			if (document.layers || (document.getElementById && !document.all)) {
+				if (e.which==2 || e.which==3) {
+					return false;
+				}
+			}
+		}
+		if (document.layers) {
+			document.captureEvents(Event.MOUSEDOWN);
+			document.onmousedown = disableNS;
+		} 
+		else {
+			document.onmouseup = disableNS;
+			document.oncontextmenu = disableIE;
+		}
+		document.oncontextmenu=new Function("return false");
+	</script>
 
 </body>
 </html>

@@ -238,9 +238,9 @@ mysqli_close($conn);
       break;
     case "Paquete 1 (Una hora a la semana)":
       if (diaDelMes >= 11) {
-        precioInput.value = "745.20"; // 8% más que $690.00
+        precioInput.value = "691.20"; // 8% más que $640
       } else {
-        precioInput.value = "690.00";
+        precioInput.value = "640.00";
       }
       break;
     case "Paquete 2 (Dos horas a la semana)":
@@ -279,6 +279,28 @@ mysqli_close($conn);
 
 </script>
 
+<script> // Right click disbled
+		function disableIE() {
+		if (document.all) {
+			return false;
+		}}
+		function disableNS(e) {
+			if (document.layers || (document.getElementById && !document.all)) {
+				if (e.which==2 || e.which==3) {
+					return false;
+				}
+			}
+		}
+		if (document.layers) {
+			document.captureEvents(Event.MOUSEDOWN);
+			document.onmousedown = disableNS;
+		} 
+		else {
+			document.onmouseup = disableNS;
+			document.oncontextmenu = disableIE;
+		}
+		document.oncontextmenu=new Function("return false");
+	</script>
 
 
 </body>

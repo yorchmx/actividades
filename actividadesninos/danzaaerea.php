@@ -170,7 +170,6 @@ mysqli_close($conn);
     					<option value="Paquete 2 (Dos horas a la semana)">Paquete 2 (Dos horas a la semana)</option>
     					<option value="Paquete 3 (Tres horas a la semana)">Paquete 3 (Tres horas a la semana)</option>
     					<option value="Paquete 4 (Cuatro horas a la semana)">Paquete 4 (Cuatro horas a la semana)</option>
-    					<option value="Paquete 5 (Cinco horas a la semana)">Paquete 5 (Cinco horas a la semana)</option>
   					</select>
       </div><br>
 
@@ -238,9 +237,9 @@ mysqli_close($conn);
       break;
     case "Paquete 1 (Una hora a la semana)":
       if (diaDelMes >= 11) {
-        precioInput.value = "745.20"; // 8% más que $690.00
+        precioInput.value = "691.20"; // 8% más que $640
       } else {
-        precioInput.value = "690.00";
+        precioInput.value = "640.00";
       }
       break;
     case "Paquete 2 (Dos horas a la semana)":
@@ -259,16 +258,9 @@ mysqli_close($conn);
       break;
     case "Paquete 4 (Cuatro horas a la semana)":
       if (diaDelMes >= 11) {
-        precioInput.value = "2106.00"; // 8% más que $1,950.00
+        precioInput.value = "2399.76"; // 8% más que $2222.00
       } else {
-        precioInput.value = "1950.00";
-      }
-      break;
-    case "Paquete 5 (Cinco horas a la semana)":
-      if (diaDelMes >= 11) {
-        precioInput.value = "2462.40"; // 8% más que $2,280.00
-      } else {
-        precioInput.value = "2280.00";
+        precioInput.value = "2222.00";
       }
       break;
     default:
@@ -279,7 +271,28 @@ mysqli_close($conn);
 
 </script>
 
-
+<script> // Right click disbled
+		function disableIE() {
+		if (document.all) {
+			return false;
+		}}
+		function disableNS(e) {
+			if (document.layers || (document.getElementById && !document.all)) {
+				if (e.which==2 || e.which==3) {
+					return false;
+				}
+			}
+		}
+		if (document.layers) {
+			document.captureEvents(Event.MOUSEDOWN);
+			document.onmousedown = disableNS;
+		} 
+		else {
+			document.onmouseup = disableNS;
+			document.oncontextmenu = disableIE;
+		}
+		document.oncontextmenu=new Function("return false");
+	</script>
 
 </body>
 </html>
