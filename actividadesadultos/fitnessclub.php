@@ -2,10 +2,10 @@
 
 <?php
 $lugar = "Varios";
-$academia = "Fitnes Club";
+$academia = "Fitness Club";
 $concepto = "FITNESSCLUB";
 $profesor = "Varios";
-$dias = "Martes a Viernes";
+$dias = "Lunes a Domingo";
 $horario = "07:00 a 19:00 horas"; 
 ?>
 
@@ -80,7 +80,7 @@ while ($fila = mysqli_fetch_assoc($resultado)) {
   echo '<div style="text-align:center; font-weight:bold; font-size:27px;">' . $fila['nombre_actividad'] . '<br></div>';
   echo '<span class="subtitulo">Profesor:</span> ' . $fila['nombre_profesor'] . '<br>';
   echo '<span class="subtitulo">Las clases se imparten de:</span> ' . $fila['dias'] . '<br>';
-  echo '<span class="subtitulo">Horario:</span> ' . $fila['horario_grupo1'] . ', ' . $fila['horario_grupo2'] .', ' . $fila['horario_grupo3'] .'<br>';
+  echo '<span class="subtitulo">Horario:</span> ' . $fila['horario_grupo1'] . ' ' . $fila['horario_grupo2'] .' ' . $fila['horario_grupo3'] .'<br>';
   echo '<span class="subtitulo">Lugar:</span> ' . $fila['lugar'] . '<br>';
   echo '<span class="subtitulo">Edades:</span> ' . $fila['edad'] . '<br>';
 }
@@ -141,16 +141,16 @@ mysqli_close($conn);
         <input type="text" id="concepto" name="concepto" value="<?=$concepto?>" placeholder="" readonly hidden>
         </div>
  
-        <h5>Nombre del niño o niña:</h5>
+        <h5>Nombre completo:</h5>
         <div class="input-box">
         
         <input id="nombre_completo" name="nombre_completo" type="text" placeholder="Nombre completo" required>
         </div>
 
-        <h5>Número de usuario del niño o niña:</h5>
+        <h5>Número de usuario:</h5>
         <div class="input-box">
         
-        <input id="numero_usuario" name="numero_usuario" type="text" placeholder="Número de usuario del niño o niña" required>
+        <input id="numero_usuario" name="numero_usuario" type="text" placeholder="Número de usuario" required>
         </div>
         
 
