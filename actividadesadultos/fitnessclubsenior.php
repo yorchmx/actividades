@@ -77,12 +77,12 @@ $resultado = mysqli_query($conn, $sql);
 // Mostrar los datos
 while ($fila = mysqli_fetch_assoc($resultado)) {
   echo '<h3><center>Actividades Adultos</center></h3>  '. '';
-  echo '<div style="text-align:center; font-weight:bold; font-size:27px;">' . $fila['nombre_actividad'] . '<br></div>';
+  echo '<div style="text-align:center; font-weight:bold; font-size:27px;">' . 'Fitness Club Senior' . '<br></div>';
   echo '<span class="subtitulo">Profesor:</span> ' . $fila['nombre_profesor'] . '<br>';
   echo '<span class="subtitulo">Las clases se imparten de:</span> ' . $fila['dias'] . '<br>';
   echo '<span class="subtitulo">Horario:</span> ' . $fila['horario_grupo1'] . ' ' . $fila['horario_grupo2'] .' ' . $fila['horario_grupo3'] .'<br>';
   echo '<span class="subtitulo">Lugar:</span> ' . $fila['lugar'] . '<br>';
-  echo '<span class="subtitulo">Edades:</span> ' . $fila['edad'] . '<br>';
+  echo '<span class="subtitulo">Edades:</span> ' . 'Mayores de 65 años' . '<br>';
 }
 
 // Cerrar la conexión a la base de datos

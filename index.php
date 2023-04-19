@@ -344,7 +344,7 @@
                     <div class="view overlay">
                         <img 
                         class="card-img-top"
-                        src="./img/9.jpg" 
+                        src="./img/17.jpg" 
                         alt="Card image cap" 
                         />
                         <a href="actividadesadultos/fitnessclubsenior.php">
@@ -355,7 +355,7 @@
                     <!-- Card content -->
                     <div class="card-body">
                         <!-- Title -->
-                        <h4 class="card-title">Fitness Club Senior +65</h4>
+                        <h4 class="card-title">Fitness Club Senior 65+</h4>
                         <!-- Text -->
                         <p class="card-text">
                          <!--Some quick example text to build on the card title and make up the bulk of the card´s content.->>   
