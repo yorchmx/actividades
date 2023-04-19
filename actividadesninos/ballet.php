@@ -72,7 +72,7 @@ $conn->set_charset("utf8");
 
 
 // Preparar la consulta SQL
-$sql = "SELECT * FROM actividades WHERE id = 2";
+$sql = "SELECT * FROM deportes WHERE id = 2";
 
 // Ejecutar la consulta SQL
 $resultado = mysqli_query($conn, $sql);

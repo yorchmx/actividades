@@ -68,7 +68,7 @@ $conn->set_charset("utf8");
 
 
 // Preparar la consulta SQL
-$sql = "SELECT * FROM actividades WHERE id = 9";
+$sql = "SELECT * FROM deportes WHERE id = 9";
 
 // Ejecutar la consulta SQL
 $resultado = mysqli_query($conn, $sql);
@@ -76,7 +76,7 @@ $resultado = mysqli_query($conn, $sql);
 
 // Mostrar los datos
 while ($fila = mysqli_fetch_assoc($resultado)) {
-  echo '<h3><center>Actividades Infantiles</center></h3>  '. '';
+  echo '<h3><center>Actividades Adultos</center></h3>  '. '';
   echo '<div style="text-align:center; font-weight:bold; font-size:27px;">' . $fila['nombre_actividad'] . '<br></div>';
   echo '<span class="subtitulo">Profesor:</span> ' . $fila['nombre_profesor'] . '<br>';
   echo '<span class="subtitulo">Las clases se imparten de:</span> ' . $fila['dias'] . '<br>';
