@@ -62,3 +62,7 @@ body{
     box-shadow:1px 1px 20px #d2d2d2;
 }
 
+.subtitulo {
+    font-weight: bold;
+    color: #3e2093;
+  }
