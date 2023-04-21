@@ -473,7 +473,12 @@ $resultado = mysqli_query($conn, $sql);
 while ($fila = mysqli_fetch_assoc($resultado)) {
   echo '<span class="subtitulo">Profesor:</span> ' . $fila['nombre_profesor'] . '<br>';
   echo '<span class="subtitulo">Las clases se imparten de:</span> ' . $fila['dias'] . '<br>';
-  echo '<span class="subtitulo">Horario:</span> ' . $fila['horario_grupo1'] . ' ' .'<br>';
+  echo '<span class="subtitulo">Horario:</span><br>';
+  echo '<span class="subtitulo">Lunes y Miércoles</span> ' .'<br>'. $fila['grupo1'] . '<br>' . $fila['horario_grupo1'] . '<br>';
+  echo '<span class="subtitulo"></span> ' . $fila['grupo2'] . '<br>' . $fila['horario_grupo2'] . '<br>';
+  echo '<span class="subtitulo">Martes y Jueves</span> ' .'<br>'. $fila['grupo3'] . '<br>' . $fila['horario_grupo3'] . '<br>';
+  echo '<span class="subtitulo"></span> ' . $fila['grupo4'] . '<br>' . $fila['horario_grupo4'] . '<br>';
+  echo '<span class="subtitulo"></span> ' . $fila['grupo5'] . '<br>' . $fila['horario_grupo5'] . '<br>';
   echo '<span class="subtitulo">Lugar:</span> ' . $fila['lugar'] . '<br>';
   echo '<span class="subtitulo">Edades:</span> ' . $fila['edad'] . '<br>';
 }
@@ -541,7 +546,9 @@ $resultado = mysqli_query($conn, $sql);
 while ($fila = mysqli_fetch_assoc($resultado)) {
   echo '<span class="subtitulo">Profesor:</span> ' . $fila['nombre_profesor'] . '<br>';
   echo '<span class="subtitulo">Las clases se imparten de:</span> ' . $fila['dias'] . '<br>';
-  echo '<span class="subtitulo">Horario:</span> ' . $fila['horario_grupo1'] . ' ' .'<br>';
+  echo '<span class="subtitulo">Horario:</span> ' .'<br>'. $fila['grupo1'] . ' ' . $fila['horario_grupo1'] .'<br>';
+  echo '<span class="subtitulo"></span> ' . $fila['grupo2'] . ' ' . $fila['horario_grupo2'] .'<br>';
+  echo '<span class="subtitulo"></span> ' . $fila['grupo3'] . ' ' . $fila['horario_grupo3'] .'<br>';
   echo '<span class="subtitulo">Lugar:</span> ' . $fila['lugar'] . '<br>';
   echo '<span class="subtitulo">Edades:</span> ' . $fila['edad'] . '<br>';
 }
