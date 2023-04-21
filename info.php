@@ -136,7 +136,7 @@ $resultado = mysqli_query($conn, $sql);
 while ($fila = mysqli_fetch_assoc($resultado)) {
   echo '<span class="subtitulo">Profesor:</span> ' . $fila['nombre_profesor'] . '<br>';
   echo '<span class="subtitulo">Las clases se imparten de:</span> ' . $fila['dias'] . '<br>';
-  echo '<span class="subtitulo">Horario:</span> ' . $fila['horario_grupo1'] . ' ' .'<br>';
+  echo '<span class="subtitulo">Horario:</span> ' . $fila['horario_grupo1'] . ' y ' . $fila['horario_grupo2'] .'<br>';
   echo '<span class="subtitulo">Lugar:</span> ' . $fila['lugar'] . '<br>';
   echo '<span class="subtitulo">Edades:</span> ' . $fila['edad'] . '<br>';
 }
@@ -204,7 +204,8 @@ $resultado = mysqli_query($conn, $sql);
 while ($fila = mysqli_fetch_assoc($resultado)) {
   echo '<span class="subtitulo">Profesor:</span> ' . $fila['nombre_profesor'] . '<br>';
   echo '<span class="subtitulo">Las clases se imparten de:</span> ' . $fila['dias'] . '<br>';
-  echo '<span class="subtitulo">Horario:</span> ' . $fila['horario_grupo1'] . ' ' .'<br>';
+  echo '<span class="subtitulo">Horario:</span> ' . $fila['grupo1'] . ' ' . $fila['horario_grupo1'] .'<br>';
+  echo '<span class="subtitulo"></span> ' . $fila['grupo2'] . ' ' . $fila['horario_grupo2'] .'<br>';
   echo '<span class="subtitulo">Lugar:</span> ' . $fila['lugar'] . '<br>';
   echo '<span class="subtitulo">Edades:</span> ' . $fila['edad'] . '<br>';
 }
@@ -271,7 +272,8 @@ $resultado = mysqli_query($conn, $sql);
 while ($fila = mysqli_fetch_assoc($resultado)) {
   echo '<span class="subtitulo">Profesor:</span> ' . $fila['nombre_profesor'] . '<br>';
   echo '<span class="subtitulo">Las clases se imparten de:</span> ' . $fila['dias'] . '<br>';
-  echo '<span class="subtitulo">Horario:</span> ' . $fila['horario_grupo1'] . ' ' .'<br>';
+  echo '<span class="subtitulo">Horario:</span> ' .'<br>'. $fila['horario_grupo1'] . ' ' .'<br>';
+  echo '<span class="subtitulo"></span> '. $fila['horario_grupo2'] . ' ' .'<br>';
   echo '<span class="subtitulo">Lugar:</span> ' . $fila['lugar'] . '<br>';
   echo '<span class="subtitulo">Edades:</span> ' . $fila['edad'] . '<br>';
 }
@@ -338,7 +340,7 @@ $resultado = mysqli_query($conn, $sql);
 while ($fila = mysqli_fetch_assoc($resultado)) {
   echo '<span class="subtitulo">Profesor:</span> ' . $fila['nombre_profesor'] . '<br>';
   echo '<span class="subtitulo">Las clases se imparten de:</span> ' . $fila['dias'] . '<br>';
-  echo '<span class="subtitulo">Horario:</span> ' . $fila['horario_grupo1'] . ' ' .'<br>';
+  echo '<span class="subtitulo">Horario:</span> ' .'<br>'. $fila['horario_grupo1'] . '<br>' . $fila['horario_grupo2'] . '<br>' . $fila['horario_grupo3'] .'<br>';
   echo '<span class="subtitulo">Lugar:</span> ' . $fila['lugar'] . '<br>';
   echo '<span class="subtitulo">Edades:</span> ' . $fila['edad'] . '<br>';
 }
@@ -405,7 +407,7 @@ $resultado = mysqli_query($conn, $sql);
 while ($fila = mysqli_fetch_assoc($resultado)) {
   echo '<span class="subtitulo">Profesor:</span> ' . $fila['nombre_profesor'] . '<br>';
   echo '<span class="subtitulo">Las clases se imparten de:</span> ' . $fila['dias'] . '<br>';
-  echo '<span class="subtitulo">Horario:</span> ' . $fila['horario_grupo1'] . ' ' .'<br>';
+  echo '<span class="subtitulo">Horario:</span> ' .'<br>'. $fila['horario_grupo1'] . '<br>' . $fila['horario_grupo2'] . '<br>' . $fila['horario_grupo3'] .'<br>';
   echo '<span class="subtitulo">Lugar:</span> ' . $fila['lugar'] . '<br>';
   echo '<span class="subtitulo">Edades:</span> ' . $fila['edad'] . '<br>';
 }
@@ -687,6 +689,424 @@ mysqli_close($conn);
                             <a href="https://clubfrance.org.mx/academias/actividadesadultos/fitnessclubsenior.php">
                             <button class="btn btn-primary">Comprar</button>
                             </a>
+                        </div>
+                    </div>
+                    <br>
+                </div>
+
+                <h1 class="titulo text-center">Actividades Fitness Club</h1>
+    </div>
+    
+    <div class="container principal">
+    <div class="row">
+        <div class="col-lg-12" text-center>
+            <div class="row">
+
+                <!-- Tarjeta 11 -->
+                <div class="col-lg-4 col-md-12 mb-4">
+                    <div class="card-section border rounded p-3">
+                        <div class="card-header-first rounded pb-5">
+                        <h2 class="card-header-title text-white pt-3"><?php
+// Conectar a la base de datos
+$conn = mysqli_connect('148.72.8.182', 'academias', 'Abrelata$7', 'academias');
+$conn->set_charset("utf8");
+
+
+// Preparar la consulta SQL
+$sql = "SELECT * FROM deportes WHERE id = 11";
+
+// Ejecutar la consulta SQL
+$resultado = mysqli_query($conn, $sql);
+
+
+// Mostrar los datos
+while ($fila = mysqli_fetch_assoc($resultado)) {
+  echo '<span class="subtitulo"> </span> ' . $fila['nombre_actividad'] . '<br>';
+  
+}
+
+// Cerrar la conexión a la base de datos
+mysqli_close($conn);
+
+?></h2>
+                        </div>
+                        <br>
+                    <div class="card-body text-center">
+                        <p class="card-text">
+<?php
+// Conectar a la base de datos
+$conn = mysqli_connect('148.72.8.182', 'academias', 'Abrelata$7', 'academias');
+$conn->set_charset("utf8");
+
+
+// Preparar la consulta SQL
+$sql = "SELECT * FROM deportes WHERE id = 11";
+
+// Ejecutar la consulta SQL
+$resultado = mysqli_query($conn, $sql);
+
+
+// Mostrar los datos
+while ($fila = mysqli_fetch_assoc($resultado)) {
+  echo '<span class="subtitulo">Profesor:</span> ' . $fila['nombre_profesor'] . '<br>';
+  echo '<span class="subtitulo">Las clases se imparten de:</span> ' . $fila['dias'] . '<br>';
+  echo '<span class="subtitulo">Horario:</span> ' . $fila['horario_grupo1'] . ' ' .'<br>';
+  echo '<span class="subtitulo">Lugar:</span> ' . $fila['lugar'] . '<br>';
+  echo '<span class="subtitulo">Edades:</span> ' . $fila['edad'] . '<br>';
+}
+
+// Cerrar la conexión a la base de datos
+mysqli_close($conn);
+
+?>
+</p>
+                            <br>
+                            <!-- <a href="">
+                            <button class="btn btn-primary">Comprar</button>
+                            </a> -->
+                        </div>
+                    </div>
+                    <br>
+                </div>
+
+                <!-- Tarjeta 12 -->
+                <div class="col-lg-4 col-md-12 mb-4">
+                    <div class="card-section border rounded p-3">
+                        <div class="card-header-first rounded pb-5">
+                        <h2 class="card-header-title text-white pt-3"><?php
+// Conectar a la base de datos
+$conn = mysqli_connect('148.72.8.182', 'academias', 'Abrelata$7', 'academias');
+$conn->set_charset("utf8");
+
+
+// Preparar la consulta SQL
+$sql = "SELECT * FROM deportes WHERE id = 12";
+
+// Ejecutar la consulta SQL
+$resultado = mysqli_query($conn, $sql);
+
+
+// Mostrar los datos
+while ($fila = mysqli_fetch_assoc($resultado)) {
+  echo '<span class="subtitulo"> </span> ' . $fila['nombre_actividad'] . '<br>';
+  
+}
+
+// Cerrar la conexión a la base de datos
+mysqli_close($conn);
+
+?></h2>
+                        </div>
+                        <br>
+                    <div class="card-body text-center">
+                        <p class="card-text">
+<?php
+// Conectar a la base de datos
+$conn = mysqli_connect('148.72.8.182', 'academias', 'Abrelata$7', 'academias');
+$conn->set_charset("utf8");
+
+
+// Preparar la consulta SQL
+$sql = "SELECT * FROM deportes WHERE id = 12";
+
+// Ejecutar la consulta SQL
+$resultado = mysqli_query($conn, $sql);
+
+
+// Mostrar los datos
+while ($fila = mysqli_fetch_assoc($resultado)) {
+  echo '<span class="subtitulo">Profesor:</span> ' . $fila['nombre_profesor'] . '<br>';
+  echo '<span class="subtitulo">Las clases se imparten de:</span> ' . $fila['dias'] . '<br>';
+  echo '<span class="subtitulo">Horario:</span> ' . $fila['horario_grupo1'] . ' <br> ' . $fila['horario_grupo2'] .'<br>';
+  echo '<span class="subtitulo">Lugar:</span> ' . $fila['lugar'] . '<br>';
+  echo '<span class="subtitulo">Edades:</span> ' . $fila['edad'] . '<br>';
+}
+
+// Cerrar la conexión a la base de datos
+mysqli_close($conn);
+
+?>
+</p>
+                            <br>
+                            <!-- <a href="">
+                            <button class="btn btn-primary">Comprar</button>
+                            </a> -->
+                        </div>
+                    </div>
+                    <br>
+                </div>
+                <br>
+
+                <!-- Tarjeta 13 -->
+                <div class="col-lg-4 col-md-12 mb-4">
+                    <div class="card-section border rounded p-3">
+                        <div class="card-header-first rounded pb-5">
+                        <h2 class="card-header-title text-white pt-3"><?php
+// Conectar a la base de datos
+$conn = mysqli_connect('148.72.8.182', 'academias', 'Abrelata$7', 'academias');
+$conn->set_charset("utf8");
+
+
+// Preparar la consulta SQL
+$sql = "SELECT * FROM deportes WHERE id = 13";
+
+// Ejecutar la consulta SQL
+$resultado = mysqli_query($conn, $sql);
+
+
+// Mostrar los datos
+while ($fila = mysqli_fetch_assoc($resultado)) {
+  echo '<span class="subtitulo"> </span> ' . $fila['nombre_actividad'] . '<br>';
+  
+}
+
+// Cerrar la conexión a la base de datos
+mysqli_close($conn);
+
+?></h2>
+                        </div>
+                        <br>
+                    <div class="card-body text-center">
+                        <p class="card-text">
+<?php
+// Conectar a la base de datos
+$conn = mysqli_connect('148.72.8.182', 'academias', 'Abrelata$7', 'academias');
+$conn->set_charset("utf8");
+
+
+// Preparar la consulta SQL
+$sql = "SELECT * FROM deportes WHERE id = 13";
+
+// Ejecutar la consulta SQL
+$resultado = mysqli_query($conn, $sql);
+
+
+// Mostrar los datos
+while ($fila = mysqli_fetch_assoc($resultado)) {
+  echo '<span class="subtitulo">Profesor:</span> ' . $fila['nombre_profesor'] . '<br>';
+  echo '<span class="subtitulo">Las clases se imparten de:</span> ' . $fila['dias'] . '<br>';
+  echo '<span class="subtitulo">Horario:</span> ' . $fila['grupo1'] . ': ' . $fila['horario_grupo1'] . ' y ' . $fila['horario_grupo2'] .'<br>';
+  echo '<span class="subtitulo"></span> ' . $fila['grupo2'] . ': ' . $fila['horario_grupo3'] . ' y ' . $fila['horario_grupo4'] .'<br>';
+  
+  echo '<span class="subtitulo">Lugar:</span> ' . $fila['lugar'] . '<br>';
+  echo '<span class="subtitulo">Edades:</span> ' . $fila['edad'] . '<br>';
+}
+
+// Cerrar la conexión a la base de datos
+mysqli_close($conn);
+
+?>
+</p>
+                            <br>
+                            <!-- <a href="">
+                            <button class="btn btn-primary">Comprar</button>
+                            </a> -->
+                        </div>
+                    </div>
+                    <br>
+                </div>
+
+                <!-- Tarjeta 14 -->
+                <div class="col-lg-4 col-md-12 mb-4">
+                    <div class="card-section border rounded p-3">
+                        <div class="card-header-first rounded pb-5">
+                        <h2 class="card-header-title text-white pt-3"><?php
+// Conectar a la base de datos
+$conn = mysqli_connect('148.72.8.182', 'academias', 'Abrelata$7', 'academias');
+$conn->set_charset("utf8");
+
+
+// Preparar la consulta SQL
+$sql = "SELECT * FROM deportes WHERE id = 14";
+
+// Ejecutar la consulta SQL
+$resultado = mysqli_query($conn, $sql);
+
+
+// Mostrar los datos
+while ($fila = mysqli_fetch_assoc($resultado)) {
+  echo '<span class="subtitulo"> </span> ' . $fila['nombre_actividad'] . '<br>';
+  
+}
+
+// Cerrar la conexión a la base de datos
+mysqli_close($conn);
+
+?></h2>
+                        </div>
+                        <br>
+                    <div class="card-body text-center">
+                        <p class="card-text">
+<?php
+// Conectar a la base de datos
+$conn = mysqli_connect('148.72.8.182', 'academias', 'Abrelata$7', 'academias');
+$conn->set_charset("utf8");
+
+
+// Preparar la consulta SQL
+$sql = "SELECT * FROM deportes WHERE id = 14";
+
+// Ejecutar la consulta SQL
+$resultado = mysqli_query($conn, $sql);
+
+
+// Mostrar los datos
+while ($fila = mysqli_fetch_assoc($resultado)) {
+  echo '<span class="subtitulo">Profesor:</span> ' . $fila['nombre_profesor'] . '<br>';
+  echo '<span class="subtitulo">Las clases se imparten de:</span> ' . $fila['dias'] . '<br>';
+  echo '<span class="subtitulo">Horario:</span> ' . $fila['horario_grupo1'] . ' <br> ' . $fila['horario_grupo2'] . ' <br> ' . $fila['horario_grupo3'] . '<br>';
+  echo '<span class="subtitulo">Lugar:</span> ' . $fila['lugar'] . '<br>';
+  echo '<span class="subtitulo">Edades:</span> ' . $fila['edad'] . '<br>';
+}
+
+// Cerrar la conexión a la base de datos
+mysqli_close($conn);
+
+?>
+</p>
+                            <br>
+                            <!-- <a href="">
+                            <button class="btn btn-primary">Comprar</button>
+                            </a> -->
+                        </div>
+                    </div>
+                    <br>
+                </div>
+
+                <!-- Tarjeta 15 -->
+                <div class="col-lg-4 col-md-12 mb-4">
+                    <div class="card-section border rounded p-3">
+                        <div class="card-header-first rounded pb-5">
+                        <h2 class="card-header-title text-white pt-3"><?php
+// Conectar a la base de datos
+$conn = mysqli_connect('148.72.8.182', 'academias', 'Abrelata$7', 'academias');
+$conn->set_charset("utf8");
+
+
+// Preparar la consulta SQL
+$sql = "SELECT * FROM deportes WHERE id = 15";
+
+// Ejecutar la consulta SQL
+$resultado = mysqli_query($conn, $sql);
+
+
+// Mostrar los datos
+while ($fila = mysqli_fetch_assoc($resultado)) {
+  echo '<span class="subtitulo"> </span> ' . $fila['nombre_actividad'] . '<br>';
+  
+}
+
+// Cerrar la conexión a la base de datos
+mysqli_close($conn);
+
+?></h2>
+                        </div>
+                        <br>
+                    <div class="card-body text-center">
+                        <p class="card-text">
+<?php
+// Conectar a la base de datos
+$conn = mysqli_connect('148.72.8.182', 'academias', 'Abrelata$7', 'academias');
+$conn->set_charset("utf8");
+
+
+// Preparar la consulta SQL
+$sql = "SELECT * FROM deportes WHERE id = 15";
+
+// Ejecutar la consulta SQL
+$resultado = mysqli_query($conn, $sql);
+
+
+// Mostrar los datos
+while ($fila = mysqli_fetch_assoc($resultado)) {
+  echo '<span class="subtitulo">Profesor:</span> ' . $fila['nombre_profesor'] . '<br>';
+  echo '<span class="subtitulo">Las clases se imparten de:</span> ' . $fila['dias'] . '<br>';
+  echo '<span class="subtitulo">Horario:</span> ' .'<br>'. $fila['grupo1'] . ' ' . $fila['horario_grupo1'] . ' ' .'<br>';
+  echo '<span class="subtitulo"></span> '. $fila['grupo1'] . ' ' . $fila['horario_grupo2'] . ' ' .'<br>';
+  echo '<span class="subtitulo"></span> ' . $fila['grupo2'] . ' ' . $fila['horario_grupo3'] . ' ' .'<br>';
+  echo '<span class="subtitulo">Lugar:</span> ' . $fila['lugar'] . '<br>';
+  echo '<span class="subtitulo">Edades:</span> ' . $fila['edad'] . '<br>';
+}
+
+// Cerrar la conexión a la base de datos
+mysqli_close($conn);
+
+?>
+</p>
+                            <br>
+                            <!-- <a href="">
+                            <button class="btn btn-primary">Comprar</button>
+                            </a> -->
+                        </div>
+                    </div>
+                    <br>
+                </div>
+
+                 <!-- Tarjeta 16 -->
+                 <div class="col-lg-4 col-md-12 mb-4">
+                    <div class="card-section border rounded p-3">
+                        <div class="card-header-first rounded pb-5">
+                        <h2 class="card-header-title text-white pt-3"><?php
+// Conectar a la base de datos
+$conn = mysqli_connect('148.72.8.182', 'academias', 'Abrelata$7', 'academias');
+$conn->set_charset("utf8");
+
+
+// Preparar la consulta SQL
+$sql = "SELECT * FROM deportes WHERE id = 16";
+
+// Ejecutar la consulta SQL
+$resultado = mysqli_query($conn, $sql);
+
+
+// Mostrar los datos
+while ($fila = mysqli_fetch_assoc($resultado)) {
+  echo '<span class="subtitulo"> </span> ' . $fila['nombre_actividad'] . '<br>';
+  
+}
+
+// Cerrar la conexión a la base de datos
+mysqli_close($conn);
+
+?></h2>
+                        </div>
+                        <br>
+                    <div class="card-body text-center">
+                        <p class="card-text">
+<?php
+// Conectar a la base de datos
+$conn = mysqli_connect('148.72.8.182', 'academias', 'Abrelata$7', 'academias');
+$conn->set_charset("utf8");
+
+
+// Preparar la consulta SQL
+$sql = "SELECT * FROM deportes WHERE id = 16";
+
+// Ejecutar la consulta SQL
+$resultado = mysqli_query($conn, $sql);
+
+
+// Mostrar los datos
+while ($fila = mysqli_fetch_assoc($resultado)) {
+  echo '<span class="subtitulo">Profesor:</span> ' . $fila['nombre_profesor'] . '<br>';
+  echo '<span class="subtitulo">Las clases se imparten de:</span> ' . $fila['dias'] . '<br>';
+  echo '<span class="subtitulo">Horario:</span> ' .'<br>'. $fila['grupo1'] . ' <br> ' . $fila['horario_grupo1'] . ' ' .'<br>';
+  echo '<span class="subtitulo"></span> '. $fila['grupo2'] . ' <br>' . $fila['horario_grupo2'] . ' ' .'<br>';
+  echo '<span class="subtitulo">Horario:</span> ' .'<br>'. $fila['grupo3'] . '<br>' . $fila['horario_grupo3'] . '<br>' . $fila['horario_grupo4'] .'<br>';
+  echo '<span class="subtitulo"></span> ' . $fila['grupo5'] . '<br>' . $fila['horario_grupo5'] . '<br>';
+  echo '<span class="subtitulo">Lugar:</span> ' . $fila['lugar'] . '<br>';
+  echo '<span class="subtitulo">Edades:</span> ' . $fila['edad'] . '<br>';
+}
+
+// Cerrar la conexión a la base de datos
+mysqli_close($conn);
+
+?>
+</p>
+                            <br>
+                            <!-- <a href="">
+                            <button class="btn btn-primary">Comprar</button>
+                            </a> -->
                         </div>
                     </div>
                     <br>
