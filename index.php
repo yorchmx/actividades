@@ -285,6 +285,36 @@
                     </div>
                     </div>
 
+                    <!-- Card -->
+                    </div>
+                    <div class="col-lg-3 pb-5 wow fadeInDown slow">
+                        <!-- Card -->
+                    <div class="card ho">
+                    <!-- Card image -->
+                    <div class="view overlay">
+                        <img 
+                        class="card-img-top"
+                        src="./img/18.jpg" 
+                        alt="Card image cap" 
+                        />
+                        <a href="actividadesninos/tenis.php">
+                            <div class="mask rgba-white-slight"></div>
+                        </a>
+                    </div>
+                    
+                    <!-- Card content -->
+                    <div class="card-body">
+                        <!-- Title -->
+                        <h4 class="card-title">Tenis</h4>
+                        <!-- Text -->
+                        <p class="card-text">
+                         <!--Some quick example text to build on the card title and make up the bulk of the card´s content.->> 
+                        </p>
+                        <!-- Button -->
+                        <a href="actividadesninos/tenis.php" class="btn blue-gradient">Comprar</a>
+                    </div>
+                    </div>
+
                     </div>
                 </div>
             </div>
