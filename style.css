@@ -19,8 +19,8 @@ body{
 .card-header-first{
     margin-top:-40px;
     height: 80px;
-    background: linear-gradient(-90deg, #1101bf, #2d5f7a);
-    box-shadow:1px 5px 15px #595793;
+    background: linear-gradient(-90deg, #28036a, #28036a);
+    box-shadow:1px 5px 15px #EF4135;
 }
 
 /* Tarjeta 2 */

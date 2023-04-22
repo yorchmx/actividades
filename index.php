@@ -431,9 +431,9 @@
             });
         </script>
 
-<footer>
-  <center> <p>© 2023 Club France. Todos los derechos reservados.</p></center> 
-  </footer>
+        <footer>
+        <center> <p>© 2023 Club France. Todos los derechos reservados.</p></center> 
+        </footer>
 
   <script> // Right click disbled
 		function disableIE() {
