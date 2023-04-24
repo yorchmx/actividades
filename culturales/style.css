@@ -18,7 +18,7 @@ body{
 /* Tarjeta 1 */
 .card-header-first{
     margin-top:-40px;
-    height: 80px;
+    height: 110px;
     background: linear-gradient(-90deg, #28036a, #28036a);
     box-shadow:1px 5px 15px #EF4135;
 }
@@ -65,4 +65,8 @@ body{
 .subtitulo {
     font-weight: bold;
     color: #3e2093;
+  }
+
+  .titulo1{
+    font-family: Shadows Into Light;
   }
