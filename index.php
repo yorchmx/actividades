@@ -57,7 +57,7 @@
                         src="./img/1.jpg" 
                         alt="Card image cap" 
                         />
-                        <a href="actividadesninos/badminton.php">
+                        <a href="deportivas/ninos/badminton.php">
                             <div class="mask rgba-white-slight"></div>
                         </a>
                     </div>
@@ -71,7 +71,7 @@
                            <!--Some quick example text to build on the card title and make up the bulk of the card´s content.->> 
                         </p>
                         <!-- Button -->
-                        <a href="actividadesninos/badminton.php" class="btn blue-gradient">Comprar</a>
+                        <a href="deportivas/ninos/badminton.php" class="btn blue-gradient">Comprar</a>
                     </div>
                     </div>
                     </div>
@@ -87,7 +87,7 @@
                         src="./img/2.jpg" 
                         alt="Card image cap" 
                         />
-                        <a href="actividadesninos/ballet.php">
+                        <a href="deportivas/ninos/ballet.php">
                             <div class="mask rgba-white-slight"></div>
                         </a>
                     </div>
@@ -101,7 +101,7 @@
                          <!--Some quick example text to build on the card title and make up the bulk of the card´s content.->>   
                         </p>
                         <!-- Button -->
-                        <a href="actividadesninos/ballet.php" class="btn blue-gradient">Comprar</a>
+                        <a href="deportivas/ninos/ballet.php" class="btn blue-gradient">Comprar</a>
                     </div>
                     </div>
 
@@ -117,7 +117,7 @@
                         src="./img/3.jpg" 
                         alt="Card image cap" 
                         />
-                        <a href="actividadesninos/basquetbolinfantil.php">
+                        <a href="deportivas/ninos/basquetbolinfantil.php">
                             <div class="mask rgba-white-slight"></div>
                         </a>
                     </div>
@@ -131,7 +131,7 @@
                          <!--Some quick example text to build on the card title and make up the bulk of the card´s content.->>   
                         </p>
                         <!-- Button -->
-                        <a href="actividadesninos/basquetbolinfantil.php" class="btn blue-gradient">Comprar</a>
+                        <a href="deportivas/ninos/basquetbolinfantil.php" class="btn blue-gradient">Comprar</a>
                     </div>
                     </div>
 
@@ -147,7 +147,7 @@
                         src="./img/4.jpg" 
                         alt="Card image cap" 
                         />
-                        <a href="actividadesninos/boxinfantil.php">
+                        <a href="deportivas/ninos/boxinfantil.php">
                             <div class="mask rgba-white-slight"></div>
                         </a>
                     </div>
@@ -161,7 +161,7 @@
                          <!--Some quick example text to build on the card title and make up the bulk of the card´s content.->>   
                         </p>
                         <!-- Button -->
-                        <a href="actividadesninos/boxinfantil.php" class="btn blue-gradient">Comprar</a>
+                        <a href="deportivas/ninos/boxinfantil.php" class="btn blue-gradient">Comprar</a>
                     </div>
                     </div>
 
@@ -177,7 +177,7 @@
                         src="./img/5.jpg" 
                         alt="Card image cap" 
                         />
-                        <a href="actividadesninos/danzaaerea.php">
+                        <a href="deportivas/ninos/danzaaerea.php">
                             <div class="mask rgba-white-slight"></div>
                         </a>
                     </div>
@@ -191,7 +191,7 @@
                          <!--Some quick example text to build on the card title and make up the bulk of the card´s content.->>   
                         </p>
                         <!-- Button -->
-                        <a href="actividadesninos/danzaaerea.php" class="btn blue-gradient">Comprar</a>
+                        <a href="deportivas/ninos/danzaaerea.php" class="btn blue-gradient">Comprar</a>
                     </div>
                     </div>
 
@@ -207,7 +207,7 @@
                         src="./img/6.jpg" 
                         alt="Card image cap" 
                         />
-                        <a href="actividadesninos/escalada.php">
+                        <a href="deportivas/ninos/escalada.php">
                             <div class="mask rgba-white-slight"></div>
                         </a>
                     </div>
@@ -221,7 +221,7 @@
                          <!--Some quick example text to build on the card title and make up the bulk of the card´s content.->> 
                         </p>
                         <!-- Button -->
-                        <a href="actividadesninos/escalada.php" class="btn blue-gradient">Comprar</a>
+                        <a href="deportivas/ninos/escalada.php" class="btn blue-gradient">Comprar</a>
                     </div>
                     </div>
 
@@ -237,7 +237,7 @@
                         src="./img/7.jpg" 
                         alt="Card image cap" 
                         />
-                        <a href="actividadesninos/gimnasia.php">
+                        <a href="deportivas/ninos/gimnasia.php">
                             <div class="mask rgba-white-slight"></div>
                         </a>
                     </div>
@@ -251,7 +251,7 @@
                          <!--Some quick example text to build on the card title and make up the bulk of the card´s content.->> 
                         </p>
                         <!-- Button -->
-                        <a href="actividadesninos/gimnasia.php" class="btn blue-gradient">Comprar</a>
+                        <a href="deportivas/ninos/gimnasia.php" class="btn blue-gradient">Comprar</a>
                     </div>
                     </div>
 
@@ -267,7 +267,7 @@
                         src="./img/8.jpg" 
                         alt="Card image cap" 
                         />
-                        <a href="actividadesninos/natacion.php">
+                        <a href="deportivas/ninos/natacion.php">
                             <div class="mask rgba-white-slight"></div>
                         </a>
                     </div>
@@ -281,7 +281,7 @@
                          <!--Some quick example text to build on the card title and make up the bulk of the card´s content.->> 
                         </p>
                         <!-- Button -->
-                        <a href="actividadesninos/natacion.php" class="btn blue-gradient">Comprar</a>
+                        <a href="deportivas/ninos/natacion.php" class="btn blue-gradient">Comprar</a>
                     </div>
                     </div>
 
@@ -297,7 +297,7 @@
                         src="./img/18.jpg" 
                         alt="Card image cap" 
                         />
-                        <a href="actividadesninos/tenis.php">
+                        <a href="deportivas/ninos/tenis.php">
                             <div class="mask rgba-white-slight"></div>
                         </a>
                     </div>
@@ -311,7 +311,7 @@
                          <!--Some quick example text to build on the card title and make up the bulk of the card´s content.->> 
                         </p>
                         <!-- Button -->
-                        <a href="actividadesninos/tenis.php" class="btn blue-gradient">Comprar</a>
+                        <a href="deportivas/ninos/tenis.php" class="btn blue-gradient">Comprar</a>
                     </div>
                     </div>
 
@@ -348,7 +348,7 @@
                         src="./img/9.jpg" 
                         alt="Card image cap" 
                         />
-                        <a href="actividadesadultos/fitnessclub.php">
+                        <a href="deportivas/adultos/fitnessclub.php">
                             <div class="mask rgba-white-slight"></div>
                         </a>
                     </div>
@@ -362,7 +362,7 @@
                            <!--Some quick example text to build on the card title and make up the bulk of the card´s content.->> 
                         </p>
                         <!-- Button -->
-                        <a href="actividadesadultos/fitnessclub.php" class="btn blue-gradient">Comprar</a>
+                        <a href="deportivas/adultosfitnessclub.php" class="btn blue-gradient">Comprar</a>
                     </div>
                     </div>
                     <!-- Card -->
@@ -377,7 +377,7 @@
                         src="./img/17.jpg" 
                         alt="Card image cap" 
                         />
-                        <a href="actividadesadultos/fitnessclubsenior.php">
+                        <a href="deportivas/adultos/fitnessclubsenior.php">
                             <div class="mask rgba-white-slight"></div>
                         </a>
                     </div>
@@ -391,7 +391,7 @@
                          <!--Some quick example text to build on the card title and make up the bulk of the card´s content.->>   
                         </p>
                         <!-- Button -->
-                        <a href="actividadesadultos/fitnessclubsenior.php" class="btn blue-gradient">Comprar</a>
+                        <a href="deportivas/adultos/fitnessclubsenior.php" class="btn blue-gradient">Comprar</a>
                     </div>
                     </div>
                     </div>
