@@ -73,17 +73,18 @@ $resultado = mysqli_query($conn, $sql);
 while ($fila = mysqli_fetch_assoc($resultado)) {
   echo '<span class="subtitulo">Lugar:</span> ' . $fila['lugar'] . '<br>';
   echo '<span class="subtitulo">Profesor:</span> ' . $fila['profesor'] . '<br>';
-  echo '<span class="subtitulo">Celular:</span> ' . $fila['celular'].'<br>';
-  echo '<span class="subtitulo">Lugar:</span> ' . $fila['lugar'] . '<br>';
+  echo '<span class="subtitulo">WhatsApp:</span> <a href="' . $fila['url_celular'] . '">' . $fila['celular'] . '</a><br>';
   echo '<span class="subtitulo">Días:</span> ' . $fila['dias'] . '<br>';
   echo '<span class="subtitulo">Horario:</span> ' . $fila['horario'] . '<br>';
   echo '<span class="subtitulo">Avisos:</span> ' . $fila['avisos'] . '<br>';
+  
 }
 
 // Cerrar la conexión a la base de datos
 mysqli_close($conn);
 
 ?>
+
 </p>
                             <br>
                             
@@ -91,7 +92,9 @@ mysqli_close($conn);
                     </div>
                     <br>
                 </div>
+
                 <!-- Tarjeta 2 -->
+
                 <div class="col-lg-4 col-md-12 mb-4">
                     <div class="card-section border rounded p-3">
                         <div class="card-header-first rounded pb-5">
@@ -140,10 +143,10 @@ while ($fila = mysqli_fetch_assoc($resultado)) {
   echo '<span class="subtitulo">Lugar:</span> ' . $fila['lugar'] . '<br>';
   echo '<span class="subtitulo">Profesor:</span> ' . $fila['profesor'] . '<br>';
   echo '<span class="subtitulo">Celular:</span> ' . $fila['celular'].'<br>';
-  echo '<span class="subtitulo">Lugar:</span> ' . $fila['lugar'] . '<br>';
   echo '<span class="subtitulo">Días:</span> ' . $fila['dias'] . '<br>';
   echo '<span class="subtitulo">Horario:</span> ' . $fila['horario'] . '<br>';
   echo '<span class="subtitulo">Avisos:</span> ' . $fila['avisos'] . '<br>';
+  echo '<span class="subtitulo">Facebook:</span> <a href="' . $fila['url_facebook'] . '">' . $fila['facebook'] . '</a><br>';
 }
 
 // Cerrar la conexión a la base de datos
@@ -207,8 +210,7 @@ $resultado = mysqli_query($conn, $sql);
 while ($fila = mysqli_fetch_assoc($resultado)) {
   echo '<span class="subtitulo">Lugar:</span> ' . $fila['lugar'] . '<br>';
   echo '<span class="subtitulo">Profesor:</span> ' . $fila['profesor'] . '<br>';
-  echo '<span class="subtitulo">Celular:</span> ' . $fila['celular'].'<br>';
-  echo '<span class="subtitulo">Lugar:</span> ' . $fila['lugar'] . '<br>';
+  echo '<span class="subtitulo">WhatsApp:</span> <a href="' . $fila['url_celular'] . '">' . $fila['celular'] . '</a><br>';
   echo '<span class="subtitulo">Días:</span> ' . $fila['dias'] . '<br>';
   echo '<span class="subtitulo">Horario:</span> ' . $fila['horario'] . '<br>';
   echo '<span class="subtitulo">Avisos:</span> ' . $fila['avisos'] . '<br>';
@@ -225,7 +227,7 @@ mysqli_close($conn);
                     </div>
                     <br>
                 </div>
-                <div class="text-bg-warning p-3">Club France a través del Comité Infantil realiza varias actividades en el transcurso del año, te invitamos a sumarte a esta comunidad.</div>
+                <div class="text-bg-warning p-3 text-center">Club France a través del Comité Infantil realiza varias actividades en el transcurso del año, te invitamos a sumarte a esta comunidad.</div>
                 <div class="container">   
                   <br>
                 <h3 class="titulo text-center">Adultos</h3>
@@ -285,8 +287,7 @@ $resultado = mysqli_query($conn, $sql);
 while ($fila = mysqli_fetch_assoc($resultado)) {
   echo '<span class="subtitulo">Lugar:</span> ' . $fila['lugar'] . '<br>';
   echo '<span class="subtitulo">Profesor:</span> ' . $fila['profesor'] . '<br>';
-  echo '<span class="subtitulo">Celular:</span> ' . $fila['celular'].'<br>';
-  echo '<span class="subtitulo">Lugar:</span> ' . $fila['lugar'] . '<br>';
+  echo '<span class="subtitulo">WhatsApp:</span> <a href="' . $fila['url_celular'] . '">' . $fila['celular'] . '</a><br>';
   echo '<span class="subtitulo">Días:</span> ' . $fila['dias'] . '<br>';
   echo '<span class="subtitulo">Horario:</span> ' . $fila['horario'] . '<br>';
   echo '<span class="subtitulo">Avisos:</span> ' . $fila['avisos'] . '<br>';
@@ -353,7 +354,6 @@ while ($fila = mysqli_fetch_assoc($resultado)) {
   echo '<span class="subtitulo">Lugar:</span> ' . $fila['lugar'] . '<br>';
   echo '<span class="subtitulo">Profesor:</span> ' . $fila['profesor'] . '<br>';
   echo '<span class="subtitulo">Celular:</span> ' . $fila['celular'].'<br>';
-  echo '<span class="subtitulo">Lugar:</span> ' . $fila['lugar'] . '<br>';
   echo '<span class="subtitulo">Días:</span> ' . $fila['dias'] . '<br>';
   echo '<span class="subtitulo">Horario:</span> ' . $fila['horario'] . '<br>';
   echo '<span class="subtitulo">Avisos:</span> ' . $fila['avisos'] . '<br>';
@@ -372,6 +372,7 @@ mysqli_close($conn);
                 </div>
 
                  <!-- Tarjeta 6 -->
+
                  <div class="col-lg-4 col-md-12 mb-4">
                     <div class="card-section border rounded p-3">
                         <div class="card-header-first rounded pb-5">
@@ -420,10 +421,10 @@ while ($fila = mysqli_fetch_assoc($resultado)) {
   echo '<span class="subtitulo">Lugar:</span> ' . $fila['lugar'] . '<br>';
   echo '<span class="subtitulo">Profesor:</span> ' . $fila['profesor'] . '<br>';
   echo '<span class="subtitulo">Celular:</span> ' . $fila['celular'].'<br>';
-  echo '<span class="subtitulo">Lugar:</span> ' . $fila['lugar'] . '<br>';
   echo '<span class="subtitulo">Días:</span> ' . $fila['dias'] . '<br>';
   echo '<span class="subtitulo">Horario:</span> ' . $fila['horario'] . '<br>';
   echo '<span class="subtitulo">Avisos:</span> ' . $fila['avisos'] . '<br>';
+  echo '<span class="subtitulo">Facebook:</span> <a href="' . $fila['url_facebook'] . '">' . $fila['facebook'] . '</a><br>';
 }
 
 // Cerrar la conexión a la base de datos
@@ -486,10 +487,10 @@ while ($fila = mysqli_fetch_assoc($resultado)) {
   echo '<span class="subtitulo">Lugar:</span> ' . $fila['lugar'] . '<br>';
   echo '<span class="subtitulo">Profesor:</span> ' . $fila['profesor'] . '<br>';
   echo '<span class="subtitulo">Celular:</span> ' . $fila['celular'].'<br>';
-  echo '<span class="subtitulo">Lugar:</span> ' . $fila['lugar'] . '<br>';
   echo '<span class="subtitulo">Días:</span> ' . $fila['dias'] . '<br>';
   echo '<span class="subtitulo">Horario:</span> ' . $fila['horario'] . '<br>';
   echo '<span class="subtitulo">Avisos:</span> ' . $fila['avisos'] . '<br>';
+  echo '<span class="subtitulo">Facebook:</span> <a href="' . $fila['url_facebook'] . '">' . $fila['facebook'] . '</a><br>';
 }
 
 // Cerrar la conexión a la base de datos
@@ -506,6 +507,7 @@ mysqli_close($conn);
                 <br>
 
                 <!-- Tarjeta 8 -->
+
                 <div class="col-lg-4 col-md-12 mb-4">
                     <div class="card-section border rounded p-3">
                         <div class="card-header-first rounded pb-5">
@@ -553,8 +555,7 @@ $resultado = mysqli_query($conn, $sql);
 while ($fila = mysqli_fetch_assoc($resultado)) {
   echo '<span class="subtitulo">Lugar:</span> ' . $fila['lugar'] . '<br>';
   echo '<span class="subtitulo">Profesor:</span> ' . $fila['profesor'] . '<br>';
-  echo '<span class="subtitulo">Celular:</span> ' . $fila['celular'].'<br>';
-  echo '<span class="subtitulo">Lugar:</span> ' . $fila['lugar'] . '<br>';
+  echo '<span class="subtitulo">WhatsApp:</span> <a href="' . $fila['url_celular'] . '">' . $fila['celular'] . '</a><br>';
   echo '<span class="subtitulo">Días:</span> ' . $fila['dias'] . '<br>';
   echo '<span class="subtitulo">Horario:</span> ' . $fila['horario'] . '<br>';
   echo '<span class="subtitulo">Avisos:</span> ' . $fila['avisos'] . '<br>';
@@ -621,7 +622,6 @@ while ($fila = mysqli_fetch_assoc($resultado)) {
   echo '<span class="subtitulo">Lugar:</span> ' . $fila['lugar'] . '<br>';
   echo '<span class="subtitulo">Profesor:</span> ' . $fila['profesor'] . '<br>';
   echo '<span class="subtitulo">Celular:</span> ' . $fila['celular'].'<br>';
-  echo '<span class="subtitulo">Lugar:</span> ' . $fila['lugar'] . '<br>';
   echo '<span class="subtitulo">Días:</span> ' . $fila['dias'] . '<br>';
   echo '<span class="subtitulo">Horario:</span> ' . $fila['horario'] . '<br>';
   echo '<span class="subtitulo">Avisos:</span> ' . $fila['avisos'] . '<br>';
@@ -696,10 +696,10 @@ while ($fila = mysqli_fetch_assoc($resultado)) {
   echo '<span class="subtitulo">Lugar:</span> ' . $fila['lugar'] . '<br>';
   echo '<span class="subtitulo">Profesor:</span> ' . $fila['profesor'] . '<br>';
   echo '<span class="subtitulo">Celular:</span> ' . $fila['celular'].'<br>';
-  echo '<span class="subtitulo">Lugar:</span> ' . $fila['lugar'] . '<br>';
   echo '<span class="subtitulo">Días:</span> ' . $fila['dias'] . '<br>';
   echo '<span class="subtitulo">Horario:</span> ' . $fila['horario'] . '<br>';
   echo '<span class="subtitulo">Avisos:</span> ' . $fila['avisos'] . '<br>';
+  echo '<span class="subtitulo">Facebook:</span> <a href="' . $fila['url_facebook'] . '">' . $fila['facebook'] . '</a><br>';
 }
 
 // Cerrar la conexión a la base de datos
@@ -718,9 +718,10 @@ mysqli_close($conn);
 
                 <div class="alert alert-success" role="alert">
   <h4 class="alert-heading">Club France</h4>
-  <p>A través de los Comités de: Ajedrez, Artes Plásticas, Ciencia y Tecnología, Cultura, Dominó, realizan varias actividades en el transcurso del año, te invitamos a sumarte a estas comunidades.</p>
+  <p>A través de los Comités de: Ajedrez, Artes Plásticas, Ciencia y Tecnología, Cultura y Dominó realizan varias actividades en el transcurso del año, te invitamos a sumarte a estas comunidades.</p>
   <hr>
-  <p class="mb-0">Envia un WhatsApp a Coordinación de Cultura para mayores informes: 55 3281 2300</p>
+  <a>Envía un WhatsApp a Coordinación de Cultura para mayores informes:</a> <a href="whatsapp://send?phone=+525532812300&text=Hola%20Coordinación%20de%20Cultura%2C%20quisiera%20más%20información.">55 3281 2300</a>
+
 </div>
               
                 <br>
