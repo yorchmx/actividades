@@ -38,6 +38,8 @@ class DeportesController extends Controller
     public function store(Request $request)
     {
         //
+        $datosDeportes = request()->all();
+        return response()->json($datosDeportes);
     }
 
     /**
