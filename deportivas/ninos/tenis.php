@@ -3,7 +3,7 @@
 <?php
 $lugar = "Canchas de Tenis";
 $academia = "Tenis";
-$concepto = "TENISINFANTIL";
+$concepto = "TENIS";
 $profesor = "Fernando Corona";
 $dias = "Martes a Viernes";
 $horario = "16:00 a 18:00 hrs."; 

@@ -115,6 +115,13 @@ echo '<li><center><strong>Precio:</strong> '.$_POST['precio'].'</center></li>';
 
 ?>
 <br>
+
+<?php
+
+$fecha_actual = date("d") . "" . date("m") . "" . date("y"); // almacenar la fecha actual en formato YY-MM-DD en la variable $fecha_actual
+
+?>
+
 <?php
 
 include 'conexion.php';
@@ -128,7 +135,7 @@ $id = uniqid('', true);
 $numero = substr($id, 0, 8);
 
 // Incrementar el número y crea la dadena con el formato deseado
-$referencia = $concepto . "" . $numero;
+$referencia = $concepto . "-" . $numero_usuario . "-" . $nombre_completo .'-'. $fecha_actual;
 
 $importe = $_POST['precio'];
 

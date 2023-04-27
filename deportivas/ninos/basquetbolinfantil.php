@@ -3,7 +3,7 @@
 <?php
 $lugar = "Cancha de Básquetbol";
 $academia = "Básquetbol Infantil";
-$concepto = "BASQUETINFANTIL";
+$concepto = "BASQUET";
 $profesor = "Daniel Verazaluce";
 $dias = "Martes y Viernes";
 $horario = "17:00 a 18:00 horas y 18:00 a 19:00 horas"; 

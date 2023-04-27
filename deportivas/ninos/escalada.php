@@ -3,7 +3,7 @@
 <?php
 $lugar = "Muro de escalar";
 $academia = "Escalada";
-$concepto = "ESCALADAINFANTIL";
+$concepto = "ESCALADA";
 $profesor = "Enrique Lucas";
 $dias = "Martes a Jueves";
 $horario = "16:00 a 17:00 horas, 17:00 a 18:00 horas y 18:00 a 19:00 horas"; 

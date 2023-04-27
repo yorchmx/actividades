@@ -108,13 +108,22 @@ echo '<li><center><strong>Profesor:</strong> '.$_POST['profesor'].'</center></li
 echo '<li><center><strong>Días:</strong> '.$_POST['dias'].'</center></li>';
 echo '<li><center><strong>Horarios:</strong> '.$_POST['horario'].'</center></li>';
 echo '<li><center><strong>Nombre completo:</strong> '.$_POST['nombre_completo'].'</center></li>';
-echo '<li><center><strong>Número de usuario del niño o niña:</strong> '.$_POST['numero_usuario'].'</center></li>';
+echo '<li><center><strong>Número de usuario:</strong> '.$_POST['numero_usuario'].'</center></li>';
 echo '<li><center><strong>Email:</strong> '.$_POST['email'].'</center></li>';
 echo '<li><center><strong>Paquete:</strong> '.$_POST['paquete'].'</center></li>';
 echo '<li><center><strong>Precio:</strong> '.$_POST['precio'].'</center></li>';
 
 ?>
 <br>
+
+
+
+<?php
+
+$fecha_actual = date("d") . "" . date("m") . "" . date("y"); // almacenar la fecha actual en formato YY-MM-DD en la variable $fecha_actual
+
+?>
+
 <?php
 
 include 'conexion.php';
@@ -128,7 +137,7 @@ $id = uniqid('', true);
 $numero = substr($id, 0, 8);
 
 // Incrementar el número y crea la dadena con el formato deseado
-$referencia = $concepto . "" . $numero;
+$referencia = $concepto . "-" . $numero_usuario . "-" . $nombre_completo .'-'. $fecha_actual;
 
 $importe = $_POST['precio'];
 
@@ -145,7 +154,7 @@ $signature = hash_hmac('sha256', $message, $key);
 $button = '<form action="https://www.adquiramexico.com.mx:443/mExpress/pago/avanzado" method="post"/>
   <input type="hidden" name="importe" value="' . $importe . '"/>
   <input type="hidden" name="referencia" value="'. $referencia .'"/>
-  <input type="hidden" name="urlretorno" value="https://clubfrance.org.mx/academias/pago/respuesta.php"/>
+  <input type="hidden" name="urlretorno" value="https://clubfrance.org.mx/actividades/pago/respuesta.php"/>
   <input type="hidden" name="idexpress" value="'.$idexpress.'"/>
   <input type="hidden" name="financiamiento" value="0"/>
   <input type="hidden" name="plazos" value=""/>

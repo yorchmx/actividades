@@ -3,7 +3,7 @@
 <?php
 $lugar = "Gimnasio de Box";
 $academia = "Box Infantil";
-$concepto = "BOXINFANTIL";
+$concepto = "BOX";
 $profesor = "Eduardo Velasco";
 $dias = "Martes, Jueves y Viernes";
 $horario = "Martes y Jueves 16:00 a 17:00 horas y Sábado de 8:00 a 9:00 horas"; 

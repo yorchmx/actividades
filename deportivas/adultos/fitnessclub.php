@@ -150,7 +150,7 @@ mysqli_close($conn);
         <h5>Número de usuario:</h5>
         <div class="input-box">
         
-        <input id="numero_usuario" name="numero_usuario" type="text" placeholder="Número de usuario" required>
+        <input id="numero_usuario" name="numero_usuario" type="text" placeholder="Poner correctamente el número de usuario" >
         </div>
         
 
