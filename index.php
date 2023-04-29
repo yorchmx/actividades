@@ -348,7 +348,7 @@
                         src="./img/9.jpg" 
                         alt="Card image cap" 
                         />
-                        <a href="deportivas/adultos/fitnessclub.php">
+                        <a href="deportivas/adultos/pagofitnessclub.php">
                             <div class="mask rgba-white-slight"></div>
                         </a>
                     </div>
@@ -362,7 +362,7 @@
                            <!--Some quick example text to build on the card title and make up the bulk of the card´s content.->> 
                         </p>
                         <!-- Button -->
-                        <a href="deportivas/adultos/fitnessclub.php" class="btn blue-gradient">Comprar</a>
+                        <a href="deportivas/adultos/pagofitnessclub.php" class="btn blue-gradient">Comprar</a>
                     </div>
                     </div>
                     <!-- Card -->
