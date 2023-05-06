@@ -38,24 +38,17 @@
 <?php
 
 if (!empty($_POST["btnregistrar"])) {
-    if ( !empty($_POST["academia"]) and !empty($_POST["profesor"]) and !empty($_POST["dias"]) and !empty($_POST["horario"]) and !empty($_POST["nombre_completo"]) and !empty($_POST["numero_usuario"]) and !empty($_POST["firma"])) {
+    if ( !empty($_POST["nombre_completo"]) and !empty($_POST["numero_usuario"])) {
 
     include 'conexion.php';
 
-    $academia = $_POST['academia'];
-    $profesor = $_POST['profesor'];
-    $dias = $_POST['dias'];
-    $horario = $_POST['horario'];
-    $apartado = $_POST['apartado'];
+    
     $nombre_completo = $_POST['nombre_completo'];
     $numero_usuario = $_POST['numero_usuario'];
-    $email = $_POST['email'];
-    $paquete = $_POST['paquete'];
     $precio = $_POST['precio'];
     $folio = $_POST['folio'];
-    $fecha_hora = $_POST['fecha_hora'];
-    $reglamento = $_POST['reglamento'];
-    $firma = $_POST['firma'];
+    $fecha_registro = $_POST['fecha_registro'];
+    
     $concepto = $_POST['concepto'];
 
 
@@ -80,8 +73,8 @@ if (!empty($_POST["btnregistrar"])) {
 
     /* Registro Niños */
 
-$sql = $conexion->query( "INSERT INTO `adultos` (`academia`, `profesor`, `dias`, `horario`, `apartado`, `nombre_completo`, `numero_usuario`, `email`, `paquete`, `precio`, `folio`, `concepto`, `fecha_hora`, `reglamento`, `firma`) 
-                                            VALUES ('$academia', '$profesor', '$dias', '$horario', '$apartado', '$nombre_completo', '$numero_usuario', '$email', '$paquete', '$precio', '$folio', '$concepto', '$fecha_hora', '$reglamento', '$firma')");
+$sql = $conexion->query( "INSERT INTO `prepago` (`nombre_completo`, `numero_usuario`, `precio`, `folio`, `concepto`, `fecha_registro`) 
+                                            VALUES ('$nombre_completo', '$numero_usuario', '$precio', '$folio', '$concepto', '$fecha_registro')");
                            
                  
 $sql_query = mysqli_query($conexion,$sql);
@@ -100,16 +93,9 @@ if ($sql==1) {
 
 }
 
-echo '<p><center>Los datos ingresados son:</center></p>';
+
 echo '<ul>';
 echo '<li><center><strong>Academia:</strong> '.$_POST['academia'].'</center></li>';
-echo '<li><center><strong>Ya apartaste lugar con el profesor:</strong> '.$_POST['apartado'].'</center></li>';
-echo '<li><center><strong>Profesor:</strong> '.$_POST['profesor'].'</center></li>';
-echo '<li><center><strong>Días:</strong> '.$_POST['dias'].'</center></li>';
-echo '<li><center><strong>Horarios:</strong> '.$_POST['horario'].'</center></li>';
-echo '<li><center><strong>Nombre completo:</strong> '.$_POST['nombre_completo'].'</center></li>';
-echo '<li><center><strong>Número de usuario:</strong> '.$_POST['numero_usuario'].'</center></li>';
-echo '<li><center><strong>Email:</strong> '.$_POST['email'].'</center></li>';
 echo '<li><center><strong>Paquete:</strong> '.$_POST['paquete'].'</center></li>';
 echo '<li><center><strong>Precio:</strong> '.$_POST['precio'].'</center></li>';
 
@@ -117,10 +103,9 @@ echo '<li><center><strong>Precio:</strong> '.$_POST['precio'].'</center></li>';
 <br>
 
 
-
 <?php
 
-$fecha_actual = date("d") . "" . date("m") . "" . date("y"); // almacenar la fecha actual en formato YY-MM-DD en la variable $fecha_actual
+$fecha_actual = date("d") . "-" . date("m") . "-" . date("y"); // almacenar la fecha actual en formato YY-MM-DD en la variable $fecha_actual
 
 ?>
 

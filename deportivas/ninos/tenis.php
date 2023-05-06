@@ -25,6 +25,8 @@ $horario = "16:00 a 18:00 hrs.";
 
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
 
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
    </head>
    
 <body>
@@ -100,7 +102,7 @@ mysqli_close($conn);
          ?>
 
     <h5>¿Has apartado tu lugar en la clase? Antes de realizar el pago, asegúrate de apartar tu lugar con el profesor:  <p style="color:#3e2093";><?php echo $profesor; ?></p></h5>
-           
+    
         <div class="input-field">
         <select name="apartado" id="apartado" required><br>
               <option disabled selected>Selecciona un opción</option>
@@ -213,7 +215,7 @@ mysqli_close($conn);
       <br>
     
       <div class="d-grid gap-2">
-       <button type="submit" class="btn btn-primary" name="btnregistrar" value="ok" >Pagar</button>
+       <button type="submit" class="btn btn-primary" name="btnregistrar" value="ok">Pagar</button>
       </div>
       
      <br>

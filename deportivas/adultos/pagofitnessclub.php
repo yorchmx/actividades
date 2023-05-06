@@ -99,15 +99,7 @@ mysqli_close($conn);
             include_once "registro.php";
          ?>
 
-    <h5>¿Has apartado tu lugar en la clase? Antes de realizar el pago, asegúrate de apartar tu lugar con el profesor:  <p style="color:#3e2093";><?php echo $profesor; ?></p></h5>
-           
-        <div class="input-field">
-        <select name="apartado" id="apartado" required><br>
-              <option disabled selected>Selecciona un opción</option>
-    					<option value="Sí">Sí</option>
-    					<option value="No">No</option>
-  					</select>
-      </div>
+    
 
         <div id="mi-elemento">
             <input type="text" id="academia" name="academia" value="<?=$academia?>" placeholder="" readonly hidden>
@@ -126,7 +118,7 @@ mysqli_close($conn);
         </div>
 
         <div id="mi-elemento">
-        <input type="datetime" id="fecha_hora" name="fecha_hora" value="<?=  $currentDateTime?>" placeholder="" readonly hidden>
+        <input type="datetime" id="fecha_registro" name="fecha_registro" value="<?=  $currentDateTime?>" placeholder="" readonly hidden>
         </div>
 
          <!-- <h5>Folio:</h5> -->
@@ -152,19 +144,12 @@ mysqli_close($conn);
         
         <input id="numero_usuario" name="numero_usuario" type="text" placeholder="Poner correctamente el número de usuario" >
         </div>
-        
 
-        <h5>Correo electrónico:</h5>
-        <div class="input-box">
-        
-        <input id="email" name="email" type="email" placeholder="Correo electrónico" required>
-        </div>
-
-        <h5>Paquetes:</h5>
+        <h5>Paquetes Mensuales:</h5>
         
         <div class="input-field">
         <select name="paquete" id="paquete" onchange="actualizarPrecio()" required><br>
-              <option disabled selected>Selecciona un paquete</option>
+              <option disabled selected>Selecciona un paquete mensual</option>
     					<option value="Una Clase">Una Clase</option>
     					<option value="Paquete 1 (Una clase a la semana)">Paquete 1 (Una clase a la semana)</option>
     					<option value="Paquete 2 (Dos clases a la semana)">Paquete 2 (Dos clases a la semana)</option>
@@ -181,29 +166,7 @@ mysqli_close($conn);
           
       <!--  <h5>Fecha y hora:</h5> -->
       
-        <div class="col-md-12">
-          <div class="form-group">
-          <div class="custom-control custom-checkbox">
-              <input type="checkbox" class="custom-control-input" id="reglamento" name="reglamento" value="Sí" required >
-              <label class="custom-control-label" for="aviso">He Leído y Acepto el <a href="" target="_blank" class="text-danger">Reglamento</a></label>
-              <div class="valid-feedback" >Campo Ok!</div>
-              <div class="invalid-feedback" >Debes aceptar los términos</div>
-          </div>
-          
-      </div>
-      </div>
-      <div class="col-md-12">
-      <span style="font-size: 10px;">
-      Los datos personales recopilados serán protegidos, almacenados y procesados con fines estadísticos, promocionales y de mejora. La información obtenida es confidencial y es propiedad de Club France, invitamos a consultar nuestro <a href="https://clubfrance.org.mx/aviso_privacidad/Aviso_de_Privacidad.pdf" target="_blank">Aviso de privacidad</a>.                                            </span>
-     </div>
-     <br>
-     
-
-      <h5>Firma:</h5>
-          <div class="input-box">
-          <input type="text" id="firma" name="firma" value="" placeholder="Nombre completo del tutor">
-      </div>
-
+        
       <br>
     
       <div class="d-grid gap-2">

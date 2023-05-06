@@ -35,6 +35,9 @@
     }
 </style>
 
+
+
+
 <?php
 
 if (!empty($_POST["btnregistrar"])) {
@@ -115,6 +118,10 @@ echo '<li><center><strong>Precio:</strong> '.$_POST['precio'].'</center></li>';
 
 ?>
 <br>
+
+
+
+
 
 <?php
 
