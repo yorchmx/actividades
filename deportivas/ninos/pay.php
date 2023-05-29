@@ -56,7 +56,7 @@ if (!empty($_POST["btnregistrar"])) {
     $paquete = $_POST['paquete'];
     $precio = $_POST['precio'];
     $folio = $_POST['folio'];
-    $fecha_hora = $_POST['fecha_hora'];
+    $fecha_registro = $_POST['fecha_registro'];
     $reglamento = $_POST['reglamento'];
     $firma = $_POST['firma'];
     $concepto = $_POST['concepto'];
@@ -83,8 +83,8 @@ if (!empty($_POST["btnregistrar"])) {
 
     /* Registro Niños */
 
-$sql = $conexion->query( "INSERT INTO `infantiles` (`academia`, `profesor`, `dias`, `horario`, `apartado`, `nombre_completo`, `numero_usuario`, `email`, `paquete`, `precio`, `folio`, `concepto`, `fecha_hora`, `reglamento`, `firma`) 
-                                            VALUES ('$academia', '$profesor', '$dias', '$horario', '$apartado', '$nombre_completo', '$numero_usuario', '$email', '$paquete', '$precio', '$folio', '$concepto', '$fecha_hora', '$reglamento', '$firma')");
+$sql = $conexion->query( "INSERT INTO `infantiles` (`academia`, `profesor`, `dias`, `horario`, `apartado`, `nombre_completo`, `numero_usuario`, `email`, `paquete`, `precio`, `folio`, `concepto`, `fecha_registro`, `reglamento`, `firma`) 
+                                            VALUES ('$academia', '$profesor', '$dias', '$horario', '$apartado', '$nombre_completo', '$numero_usuario', '$email', '$paquete', '$precio', '$folio', '$concepto', '$fecha_registro', '$reglamento', '$firma')");
                            
                  
 $sql_query = mysqli_query($conexion,$sql);
@@ -106,7 +106,7 @@ if ($sql==1) {
 echo '<p><center>Los datos ingresados son:</center></p>';
 echo '<ul>';
 echo '<li><center><strong>Academia:</strong> '.$_POST['academia'].'</center></li>';
-echo '<li><center><strong>Ya apartaste lugar con el profesor:</strong> '.$_POST['apartado'].'</center></li>';
+echo '<li><center><strong>¿Ya apartaste lugar con el profesor?:</strong> '.$_POST['apartado'].'</center></li>';
 echo '<li><center><strong>Profesor:</strong> '.$_POST['profesor'].'</center></li>';
 echo '<li><center><strong>Días:</strong> '.$_POST['dias'].'</center></li>';
 echo '<li><center><strong>Horarios:</strong> '.$_POST['horario'].'</center></li>';
@@ -125,7 +125,7 @@ echo '<li><center><strong>Precio:</strong> '.$_POST['precio'].'</center></li>';
 
 <?php
 
-$fecha_actual = date("d") . "" . date("m") . "" . date("y"); // almacenar la fecha actual en formato YY-MM-DD en la variable $fecha_actual
+$fecha_actual = date("d") . "-" . date("m") . "-" . date("y"); // almacenar la fecha actual en formato YY-MM-DD en la variable $fecha_actual
 
 ?>
 

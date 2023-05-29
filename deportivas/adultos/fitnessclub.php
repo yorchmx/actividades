@@ -95,10 +95,7 @@ mysqli_close($conn);
 
   <form action="pay.php" method="POST" enctype="multipart/form-data">
 
-        <?php 
-            include_once "registro.php";
-         ?>
-
+        
     <h5>¿Has apartado tu lugar en la clase? Antes de realizar el pago, asegúrate de apartar tu lugar con el profesor:  <p style="color:#3e2093";><?php echo $profesor; ?></p></h5>
            
         <div class="input-field">
@@ -126,7 +123,7 @@ mysqli_close($conn);
         </div>
 
         <div id="mi-elemento">
-        <input type="datetime" id="fecha_hora" name="fecha_hora" value="<?=  $currentDateTime?>" placeholder="" readonly hidden>
+        <input type="datetime" id="fecha_registro" name="fecha_registro" value="<?=  $currentDateTime?>" placeholder="" readonly hidden>
         </div>
 
          <!-- <h5>Folio:</h5> -->

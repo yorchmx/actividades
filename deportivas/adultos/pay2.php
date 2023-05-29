@@ -35,31 +35,20 @@
     }
 </style>
 
-
-
-
 <?php
 
 if (!empty($_POST["btnregistrar"])) {
-    if ( !empty($_POST["academia"]) and !empty($_POST["profesor"]) and !empty($_POST["dias"]) and !empty($_POST["horario"]) and !empty($_POST["primer_nombre"]) and !empty($_POST["primer_apellido"]) and !empty($_POST["numero_usuario"]) and !empty($_POST["firma"])) {
+    if ( !empty($_POST["nombre_completo"]) and !empty($_POST["numero_usuario"])) {
 
     include 'conexion.php';
 
-    $academia = $_POST['academia'];
-    $profesor = $_POST['profesor'];
-    $dias = $_POST['dias'];
-    $horario = $_POST['horario'];
-    $apartado = $_POST['apartado'];
-    $primer_nombre = $_POST['primer_nombre'];
-    $primer_apellido = $_POST['primer_apellido'];
+    
+    $nombre_completo = $_POST['nombre_completo'];
     $numero_usuario = $_POST['numero_usuario'];
-    $email = $_POST['email'];
-    $paquete = $_POST['paquete'];
     $precio = $_POST['precio'];
     $folio = $_POST['folio'];
     $fecha_registro = $_POST['fecha_registro'];
-    $reglamento = $_POST['reglamento'];
-    $firma = $_POST['firma'];
+    
     $concepto = $_POST['concepto'];
 
 
@@ -84,8 +73,8 @@ if (!empty($_POST["btnregistrar"])) {
 
     /* Registro Niños */
 
-$sql = $conexion->query( "INSERT INTO `adultos` (`academia`, `profesor`, `dias`, `horario`, `apartado`, `primer_nombre`, `primer_apellido`, `numero_usuario`, `email`, `paquete`, `precio`, `folio`, `concepto`, `fecha_registro`, `reglamento`, `firma`) 
-                                            VALUES ('$academia', '$profesor', '$dias', '$horario', '$apartado', '$primer_nombre', '$primer_apellido', '$numero_usuario', '$email', '$paquete', '$precio', '$folio', '$concepto', '$fecha_registro', '$reglamento', '$firma')");
+$sql = $conexion->query( "INSERT INTO `adultos` (`nombre_completo`, `numero_usuario`, `precio`, `folio`, `concepto`, `fecha_registro`) 
+                                            VALUES ('$nombre_completo', '$numero_usuario', '$precio', '$folio', '$concepto', '$fecha_registro')");
                            
                  
 $sql_query = mysqli_query($conexion,$sql);
@@ -104,24 +93,14 @@ if ($sql==1) {
 
 }
 
-echo '<p><center>Los datos ingresados son:</center></p>';
+
 echo '<ul>';
 echo '<li><center><strong>Academia:</strong> '.$_POST['academia'].'</center></li>';
-echo '<li><center><strong>¿Ya apartaste lugar con el profesor?</strong> '.$_POST['apartado'].'</center></li>';
-echo '<li><center><strong>Profesor:</strong> '.$_POST['profesor'].'</center></li>';
-echo '<li><center><strong>Días:</strong> '.$_POST['dias'].'</center></li>';
-echo '<li><center><strong>Horarios:</strong> '.$_POST['horario'].'</center></li>';
-echo '<li><center><strong>Nombre completo:</strong> '.$_POST['nombre_completo'].'</center></li>';
-echo '<li><center><strong>Número de usuario del niño o niña:</strong> '.$_POST['numero_usuario'].'</center></li>';
-echo '<li><center><strong>Email:</strong> '.$_POST['email'].'</center></li>';
 echo '<li><center><strong>Paquete:</strong> '.$_POST['paquete'].'</center></li>';
 echo '<li><center><strong>Precio:</strong> '.$_POST['precio'].'</center></li>';
 
 ?>
 <br>
-
-
-
 
 
 <?php
@@ -143,7 +122,7 @@ $id = uniqid('', true);
 $numero = substr($id, 0, 8);
 
 // Incrementar el número y crea la dadena con el formato deseado
-$referencia = $concepto . "-" . $numero_usuario . "-" . $primer_nombre .' '. $primer_apellido .'-'. $fecha_actual;
+$referencia = $concepto . "-" . $numero_usuario . "-" . $nombre_completo .'-'. $fecha_actual;
 
 $importe = $_POST['precio'];
 
@@ -160,7 +139,7 @@ $signature = hash_hmac('sha256', $message, $key);
 $button = '<form action="https://www.adquiramexico.com.mx:443/mExpress/pago/avanzado" method="post"/>
   <input type="hidden" name="importe" value="' . $importe . '"/>
   <input type="hidden" name="referencia" value="'. $referencia .'"/>
-  <input type="hidden" name="urlretorno" value="https://clubfrance.org.mx/academias/pago/respuesta.php"/>
+  <input type="hidden" name="urlretorno" value="https://clubfrance.org.mx/actividades/pago/respuesta.php"/>
   <input type="hidden" name="idexpress" value="'.$idexpress.'"/>
   <input type="hidden" name="financiamiento" value="0"/>
   <input type="hidden" name="plazos" value=""/>
@@ -175,7 +154,7 @@ echo $button;
 
 
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -212,3 +191,4 @@ echo $button;
 
 </body>
 </html>
+

@@ -1,0 +1,163 @@
+[17-Apr-2023 22:35:14 UTC] PHP Warning:  mysqli_query(): Empty query in /home/udp7j14n325c/public_html/academias/actividadesadultos/pay.php on line 87
+[18-Apr-2023 18:51:54 America/Mexico_City] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, bool given in /home/udp7j14n325c/public_html/academias/actividadesadultos/fitnessclub.php on line 78
+[27-Apr-2023 22:17:11 UTC] PHP Notice:  Undefined variable: numero_usuario in /home/udp7j14n325c/public_html/actividades/deportivas/adultos/pay.php on line 140
+[27-Apr-2023 22:17:11 UTC] PHP Notice:  Undefined variable: nombre_completo in /home/udp7j14n325c/public_html/actividades/deportivas/adultos/pay.php on line 140
+[27-Apr-2023 22:20:25 UTC] PHP Notice:  Undefined variable: numero_usuario in /home/udp7j14n325c/public_html/actividades/deportivas/adultos/pay.php on line 140
+[27-Apr-2023 22:20:25 UTC] PHP Notice:  Undefined variable: nombre_completo in /home/udp7j14n325c/public_html/actividades/deportivas/adultos/pay.php on line 140
+[28-Apr-2023 19:34:39 America/Mexico_City] PHP Warning:  include_once(/home/udp7j14n325c/public_html/actividades/deportivas/adultos): failed to open stream: Success in /home/udp7j14n325c/public_html/actividades/deportivas/adultos/pagofitnessclub.php on line 99
+[28-Apr-2023 19:34:39 America/Mexico_City] PHP Warning:  include_once(): Failed opening '' for inclusion (include_path='.:/opt/alt/php74/usr/share/pear') in /home/udp7j14n325c/public_html/actividades/deportivas/adultos/pagofitnessclub.php on line 99
+[28-Apr-2023 19:34:42 America/Mexico_City] PHP Warning:  include_once(/home/udp7j14n325c/public_html/actividades/deportivas/adultos): failed to open stream: Success in /home/udp7j14n325c/public_html/actividades/deportivas/adultos/pagofitnessclub.php on line 99
+[28-Apr-2023 19:34:42 America/Mexico_City] PHP Warning:  include_once(): Failed opening '' for inclusion (include_path='.:/opt/alt/php74/usr/share/pear') in /home/udp7j14n325c/public_html/actividades/deportivas/adultos/pagofitnessclub.php on line 99
+[29-Apr-2023 00:34:49 UTC] PHP Notice:  Undefined index: academia in /home/udp7j14n325c/public_html/actividades/deportivas/adultos/pay.php on line 105
+[29-Apr-2023 00:34:49 UTC] PHP Notice:  Undefined index: apartado in /home/udp7j14n325c/public_html/actividades/deportivas/adultos/pay.php on line 106
+[29-Apr-2023 00:34:49 UTC] PHP Notice:  Undefined index: profesor in /home/udp7j14n325c/public_html/actividades/deportivas/adultos/pay.php on line 107
+[29-Apr-2023 00:34:49 UTC] PHP Notice:  Undefined index: dias in /home/udp7j14n325c/public_html/actividades/deportivas/adultos/pay.php on line 108
+[29-Apr-2023 00:34:49 UTC] PHP Notice:  Undefined index: horario in /home/udp7j14n325c/public_html/actividades/deportivas/adultos/pay.php on line 109
+[29-Apr-2023 00:34:49 UTC] PHP Notice:  Undefined index: nombre_completo in /home/udp7j14n325c/public_html/actividades/deportivas/adultos/pay.php on line 110
+[29-Apr-2023 00:34:49 UTC] PHP Notice:  Undefined index: numero_usuario in /home/udp7j14n325c/public_html/actividades/deportivas/adultos/pay.php on line 111
+[29-Apr-2023 00:34:49 UTC] PHP Notice:  Undefined index: email in /home/udp7j14n325c/public_html/actividades/deportivas/adultos/pay.php on line 112
+[29-Apr-2023 00:34:49 UTC] PHP Notice:  Undefined index: concepto in /home/udp7j14n325c/public_html/actividades/deportivas/adultos/pay.php on line 133
+[29-Apr-2023 00:34:49 UTC] PHP Notice:  Undefined variable: numero_usuario in /home/udp7j14n325c/public_html/actividades/deportivas/adultos/pay.php on line 140
+[29-Apr-2023 00:34:49 UTC] PHP Notice:  Undefined variable: nombre_completo in /home/udp7j14n325c/public_html/actividades/deportivas/adultos/pay.php on line 140
+[28-Apr-2023 19:35:26 America/Mexico_City] PHP Warning:  include_once(/home/udp7j14n325c/public_html/actividades/deportivas/adultos): failed to open stream: Success in /home/udp7j14n325c/public_html/actividades/deportivas/adultos/pagofitnessclub.php on line 99
+[28-Apr-2023 19:35:26 America/Mexico_City] PHP Warning:  include_once(): Failed opening '' for inclusion (include_path='.:/opt/alt/php74/usr/share/pear') in /home/udp7j14n325c/public_html/actividades/deportivas/adultos/pagofitnessclub.php on line 99
+[29-Apr-2023 00:41:54 UTC] PHP Notice:  Undefined index: apartado in /home/udp7j14n325c/public_html/actividades/deportivas/adultos/pay.php on line 106
+[29-Apr-2023 00:41:54 UTC] PHP Notice:  Undefined index: email in /home/udp7j14n325c/public_html/actividades/deportivas/adultos/pay.php on line 112
+[29-Apr-2023 00:41:54 UTC] PHP Notice:  Undefined variable: numero_usuario in /home/udp7j14n325c/public_html/actividades/deportivas/adultos/pay.php on line 140
+[29-Apr-2023 00:41:54 UTC] PHP Notice:  Undefined variable: nombre_completo in /home/udp7j14n325c/public_html/actividades/deportivas/adultos/pay.php on line 140
+[29-Apr-2023 00:42:52 UTC] PHP Notice:  Undefined index: apartado in /home/udp7j14n325c/public_html/actividades/deportivas/adultos/pay.php on line 106
+[29-Apr-2023 00:42:52 UTC] PHP Notice:  Undefined index: email in /home/udp7j14n325c/public_html/actividades/deportivas/adultos/pay.php on line 112
+[29-Apr-2023 00:42:52 UTC] PHP Notice:  Undefined variable: numero_usuario in /home/udp7j14n325c/public_html/actividades/deportivas/adultos/pay.php on line 140
+[29-Apr-2023 00:42:52 UTC] PHP Notice:  Undefined variable: nombre_completo in /home/udp7j14n325c/public_html/actividades/deportivas/adultos/pay.php on line 140
+[02-May-2023 19:43:51 UTC] PHP Notice:  Undefined variable: numero_usuario in /home/udp7j14n325c/public_html/actividades/deportivas/adultos/pay.php on line 126
+[02-May-2023 19:43:51 UTC] PHP Notice:  Undefined variable: nombre_completo in /home/udp7j14n325c/public_html/actividades/deportivas/adultos/pay.php on line 126
+[02-May-2023 21:46:43 UTC] PHP Notice:  Undefined index: maricula in /home/udp7j14n325c/public_html/actividades/deportivas/adultos/buscar_numero.php on line 12
+[02-May-2023 21:46:43 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, bool given in /home/udp7j14n325c/public_html/actividades/deportivas/adultos/buscar_numero.php on line 16
+[02-May-2023 22:18:30 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, bool given in /home/udp7j14n325c/public_html/actividades/deportivas/adultos/buscar_numero.php on line 16
+[02-May-2023 22:18:33 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, bool given in /home/udp7j14n325c/public_html/actividades/deportivas/adultos/buscar_numero.php on line 16
+[02-May-2023 22:18:33 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, bool given in /home/udp7j14n325c/public_html/actividades/deportivas/adultos/buscar_numero.php on line 16
+[02-May-2023 22:18:35 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, bool given in /home/udp7j14n325c/public_html/actividades/deportivas/adultos/buscar_numero.php on line 16
+[02-May-2023 22:18:35 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, bool given in /home/udp7j14n325c/public_html/actividades/deportivas/adultos/buscar_numero.php on line 16
+[02-May-2023 22:18:36 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, bool given in /home/udp7j14n325c/public_html/actividades/deportivas/adultos/buscar_numero.php on line 16
+[02-May-2023 22:18:36 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, bool given in /home/udp7j14n325c/public_html/actividades/deportivas/adultos/buscar_numero.php on line 16
+[02-May-2023 22:18:40 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, bool given in /home/udp7j14n325c/public_html/actividades/deportivas/adultos/buscar_numero.php on line 16
+[02-May-2023 22:18:40 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, bool given in /home/udp7j14n325c/public_html/actividades/deportivas/adultos/buscar_numero.php on line 16
+[02-May-2023 22:18:40 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, bool given in /home/udp7j14n325c/public_html/actividades/deportivas/adultos/buscar_numero.php on line 16
+[02-May-2023 22:18:40 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, bool given in /home/udp7j14n325c/public_html/actividades/deportivas/adultos/buscar_numero.php on line 16
+[02-May-2023 22:18:41 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, bool given in /home/udp7j14n325c/public_html/actividades/deportivas/adultos/buscar_numero.php on line 16
+[02-May-2023 22:18:41 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, bool given in /home/udp7j14n325c/public_html/actividades/deportivas/adultos/buscar_numero.php on line 16
+[02-May-2023 22:18:42 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, bool given in /home/udp7j14n325c/public_html/actividades/deportivas/adultos/buscar_numero.php on line 16
+[02-May-2023 22:18:43 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, bool given in /home/udp7j14n325c/public_html/actividades/deportivas/adultos/buscar_numero.php on line 16
+[02-May-2023 22:18:43 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, bool given in /home/udp7j14n325c/public_html/actividades/deportivas/adultos/buscar_numero.php on line 16
+[02-May-2023 22:18:43 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, bool given in /home/udp7j14n325c/public_html/actividades/deportivas/adultos/buscar_numero.php on line 16
+[02-May-2023 22:18:59 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, bool given in /home/udp7j14n325c/public_html/actividades/deportivas/adultos/buscar_numero.php on line 16
+[02-May-2023 22:18:59 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, bool given in /home/udp7j14n325c/public_html/actividades/deportivas/adultos/buscar_numero.php on line 16
+[02-May-2023 22:19:00 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, bool given in /home/udp7j14n325c/public_html/actividades/deportivas/adultos/buscar_numero.php on line 16
+[02-May-2023 22:19:00 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, bool given in /home/udp7j14n325c/public_html/actividades/deportivas/adultos/buscar_numero.php on line 16
+[02-May-2023 22:19:01 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, bool given in /home/udp7j14n325c/public_html/actividades/deportivas/adultos/buscar_numero.php on line 16
+[02-May-2023 22:19:01 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, bool given in /home/udp7j14n325c/public_html/actividades/deportivas/adultos/buscar_numero.php on line 16
+[02-May-2023 22:19:03 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, bool given in /home/udp7j14n325c/public_html/actividades/deportivas/adultos/buscar_numero.php on line 16
+[02-May-2023 22:19:03 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, bool given in /home/udp7j14n325c/public_html/actividades/deportivas/adultos/buscar_numero.php on line 16
+[02-May-2023 22:19:03 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, bool given in /home/udp7j14n325c/public_html/actividades/deportivas/adultos/buscar_numero.php on line 16
+[02-May-2023 22:19:04 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, bool given in /home/udp7j14n325c/public_html/actividades/deportivas/adultos/buscar_numero.php on line 16
+[02-May-2023 22:19:04 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, bool given in /home/udp7j14n325c/public_html/actividades/deportivas/adultos/buscar_numero.php on line 16
+[02-May-2023 22:19:04 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, bool given in /home/udp7j14n325c/public_html/actividades/deportivas/adultos/buscar_numero.php on line 16
+[02-May-2023 22:19:05 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, bool given in /home/udp7j14n325c/public_html/actividades/deportivas/adultos/buscar_numero.php on line 16
+[02-May-2023 22:19:06 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, bool given in /home/udp7j14n325c/public_html/actividades/deportivas/adultos/buscar_numero.php on line 16
+[02-May-2023 22:19:06 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, bool given in /home/udp7j14n325c/public_html/actividades/deportivas/adultos/buscar_numero.php on line 16
+[02-May-2023 22:19:06 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, bool given in /home/udp7j14n325c/public_html/actividades/deportivas/adultos/buscar_numero.php on line 16
+[02-May-2023 22:19:06 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, bool given in /home/udp7j14n325c/public_html/actividades/deportivas/adultos/buscar_numero.php on line 16
+[02-May-2023 22:19:37 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, bool given in /home/udp7j14n325c/public_html/actividades/deportivas/adultos/buscar_numero.php on line 16
+[02-May-2023 22:19:37 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, bool given in /home/udp7j14n325c/public_html/actividades/deportivas/adultos/buscar_numero.php on line 16
+[02-May-2023 22:19:37 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, bool given in /home/udp7j14n325c/public_html/actividades/deportivas/adultos/buscar_numero.php on line 16
+[02-May-2023 22:19:38 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, bool given in /home/udp7j14n325c/public_html/actividades/deportivas/adultos/buscar_numero.php on line 16
+[02-May-2023 22:19:38 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, bool given in /home/udp7j14n325c/public_html/actividades/deportivas/adultos/buscar_numero.php on line 16
+[02-May-2023 22:19:38 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, bool given in /home/udp7j14n325c/public_html/actividades/deportivas/adultos/buscar_numero.php on line 16
+[02-May-2023 22:19:45 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, bool given in /home/udp7j14n325c/public_html/actividades/deportivas/adultos/buscar_numero.php on line 16
+[02-May-2023 22:19:46 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, bool given in /home/udp7j14n325c/public_html/actividades/deportivas/adultos/buscar_numero.php on line 16
+[02-May-2023 22:28:48 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, bool given in /home/udp7j14n325c/public_html/actividades/deportivas/adultos/buscar_numero.php on line 16
+[02-May-2023 22:28:48 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, bool given in /home/udp7j14n325c/public_html/actividades/deportivas/adultos/buscar_numero.php on line 16
+[02-May-2023 22:28:48 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, bool given in /home/udp7j14n325c/public_html/actividades/deportivas/adultos/buscar_numero.php on line 16
+[02-May-2023 22:28:48 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, bool given in /home/udp7j14n325c/public_html/actividades/deportivas/adultos/buscar_numero.php on line 16
+[02-May-2023 22:28:50 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, bool given in /home/udp7j14n325c/public_html/actividades/deportivas/adultos/buscar_numero.php on line 16
+[02-May-2023 22:28:50 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, bool given in /home/udp7j14n325c/public_html/actividades/deportivas/adultos/buscar_numero.php on line 16
+[02-May-2023 22:28:51 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, bool given in /home/udp7j14n325c/public_html/actividades/deportivas/adultos/buscar_numero.php on line 16
+[02-May-2023 22:28:52 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, bool given in /home/udp7j14n325c/public_html/actividades/deportivas/adultos/buscar_numero.php on line 16
+[02-May-2023 22:28:52 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, bool given in /home/udp7j14n325c/public_html/actividades/deportivas/adultos/buscar_numero.php on line 16
+[02-May-2023 22:28:52 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, bool given in /home/udp7j14n325c/public_html/actividades/deportivas/adultos/buscar_numero.php on line 16
+[02-May-2023 22:28:53 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, bool given in /home/udp7j14n325c/public_html/actividades/deportivas/adultos/buscar_numero.php on line 16
+[02-May-2023 22:28:54 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, bool given in /home/udp7j14n325c/public_html/actividades/deportivas/adultos/buscar_numero.php on line 16
+[02-May-2023 22:28:54 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, bool given in /home/udp7j14n325c/public_html/actividades/deportivas/adultos/buscar_numero.php on line 16
+[02-May-2023 22:28:54 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, bool given in /home/udp7j14n325c/public_html/actividades/deportivas/adultos/buscar_numero.php on line 16
+[02-May-2023 22:29:16 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, bool given in /home/udp7j14n325c/public_html/actividades/deportivas/adultos/buscar_numero.php on line 16
+[02-May-2023 22:29:16 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, bool given in /home/udp7j14n325c/public_html/actividades/deportivas/adultos/buscar_numero.php on line 16
+[02-May-2023 22:29:17 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, bool given in /home/udp7j14n325c/public_html/actividades/deportivas/adultos/buscar_numero.php on line 16
+[02-May-2023 22:29:17 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, bool given in /home/udp7j14n325c/public_html/actividades/deportivas/adultos/buscar_numero.php on line 16
+[02-May-2023 22:29:18 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, bool given in /home/udp7j14n325c/public_html/actividades/deportivas/adultos/buscar_numero.php on line 16
+[02-May-2023 22:29:18 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, bool given in /home/udp7j14n325c/public_html/actividades/deportivas/adultos/buscar_numero.php on line 16
+[02-May-2023 22:29:23 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, bool given in /home/udp7j14n325c/public_html/actividades/deportivas/adultos/buscar_numero.php on line 16
+[02-May-2023 22:29:23 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, bool given in /home/udp7j14n325c/public_html/actividades/deportivas/adultos/buscar_numero.php on line 16
+[02-May-2023 22:29:23 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, bool given in /home/udp7j14n325c/public_html/actividades/deportivas/adultos/buscar_numero.php on line 16
+[02-May-2023 22:29:23 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, bool given in /home/udp7j14n325c/public_html/actividades/deportivas/adultos/buscar_numero.php on line 16
+[02-May-2023 22:29:23 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, bool given in /home/udp7j14n325c/public_html/actividades/deportivas/adultos/buscar_numero.php on line 16
+[02-May-2023 22:29:24 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, bool given in /home/udp7j14n325c/public_html/actividades/deportivas/adultos/buscar_numero.php on line 16
+[02-May-2023 22:29:25 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, bool given in /home/udp7j14n325c/public_html/actividades/deportivas/adultos/buscar_numero.php on line 16
+[02-May-2023 22:29:25 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, bool given in /home/udp7j14n325c/public_html/actividades/deportivas/adultos/buscar_numero.php on line 16
+[02-May-2023 22:29:26 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, bool given in /home/udp7j14n325c/public_html/actividades/deportivas/adultos/buscar_numero.php on line 16
+[02-May-2023 22:29:26 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, bool given in /home/udp7j14n325c/public_html/actividades/deportivas/adultos/buscar_numero.php on line 16
+[02-May-2023 22:29:26 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, bool given in /home/udp7j14n325c/public_html/actividades/deportivas/adultos/buscar_numero.php on line 16
+[06-May-2023 00:51:30 UTC] PHP Warning:  mysqli_query(): Empty query in /home/udp7j14n325c/public_html/actividades/deportivas/adultos/pay.php on line 80
+[06-May-2023 00:53:11 UTC] PHP Notice:  Undefined index: fecha_registro in /home/udp7j14n325c/public_html/actividades/deportivas/adultos/pay.php on line 50
+[06-May-2023 00:53:11 UTC] PHP Warning:  mysqli_query(): Empty query in /home/udp7j14n325c/public_html/actividades/deportivas/adultos/pay.php on line 80
+[06-May-2023 00:56:13 UTC] PHP Notice:  Undefined index: fecha_registro in /home/udp7j14n325c/public_html/actividades/deportivas/adultos/pay.php on line 50
+[06-May-2023 00:56:13 UTC] PHP Warning:  mysqli_query(): Empty query in /home/udp7j14n325c/public_html/actividades/deportivas/adultos/pay.php on line 80
+[06-May-2023 00:56:55 UTC] PHP Notice:  Undefined index: fecha_registro in /home/udp7j14n325c/public_html/actividades/deportivas/adultos/pay.php on line 50
+[06-May-2023 18:52:54 UTC] PHP Notice:  Undefined index: fecha_registro in /home/udp7j14n325c/public_html/actividades/deportivas/adultos/pay.php on line 50
+[06-May-2023 19:03:30 UTC] PHP Notice:  Undefined index: fecha_registro in /home/udp7j14n325c/public_html/actividades/deportivas/adultos/pay.php on line 50
+[06-May-2023 21:23:07 UTC] PHP Notice:  Undefined index: fecha_registro in /home/udp7j14n325c/public_html/actividades/deportivas/adultos/pay.php on line 50
+[06-May-2023 22:14:16 UTC] PHP Notice:  Undefined index: fecha_registro in /home/udp7j14n325c/public_html/actividades/deportivas/adultos/pay.php on line 50
+[06-May-2023 22:16:54 UTC] PHP Notice:  Undefined index: fecha_registro in /home/udp7j14n325c/public_html/actividades/deportivas/adultos/pay.php on line 50
+[06-May-2023 22:47:44 UTC] PHP Notice:  Undefined index: fecha_registro in /home/udp7j14n325c/public_html/actividades/deportivas/adultos/pay.php on line 59
+[06-May-2023 23:17:21 UTC] PHP Notice:  Undefined index: apartado in /home/udp7j14n325c/public_html/actividades/deportivas/adultos/pay.php on line 52
+[06-May-2023 23:17:21 UTC] PHP Notice:  Undefined index: apartado in /home/udp7j14n325c/public_html/actividades/deportivas/adultos/pay.php on line 110
+[06-May-2023 23:17:21 UTC] PHP Notice:  Undefined index: nombre_completo in /home/udp7j14n325c/public_html/actividades/deportivas/adultos/pay.php on line 114
+[06-May-2023 23:17:21 UTC] PHP Notice:  Undefined variable: nombre_completo in /home/udp7j14n325c/public_html/actividades/deportivas/adultos/pay.php on line 146
+[06-May-2023 23:20:05 UTC] PHP Notice:  Undefined index: nombre_completo in /home/udp7j14n325c/public_html/actividades/deportivas/adultos/pay.php on line 114
+[06-May-2023 23:21:06 UTC] PHP Notice:  Undefined index: nombre_completo in /home/udp7j14n325c/public_html/actividades/deportivas/adultos/pay.php on line 114
+[06-May-2023 23:21:19 UTC] PHP Notice:  Undefined index: nombre_completo in /home/udp7j14n325c/public_html/actividades/deportivas/adultos/pay.php on line 114
+[20-May-2023 20:52:39 UTC] PHP Notice:  Undefined index: academia in /home/udp7j14n325c/public_html/actividades/deportivas/adultos/pay.php on line 109
+[20-May-2023 20:52:39 UTC] PHP Notice:  Undefined index: apartado in /home/udp7j14n325c/public_html/actividades/deportivas/adultos/pay.php on line 110
+[20-May-2023 20:52:39 UTC] PHP Notice:  Undefined index: profesor in /home/udp7j14n325c/public_html/actividades/deportivas/adultos/pay.php on line 111
+[20-May-2023 20:52:39 UTC] PHP Notice:  Undefined index: dias in /home/udp7j14n325c/public_html/actividades/deportivas/adultos/pay.php on line 112
+[20-May-2023 20:52:39 UTC] PHP Notice:  Undefined index: horario in /home/udp7j14n325c/public_html/actividades/deportivas/adultos/pay.php on line 113
+[20-May-2023 20:52:39 UTC] PHP Notice:  Undefined index: nombre_completo in /home/udp7j14n325c/public_html/actividades/deportivas/adultos/pay.php on line 114
+[20-May-2023 20:52:39 UTC] PHP Notice:  Undefined index: numero_usuario in /home/udp7j14n325c/public_html/actividades/deportivas/adultos/pay.php on line 115
+[20-May-2023 20:52:39 UTC] PHP Notice:  Undefined index: email in /home/udp7j14n325c/public_html/actividades/deportivas/adultos/pay.php on line 116
+[20-May-2023 20:52:39 UTC] PHP Notice:  Undefined index: paquete in /home/udp7j14n325c/public_html/actividades/deportivas/adultos/pay.php on line 117
+[20-May-2023 20:52:39 UTC] PHP Notice:  Undefined index: precio in /home/udp7j14n325c/public_html/actividades/deportivas/adultos/pay.php on line 118
+[20-May-2023 20:52:39 UTC] PHP Notice:  Undefined index: precio in /home/udp7j14n325c/public_html/actividades/deportivas/adultos/pay.php on line 137
+[20-May-2023 20:52:39 UTC] PHP Notice:  Undefined index: concepto in /home/udp7j14n325c/public_html/actividades/deportivas/adultos/pay.php on line 139
+[20-May-2023 20:52:39 UTC] PHP Notice:  Undefined variable: numero_usuario in /home/udp7j14n325c/public_html/actividades/deportivas/adultos/pay.php on line 146
+[20-May-2023 20:52:39 UTC] PHP Notice:  Undefined variable: primer_nombre in /home/udp7j14n325c/public_html/actividades/deportivas/adultos/pay.php on line 146
+[20-May-2023 20:52:39 UTC] PHP Notice:  Undefined variable: primer_apellido in /home/udp7j14n325c/public_html/actividades/deportivas/adultos/pay.php on line 146
+[20-May-2023 20:52:39 UTC] PHP Notice:  Undefined index: precio in /home/udp7j14n325c/public_html/actividades/deportivas/adultos/pay.php on line 148
+[26-May-2023 18:07:52 UTC] PHP Notice:  Undefined index: academia in /home/udp7j14n325c/public_html/actividades/deportivas/adultos/pay.php on line 109
+[26-May-2023 18:07:52 UTC] PHP Notice:  Undefined index: apartado in /home/udp7j14n325c/public_html/actividades/deportivas/adultos/pay.php on line 110
+[26-May-2023 18:07:52 UTC] PHP Notice:  Undefined index: profesor in /home/udp7j14n325c/public_html/actividades/deportivas/adultos/pay.php on line 111
+[26-May-2023 18:07:52 UTC] PHP Notice:  Undefined index: dias in /home/udp7j14n325c/public_html/actividades/deportivas/adultos/pay.php on line 112
+[26-May-2023 18:07:52 UTC] PHP Notice:  Undefined index: horario in /home/udp7j14n325c/public_html/actividades/deportivas/adultos/pay.php on line 113
+[26-May-2023 18:07:52 UTC] PHP Notice:  Undefined index: nombre_completo in /home/udp7j14n325c/public_html/actividades/deportivas/adultos/pay.php on line 114
+[26-May-2023 18:07:52 UTC] PHP Notice:  Undefined index: numero_usuario in /home/udp7j14n325c/public_html/actividades/deportivas/adultos/pay.php on line 115
+[26-May-2023 18:07:52 UTC] PHP Notice:  Undefined index: email in /home/udp7j14n325c/public_html/actividades/deportivas/adultos/pay.php on line 116
+[26-May-2023 18:07:52 UTC] PHP Notice:  Undefined index: paquete in /home/udp7j14n325c/public_html/actividades/deportivas/adultos/pay.php on line 117
+[26-May-2023 18:07:52 UTC] PHP Notice:  Undefined index: precio in /home/udp7j14n325c/public_html/actividades/deportivas/adultos/pay.php on line 118
+[26-May-2023 18:07:52 UTC] PHP Notice:  Undefined index: precio in /home/udp7j14n325c/public_html/actividades/deportivas/adultos/pay.php on line 137
+[26-May-2023 18:07:52 UTC] PHP Notice:  Undefined index: concepto in /home/udp7j14n325c/public_html/actividades/deportivas/adultos/pay.php on line 139
+[26-May-2023 18:07:52 UTC] PHP Notice:  Undefined variable: numero_usuario in /home/udp7j14n325c/public_html/actividades/deportivas/adultos/pay.php on line 146
+[26-May-2023 18:07:52 UTC] PHP Notice:  Undefined variable: primer_nombre in /home/udp7j14n325c/public_html/actividades/deportivas/adultos/pay.php on line 146
+[26-May-2023 18:07:52 UTC] PHP Notice:  Undefined variable: primer_apellido in /home/udp7j14n325c/public_html/actividades/deportivas/adultos/pay.php on line 146
+[26-May-2023 18:07:52 UTC] PHP Notice:  Undefined index: precio in /home/udp7j14n325c/public_html/actividades/deportivas/adultos/pay.php on line 148
+[26-May-2023 18:09:02 UTC] PHP Notice:  Undefined index: numero in /home/udp7j14n325c/public_html/actividades/deportivas/adultos/buscar_numero.php on line 12
+[26-May-2023 18:09:02 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, bool given in /home/udp7j14n325c/public_html/actividades/deportivas/adultos/buscar_numero.php on line 16
+[26-May-2023 18:15:25 UTC] PHP Notice:  Undefined index: numero in /home/udp7j14n325c/public_html/actividades/deportivas/adultos/buscar_numero.php on line 12
+[26-May-2023 18:15:25 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, bool given in /home/udp7j14n325c/public_html/actividades/deportivas/adultos/buscar_numero.php on line 16

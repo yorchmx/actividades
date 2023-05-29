@@ -3,7 +3,7 @@
 <?php
 $lugar = "Varios";
 $academia = "Fitness Club Senior";
-$concepto = "FITNESSCLUBSENIOR";
+$concepto = "FIT-CLUB-S";
 $profesor = "Varios";
 $dias = "Lunes a Domingo";
 $horario = "07:00 a 19:00 horas"; 
@@ -95,9 +95,7 @@ mysqli_close($conn);
 
   <form action="pay.php" method="POST" enctype="multipart/form-data">
 
-        <?php 
-            include_once "registro.php";
-         ?>
+        
 
     <h5>¿Has apartado tu lugar en la clase? Antes de realizar el pago, asegúrate de apartar tu lugar con el profesor:  <p style="color:#3e2093";><?php echo $profesor; ?></p></h5>
            
@@ -126,7 +124,7 @@ mysqli_close($conn);
         </div>
 
         <div id="mi-elemento">
-        <input type="datetime" id="fecha_hora" name="fecha_hora" value="<?=  $currentDateTime?>" placeholder="" readonly hidden>
+        <input type="datetime" id="fecha_registro" name="fecha_registro" value="<?=  $currentDateTime?>" placeholder="" readonly hidden>
         </div>
 
          <!-- <h5>Folio:</h5> -->
@@ -141,10 +139,16 @@ mysqli_close($conn);
         <input type="text" id="concepto" name="concepto" value="<?=$concepto?>" placeholder="" readonly hidden>
         </div>
  
-        <h5>Nombre completo:</h5>
+        <h5>Primer nombre:</h5>
         <div class="input-box">
         
-        <input id="nombre_completo" name="nombre_completo" type="text" placeholder="Nombre completo" required>
+        <input id="primer_nombre" name="primer_nombre" type="text" placeholder="Nombre completo" required>
+        </div>
+
+        <h5>Primer apellido:</h5>
+        <div class="input-box">
+        
+        <input id="primer_apellido" name="primer_apellido" type="text" placeholder="Nombre completo" required>
         </div>
 
         <h5>Número de usuario:</h5>

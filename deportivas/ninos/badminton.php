@@ -126,7 +126,7 @@ mysqli_close($conn);
         </div>
 
         <div id="mi-elemento">
-        <input type="datetime" id="fecha_hora" name="fecha_hora" value="<?=  $currentDateTime?>" placeholder="" readonly hidden>
+        <input type="datetime" id="fecha_registro" name="fecha_registro" value="<?=  $currentDateTime?>" placeholder="" readonly hidden>
         </div>
 
          <!-- <h5>Folio:</h5> -->

@@ -93,6 +93,8 @@ mysqli_close($conn);
 
 <br>
 
+<h5>A continuación captura los siguientes datos, selecciona el paquete y realiza el pago.</h5>
+
   <form action="pay.php" method="POST" enctype="multipart/form-data">
 
         <?php 
@@ -133,10 +135,10 @@ mysqli_close($conn);
         <input type="text" id="concepto" name="concepto" value="<?=$concepto?>" placeholder="" readonly hidden>
         </div>
  
-        <h5>Nombre completo:</h5>
+        <h5>Primer nombre y primer apellido:</h5>
         <div class="input-box">
         
-        <input id="nombre_completo" name="nombre_completo" type="text" placeholder="Nombre completo" required>
+        <input id="nombre_completo" name="nombre_completo" type="text" placeholder="Primer nombre y primer apellido" required>
         </div>
 
         <h5>Número de usuario:</h5>

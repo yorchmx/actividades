@@ -14,7 +14,7 @@ if (!empty($_POST["btnregistrar"])) {
     $paquete = $_POST['paquete'];
     $precio = $_POST['precio'];
     $folio = $_POST['folio'];
-    $fecha_hora = $_POST['fecha_hora'];
+    $fecha_registro = $_POST['fecha_registro'];
     $reglamento = $_POST['reglamento'];
     $firma = $_POST['firma'];  
 
@@ -26,9 +26,9 @@ if (!empty($_POST["btnregistrar"])) {
         if ($mysqli->connect_error) {
             die("Falló la conexión: " . $mysqli->connect_error);
         }
-        $stmt = $mysqli->prepare("INSERT INTO `adultos` (`academia`, `profesor`, `dias`, `horario`, `apartado`, `nombre_completo`, `numero_usuario`, `email`, `paquete`, `precio`, `folio`,  `fecha_hora`, `reglamento`, `firma`) 
+        $stmt = $mysqli->prepare("INSERT INTO `adultos` (`academia`, `profesor`, `dias`, `horario`, `apartado`, `nombre_completo`, `numero_usuario`, `email`, `paquete`, `precio`, `folio`,  `fecha_registro`, `reglamento`, `firma`) 
                                             VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)");
-        $stmt->bind_param("ssssssssssssss", $academia, $profesor, $dias, $horario, $apartado, $nombre_completo, $numero_usuario, $email, $paquete, $precio, $folio, $fecha_hora, $reglamento, $firma);
+        $stmt->bind_param("ssssssssssssss", $academia, $profesor, $dias, $horario, $apartado, $nombre_completo, $numero_usuario, $email, $paquete, $precio, $folio, $fecha_registro, $reglamento, $firma);
         if ($stmt->execute()) {
             echo '<div class="alert alert-success">Confirma tus datos.</div>';
             // Redireccionar a la página deseada
