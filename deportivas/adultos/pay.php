@@ -41,7 +41,7 @@
 <?php
 
 if (!empty($_POST["btnregistrar"])) {
-    if ( !empty($_POST["academia"]) and !empty($_POST["profesor"]) and !empty($_POST["dias"]) and !empty($_POST["horario"]) and !empty($_POST["primer_nombre"]) and !empty($_POST["primer_apellido"]) and !empty($_POST["numero_usuario"]) and !empty($_POST["firma"])) {
+    if ( !empty($_POST["academia"]) and !empty($_POST["profesor"]) and !empty($_POST["dias"]) and !empty($_POST["horario"]) and !empty($_POST["nombre"]) and !empty($_POST["apellido"]) and !empty($_POST["numero_usuario"]) and !empty($_POST["firma"])) {
 
     include 'conexion.php';
 
@@ -50,8 +50,8 @@ if (!empty($_POST["btnregistrar"])) {
     $dias = $_POST['dias'];
     $horario = $_POST['horario'];
     $apartado = $_POST['apartado'];
-    $primer_nombre = $_POST['primer_nombre'];
-    $primer_apellido = $_POST['primer_apellido'];
+    $nombre = $_POST['nombre'];
+    $apellido = $_POST['apellido'];
     $numero_usuario = $_POST['numero_usuario'];
     $email = $_POST['email'];
     $paquete = $_POST['paquete'];
@@ -61,6 +61,7 @@ if (!empty($_POST["btnregistrar"])) {
     $reglamento = $_POST['reglamento'];
     $firma = $_POST['firma'];
     $concepto = $_POST['concepto'];
+    $nombreCompleto = $_POST['nombre'] . ' ' . $_POST['apellido'];
 
 
 
@@ -84,8 +85,8 @@ if (!empty($_POST["btnregistrar"])) {
 
     /* Registro Niños */
 
-$sql = $conexion->query( "INSERT INTO `adultos` (`academia`, `profesor`, `dias`, `horario`, `apartado`, `primer_nombre`, `primer_apellido`, `numero_usuario`, `email`, `paquete`, `precio`, `folio`, `concepto`, `fecha_registro`, `reglamento`, `firma`) 
-                                            VALUES ('$academia', '$profesor', '$dias', '$horario', '$apartado', '$primer_nombre', '$primer_apellido', '$numero_usuario', '$email', '$paquete', '$precio', '$folio', '$concepto', '$fecha_registro', '$reglamento', '$firma')");
+$sql = $conexion->query( "INSERT INTO `registrosAdultos` (`academia`, `profesor`, `dias`, `horario`, `apartado`, `nombre`, `apellido`, `numero_usuario`, `email`, `paquete`, `precio`, `folio`, `concepto`, `fecha_registro`, `reglamento`, `firma`) 
+                                            VALUES ('$academia', '$profesor', '$dias', '$horario', '$apartado', '$nombre', '$apellido', '$numero_usuario', '$email', '$paquete', '$precio', '$folio', '$concepto', '$fecha_registro', '$reglamento', '$firma')");
                            
                  
 $sql_query = mysqli_query($conexion,$sql);
@@ -111,8 +112,8 @@ echo '<li><center><strong>¿Ya apartaste lugar con el profesor?</strong> '.$_POS
 echo '<li><center><strong>Profesor:</strong> '.$_POST['profesor'].'</center></li>';
 echo '<li><center><strong>Días:</strong> '.$_POST['dias'].'</center></li>';
 echo '<li><center><strong>Horarios:</strong> '.$_POST['horario'].'</center></li>';
-echo '<li><center><strong>Nombre completo:</strong> '.$_POST['nombre_completo'].'</center></li>';
-echo '<li><center><strong>Número de usuario del niño o niña:</strong> '.$_POST['numero_usuario'].'</center></li>';
+echo '<li><center><strong>Nombre completo:</strong> ' . $nombreCompleto . '</center></li>';
+echo '<li><center><strong>Número de usuario:</strong> '.$_POST['numero_usuario'].'</center></li>';
 echo '<li><center><strong>Email:</strong> '.$_POST['email'].'</center></li>';
 echo '<li><center><strong>Paquete:</strong> '.$_POST['paquete'].'</center></li>';
 echo '<li><center><strong>Precio:</strong> '.$_POST['precio'].'</center></li>';
@@ -143,7 +144,7 @@ $id = uniqid('', true);
 $numero = substr($id, 0, 8);
 
 // Incrementar el número y crea la dadena con el formato deseado
-$referencia = $concepto . "-" . $numero_usuario . "-" . $primer_nombre .' '. $primer_apellido .'-'. $fecha_actual;
+$referencia = $concepto . "-" . $numero_usuario . "-" . $nombre .' '. $apellido .'-'. $fecha_actual;
 
 $importe = $_POST['precio'];
 

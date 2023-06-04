@@ -36,7 +36,7 @@ $conn->set_charset("utf8");
 
 
 // Preparar la consulta SQL
-$sql = "SELECT * FROM cultura WHERE id = 1";
+$sql = "SELECT * FROM culturas WHERE id = 1";
 
 // Ejecutar la consulta SQL
 $resultado = mysqli_query($conn, $sql);
@@ -63,7 +63,7 @@ $conn->set_charset("utf8");
 
 
 // Preparar la consulta SQL
-$sql = "SELECT * FROM cultura WHERE id = 1";
+$sql = "SELECT * FROM culturas WHERE id = 1";
 
 // Ejecutar la consulta SQL
 $resultado = mysqli_query($conn, $sql);
@@ -105,7 +105,7 @@ $conn->set_charset("utf8");
 
 
 // Preparar la consulta SQL
-$sql = "SELECT * FROM cultura WHERE id = 2";
+$sql = "SELECT * FROM culturas WHERE id = 2";
 
 // Ejecutar la consulta SQL
 $resultado = mysqli_query($conn, $sql);
@@ -132,7 +132,7 @@ $conn->set_charset("utf8");
 
 
 // Preparar la consulta SQL
-$sql = "SELECT * FROM cultura WHERE id = 2";
+$sql = "SELECT * FROM culturas WHERE id = 2";
 
 // Ejecutar la consulta SQL
 $resultado = mysqli_query($conn, $sql);
@@ -173,7 +173,7 @@ $conn->set_charset("utf8");
 
 
 // Preparar la consulta SQL
-$sql = "SELECT * FROM cultura WHERE id = 3";
+$sql = "SELECT * FROM culturas WHERE id = 3";
 
 // Ejecutar la consulta SQL
 $resultado = mysqli_query($conn, $sql);
@@ -200,7 +200,7 @@ $conn->set_charset("utf8");
 
 
 // Preparar la consulta SQL
-$sql = "SELECT * FROM cultura WHERE id = 3";
+$sql = "SELECT * FROM culturas WHERE id = 3";
 
 // Ejecutar la consulta SQL
 $resultado = mysqli_query($conn, $sql);
@@ -250,7 +250,7 @@ $conn->set_charset("utf8");
 
 
 // Preparar la consulta SQL
-$sql = "SELECT * FROM cultura WHERE id = 4";
+$sql = "SELECT * FROM culturas WHERE id = 4";
 
 // Ejecutar la consulta SQL
 $resultado = mysqli_query($conn, $sql);
@@ -277,7 +277,7 @@ $conn->set_charset("utf8");
 
 
 // Preparar la consulta SQL
-$sql = "SELECT * FROM cultura WHERE id = 4";
+$sql = "SELECT * FROM culturas WHERE id = 4";
 
 // Ejecutar la consulta SQL
 $resultado = mysqli_query($conn, $sql);
@@ -316,7 +316,7 @@ $conn->set_charset("utf8");
 
 
 // Preparar la consulta SQL
-$sql = "SELECT * FROM cultura WHERE id = 5";
+$sql = "SELECT * FROM culturas WHERE id = 5";
 
 // Ejecutar la consulta SQL
 $resultado = mysqli_query($conn, $sql);
@@ -343,7 +343,7 @@ $conn->set_charset("utf8");
 
 
 // Preparar la consulta SQL
-$sql = "SELECT * FROM cultura WHERE id = 5";
+$sql = "SELECT * FROM culturas WHERE id = 5";
 
 // Ejecutar la consulta SQL
 $resultado = mysqli_query($conn, $sql);
@@ -383,7 +383,7 @@ $conn->set_charset("utf8");
 
 
 // Preparar la consulta SQL
-$sql = "SELECT * FROM cultura WHERE id = 6";
+$sql = "SELECT * FROM culturas WHERE id = 6";
 
 // Ejecutar la consulta SQL
 $resultado = mysqli_query($conn, $sql);
@@ -410,7 +410,7 @@ $conn->set_charset("utf8");
 
 
 // Preparar la consulta SQL
-$sql = "SELECT * FROM cultura WHERE id = 6";
+$sql = "SELECT * FROM culturas WHERE id = 6";
 
 // Ejecutar la consulta SQL
 $resultado = mysqli_query($conn, $sql);
@@ -449,7 +449,7 @@ $conn->set_charset("utf8");
 
 
 // Preparar la consulta SQL
-$sql = "SELECT * FROM cultura WHERE id = 7";
+$sql = "SELECT * FROM culturas WHERE id = 7";
 
 // Ejecutar la consulta SQL
 $resultado = mysqli_query($conn, $sql);
@@ -476,7 +476,7 @@ $conn->set_charset("utf8");
 
 
 // Preparar la consulta SQL
-$sql = "SELECT * FROM cultura WHERE id = 7";
+$sql = "SELECT * FROM culturas WHERE id = 7";
 
 // Ejecutar la consulta SQL
 $resultado = mysqli_query($conn, $sql);
@@ -518,7 +518,7 @@ $conn->set_charset("utf8");
 
 
 // Preparar la consulta SQL
-$sql = "SELECT * FROM cultura WHERE id = 8";
+$sql = "SELECT * FROM culturas WHERE id = 8";
 
 // Ejecutar la consulta SQL
 $resultado = mysqli_query($conn, $sql);
@@ -545,7 +545,7 @@ $conn->set_charset("utf8");
 
 
 // Preparar la consulta SQL
-$sql = "SELECT * FROM cultura WHERE id = 8";
+$sql = "SELECT * FROM culturas WHERE id = 8";
 
 // Ejecutar la consulta SQL
 $resultado = mysqli_query($conn, $sql);
@@ -584,7 +584,7 @@ $conn->set_charset("utf8");
 
 
 // Preparar la consulta SQL
-$sql = "SELECT * FROM cultura WHERE id = 9";
+$sql = "SELECT * FROM culturas WHERE id = 9";
 
 // Ejecutar la consulta SQL
 $resultado = mysqli_query($conn, $sql);
@@ -611,7 +611,7 @@ $conn->set_charset("utf8");
 
 
 // Preparar la consulta SQL
-$sql = "SELECT * FROM cultura WHERE id = 9";
+$sql = "SELECT * FROM culturas WHERE id = 9";
 
 // Ejecutar la consulta SQL
 $resultado = mysqli_query($conn, $sql);
@@ -646,9 +646,9 @@ mysqli_close($conn);
         <div class="col-lg-12" text-center>
             <div class="row">
                
-                <!-- Tarjeta 10 -->
+               <!-- Tarjeta 10 -->
                 
-                <div class="col-lg-4 col-md-12 mb-4">
+             <!--   <div class="col-lg-4 col-md-12 mb-4">
                     <div class="card-section border rounded p-3">
                         <div class="card-header-first rounded pb-5">
                         <h2 class="card-header-title text-white pt-3"><?php
@@ -658,7 +658,7 @@ $conn->set_charset("utf8");
 
 
 // Preparar la consulta SQL
-$sql = "SELECT * FROM cultura WHERE id = 10";
+$sql = "SELECT * FROM culturas WHERE id = 10";
 
 // Ejecutar la consulta SQL
 $resultado = mysqli_query($conn, $sql);
@@ -685,7 +685,7 @@ $conn->set_charset("utf8");
 
 
 // Preparar la consulta SQL
-$sql = "SELECT * FROM cultura WHERE id = 10";
+$sql = "SELECT * FROM culturas WHERE id = 10";
 
 // Ejecutar la consulta SQL
 $resultado = mysqli_query($conn, $sql);
@@ -706,7 +706,7 @@ while ($fila = mysqli_fetch_assoc($resultado)) {
 mysqli_close($conn);
 
 ?>
-</p>
+</p> -->
                 
                 
                             <br>

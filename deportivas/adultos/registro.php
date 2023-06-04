@@ -8,7 +8,8 @@ if (!empty($_POST["btnregistrar"])) {
     $dias = $_POST['dias'];
     $horario = $_POST['horario'];
     $apartado = $_POST['apartado'];
-    $nombre_completo = $_POST['nombre_completo'];
+    $nombre = $_POST['nombre'];
+    $apellido = $_POST['apellido'];
     $numero_usuario = $_POST['numero_usuario'];
     $email = $_POST['email'];
     $paquete = $_POST['paquete'];
@@ -18,7 +19,7 @@ if (!empty($_POST["btnregistrar"])) {
     $reglamento = $_POST['reglamento'];
     $firma = $_POST['firma'];  
 
-    if (empty($academia) || empty($profesor) || empty($dias) || empty($horario) || empty($nombre_completo) || empty($numero_usuario) || empty($firma)) {
+    if (empty($academia) || empty($profesor) || empty($dias) || empty($horario) || empty($nombre) ||  empty($apellido) || empty($numero_usuario) || empty($firma)) {
         echo '<div class="alert alert-warning">Por favor, complete todos los campos requeridos</div>';
     } else {
         $mysqli = new mysqli("148.72.8.182", "academias", "Abrelata$7", "academias");
@@ -26,9 +27,9 @@ if (!empty($_POST["btnregistrar"])) {
         if ($mysqli->connect_error) {
             die("Falló la conexión: " . $mysqli->connect_error);
         }
-        $stmt = $mysqli->prepare("INSERT INTO `adultos` (`academia`, `profesor`, `dias`, `horario`, `apartado`, `nombre_completo`, `numero_usuario`, `email`, `paquete`, `precio`, `folio`,  `fecha_registro`, `reglamento`, `firma`) 
+        $stmt = $mysqli->prepare("INSERT INTO `registrosAdultos` (`academia`, `profesor`, `dias`, `horario`, `apartado`, `nombre`, `apellido`, `numero_usuario`, `email`, `paquete`, `precio`, `folio`,  `fecha_registro`, `reglamento`, `firma`) 
                                             VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)");
-        $stmt->bind_param("ssssssssssssss", $academia, $profesor, $dias, $horario, $apartado, $nombre_completo, $numero_usuario, $email, $paquete, $precio, $folio, $fecha_registro, $reglamento, $firma);
+        $stmt->bind_param("ssssssssssssss", $academia, $profesor, $dias, $horario, $apartado, $nombre, $apellido, $numero_usuario, $email, $paquete, $precio, $folio, $fecha_registro, $reglamento, $firma);
         if ($stmt->execute()) {
             echo '<div class="alert alert-success">Confirma tus datos.</div>';
             // Redireccionar a la página deseada

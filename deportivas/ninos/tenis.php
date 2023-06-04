@@ -143,10 +143,16 @@ mysqli_close($conn);
         <input type="text" id="concepto" name="concepto" value="<?=$concepto?>" placeholder="" readonly hidden>
         </div>
  
-        <h5>Nombre del niño o niña:</h5>
+        <h5>Primer nombre del niño o niña:</h5>
         <div class="input-box">
         
-        <input id="nombre_completo" name="nombre_completo" type="text" placeholder="Nombre completo" required>
+        <input id="nombre" name="nombre" type="text" placeholder="Primer nombre" required>
+        </div>
+
+        <h5>Primer apellido del niño o niña:</h5>
+        <div class="input-box">
+        
+        <input id="apellido" name="apellido" type="text" placeholder="Primer apellido" required>
         </div>
 
         <h5>Número de usuario del niño o niña:</h5>
@@ -154,6 +160,45 @@ mysqli_close($conn);
         
         <input id="numero_usuario" name="numero_usuario" type="text" placeholder="Número de usuario del niño o niña" required>
         </div>
+
+        <!-- ELMINAR ESPACIOS EN BLANCO EN ESTOS TRES CAMPOS -->
+
+        <script>
+        // Obtener referencias a los campos de entrada
+        var nombreInput = document.getElementById('nombre');
+        var apellidoInput = document.getElementById('apellido');
+        var numeroUsuarioInput = document.getElementById('numero_usuario');
+
+        // Agregar un evento al enviar el formulario para eliminar los espacios en blanco
+        document.querySelector('form').addEventListener('submit', function(event) {
+          // Eliminar los espacios en blanco utilizando la función trim()
+          nombreInput.value = nombreInput.value.trim();
+          apellidoInput.value = apellidoInput.value.trim();
+          numeroUsuarioInput.value = numeroUsuarioInput.value.trim();
+        });
+       </script>
+
+       <!-- ELIMINAR ACENTOS Y Ñ -->
+
+       <script>
+        // Obtener referencias a los campos de entrada
+        var nombreInput = document.getElementById('nombre');
+        var apellidoInput = document.getElementById('apellido');
+        var numeroUsuarioInput = document.getElementById('numero_usuario');
+
+        // Agregar un evento al enviar el formulario para eliminar los acentos y las "ñ"
+        document.querySelector('form').addEventListener('submit', function(event) {
+          // Remover los acentos y las "ñ" utilizando la función normalize() y expresiones regulares
+          nombreInput.value = removeAccentsAndN(nombreInput.value);
+          apellidoInput.value = removeAccentsAndN(apellidoInput.value);
+          numeroUsuarioInput.value = removeAccentsAndN(numeroUsuarioInput.value);
+        });
+
+        // Función para remover los acentos y las "ñ"
+        function removeAccentsAndN(text) {
+          return text.normalize("NFD").replace(/[\u0300-\u036f]|[\u00f1\u00d1]/g, "");
+        }
+       </script>
         
 
         <h5>Correo electrónico:</h5>

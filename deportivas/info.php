@@ -22,7 +22,7 @@
         <div class="col-lg-12" text-center>
             <div class="row">
 
-                <!-- Tarjeta 1 -->
+                <!-- Tarjeta 1  BÁDMINTON -->
                 
                 <div class="col-lg-4 col-md-12 mb-4">
                     <div class="card-section border rounded p-3">
@@ -82,14 +82,16 @@ mysqli_close($conn);
 ?>
 </p>
                             <br>
-                            <a href="https://clubfrance.org.mx/academias/actividadesninos/badminton.php">
+                            <a href="https://clubfrance.org.mx/actividades/deportivas/ninos/badminton.php">
                             <button class="btn btn-primary">Comprar</button>
                             </a>
                         </div>
                     </div>
                     <br>
                 </div>
-                <!-- Tarjeta 2 -->
+
+                <!-- Tarjeta 2 BALLET -->
+
                 <div class="col-lg-4 col-md-12 mb-4">
                     <div class="card-section border rounded p-3">
                         <div class="card-header-first rounded pb-5">
@@ -148,7 +150,7 @@ mysqli_close($conn);
 ?>
 </p>
                             <br>
-                            <a href="https://clubfrance.org.mx/academias/actividadesninos/ballet.php">
+                            <a href="https://clubfrance.org.mx/actividades/deportivas/ninos/ballet.php">
                             <button class="btn btn-primary">Comprar</button>
                             </a>
                         </div>
@@ -157,7 +159,8 @@ mysqli_close($conn);
                 </div>
                 <br>
 
-                <!-- Tarjeta 3 -->
+                <!-- Tarjeta 3  BÀSQUETBOL INFANTIL-->
+
                 <div class="col-lg-4 col-md-12 mb-4">
                     <div class="card-section border rounded p-3">
                         <div class="card-header-first rounded pb-5">
@@ -217,7 +220,7 @@ mysqli_close($conn);
 ?>
 </p>
                             <br>
-                            <a href="https://clubfrance.org.mx/academias/actividadesninos/basquetbolinfantil.php">
+                            <a href="https://clubfrance.org.mx/actividades/deportivas/ninos/basquetbolinfantil.php">
                             <button class="btn btn-primary">Comprar</button>
                             </a>
                         </div>
@@ -225,7 +228,8 @@ mysqli_close($conn);
                     <br>
                 </div>
 
-                <!-- Tarjeta 4 -->
+                <!-- Tarjeta 4 BOX INFANTIL -->
+
                 <div class="col-lg-4 col-md-12 mb-4">
                     <div class="card-section border rounded p-3">
                         <div class="card-header-first rounded pb-5">
@@ -285,7 +289,7 @@ mysqli_close($conn);
 ?>
 </p>
                             <br>
-                            <a href="https://clubfrance.org.mx/academias/actividadesninos/boxinfantil.php">
+                            <a href="https://clubfrance.org.mx/actividades/deportivas/ninos/boxinfantil.php">
                             <button class="btn btn-primary">Comprar</button>
                             </a>
                         </div>
@@ -293,7 +297,8 @@ mysqli_close($conn);
                     <br>
                 </div>
 
-                <!-- Tarjeta 5 -->
+                <!-- Tarjeta 5 DANZA AÉREA-->
+
                 <div class="col-lg-4 col-md-12 mb-4">
                     <div class="card-section border rounded p-3">
                         <div class="card-header-first rounded pb-5">
@@ -352,7 +357,7 @@ mysqli_close($conn);
 ?>
 </p>
                             <br>
-                            <a href="https://clubfrance.org.mx/academias/actividadesninos/danzaaerea.php">
+                            <a href="https://clubfrance.org.mx/actividades/deportivas/ninos/danzaaerea.php">
                             <button class="btn btn-primary">Comprar</button>
                             </a>
                         </div>
@@ -360,7 +365,8 @@ mysqli_close($conn);
                     <br>
                 </div>
 
-                 <!-- Tarjeta 6 -->
+                 <!-- Tarjeta 6 ESCALADA -->
+
                  <div class="col-lg-4 col-md-12 mb-4">
                     <div class="card-section border rounded p-3">
                         <div class="card-header-first rounded pb-5">
@@ -419,14 +425,16 @@ mysqli_close($conn);
 ?>
 </p>
                             <br>
-                            <a href="https://clubfrance.org.mx/academias/actividadesninos/escalada.php">
+                            <a href="https://clubfrance.org.mx/actividades/deportivas/ninos/escalada.php">
                             <button class="btn btn-primary">Comprar</button>
                             </a>
                         </div>
                     </div>
                     <br>
                 </div>
-                <!-- Tarjeta 7 -->
+
+                <!-- Tarjeta 7 GIMNASIA-->
+
                 <div class="col-lg-4 col-md-12 mb-4">
                     <div class="card-section border rounded p-3">
                         <div class="card-header-first rounded pb-5">
@@ -490,7 +498,7 @@ mysqli_close($conn);
 ?>
 </p>
                             <br>
-                            <a href="https://clubfrance.org.mx/academias/actividadesninos/gimnasia.php">
+                            <a href="https://clubfrance.org.mx/actividades/deportivas/ninos/gimnasia.php">
                             <button class="btn btn-primary">Comprar</button>
                             </a>
                         </div>
@@ -499,7 +507,8 @@ mysqli_close($conn);
                 </div>
                 <br>
 
-                <!-- Tarjeta 8 -->
+                <!-- Tarjeta 8 NATACIÓN -->
+
                 <div class="col-lg-4 col-md-12 mb-4">
                     <div class="card-section border rounded p-3">
                         <div class="card-header-first rounded pb-5">
@@ -560,7 +569,7 @@ mysqli_close($conn);
 ?>
 </p>
                             <br>
-                            <a href="https://clubfrance.org.mx/academias/actividadesninos/natacion.php">
+                            <a href="https://clubfrance.org.mx/actividades/deportivas/ninos/natacion.php">
                             <button class="btn btn-primary">Comprar</button>
                             </a>
                         </div>
@@ -568,7 +577,8 @@ mysqli_close($conn);
                     <br>
                 </div>
 
-                <!-- Tarjeta 9 -->
+                <!-- Tarjeta 9 TENIS -->
+                
                 <div class="col-lg-4 col-md-12 mb-4">
                     <div class="card-section border rounded p-3">
                         <div class="card-header-first rounded pb-5">
@@ -627,7 +637,7 @@ mysqli_close($conn);
 ?>
 </p>
                             <br>
-                            <a href="https://clubfrance.org.mx/academias/actividadesninos/natacion.php">
+                            <a href="https://clubfrance.org.mx/actividades/deportivas/ninos/tenis.php">
                             <button class="btn btn-primary">Comprar</button>
                             </a>
                         </div>
@@ -645,7 +655,7 @@ mysqli_close($conn);
         <div class="col-lg-12" text-center>
             <div class="row">
                
-                <!-- Tarjeta 9 -->
+                <!-- Tarjeta 9 FITNESS CLUB -->
                 
                 <div class="col-lg-4 col-md-12 mb-4">
                     <div class="card-section border rounded p-3">
@@ -705,7 +715,7 @@ mysqli_close($conn);
 ?>
 </p>
                             <br>
-                            <a href="https://clubfrance.org.mx/academias/actividadesadultos/fitnessclub.php">
+                            <a href="https://clubfrance.org.mx/actividades/deportivas/adultos/fitnessclub.php">
                             <button class="btn btn-primary">Comprar</button>
                             </a>
                         </div>
@@ -713,7 +723,8 @@ mysqli_close($conn);
                     <br>
                 </div>
                 
-                <!-- Tarjeta 10 -->
+                <!-- Tarjeta 10 FITNESS CLUB SENIOR -->
+
                 <div class="col-lg-4 col-md-12 mb-4">
                     <div class="card-section border rounded p-3">
                         <div class="card-header-first rounded pb-5">
@@ -772,7 +783,7 @@ mysqli_close($conn);
 ?>
 </p>
                             <br>
-                            <a href="https://clubfrance.org.mx/academias/actividadesadultos/fitnessclubsenior.php">
+                            <a href="https://clubfrance.org.mx/actividades/deportivas/adultos/fitnessclubsenior.php">
                             <button class="btn btn-primary">Comprar</button>
                             </a>
                         </div>
@@ -790,7 +801,8 @@ mysqli_close($conn);
         <div class="col-lg-12" text-center>
             <div class="row">
 
-                <!-- Tarjeta 11 -->
+                <!-- Tarjeta 11 AQUA FITNESS -->
+
                 <div class="col-lg-4 col-md-12 mb-4">
                     <div class="card-section border rounded p-3">
                         <div class="card-header-first rounded pb-5">
@@ -849,7 +861,7 @@ mysqli_close($conn);
 ?>
 </p>
                             <br>
-                            <!-- <a href="">
+                           <!-- <a href="">
                             <button class="btn btn-primary">Comprar</button>
                             </a> -->
                         </div>
@@ -857,7 +869,8 @@ mysqli_close($conn);
                     <br>
                 </div>
 
-                <!-- Tarjeta 12 -->
+                <!-- Tarjeta 12 BODYPUMP -->
+
                 <div class="col-lg-4 col-md-12 mb-4">
                     <div class="card-section border rounded p-3">
                         <div class="card-header-first rounded pb-5">
@@ -916,9 +929,7 @@ mysqli_close($conn);
 ?>
 </p>
                             <br>
-                            <!-- <a href="">
-                            <button class="btn btn-primary">Comprar</button>
-                            </a> -->
+                           
                         </div>
                     </div>
                     <br>
@@ -926,6 +937,7 @@ mysqli_close($conn);
                 <br>
 
                 <!-- Tarjeta 13 -->
+
                 <div class="col-lg-4 col-md-12 mb-4">
                     <div class="card-section border rounded p-3">
                         <div class="card-header-first rounded pb-5">
