@@ -27,6 +27,50 @@ $horario = "16:00 a 18:00 hrs.";
 
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 
+    <script>
+		$(document).ready(function(){
+	$("#numero").on("input", function(){
+		var numero = $("#numero").val();
+		if(numero != ""){
+			$.post("buscar_numero.php", {numero: numero}, function(data){
+				if(data == "existe"){
+          $("#nombre").prop("disabled", false);
+          $("#apellido").prop("disabled", false);
+          $("#numero_usuario").prop("disabled", false);
+          $("#email").prop("disabled", false);
+          $("#paquete").prop("disabled", false);
+          $("#reglamento").prop("disabled", false);
+          $("#firma").prop("disabled", false);
+					$("#btnregistrar").prop("disabled", false);
+					$("#resultado").text("La matricula es correcta, llena los campos.");
+				}else{
+          $("#nombre").prop("disabled", true);
+          $("#apellido").prop("disabled", true);
+          $("#numero_usuario").prop("disabled", true);
+          $("#email").prop("disabled", true);
+          $("#paquete").prop("disabled", true);
+          $("#reglamento").prop("disabled", true);
+          $("#firma").prop("disabled", true);
+					$("#btnregistrar").prop("disabled", true);
+					$("#resultado").text("La matricula no existe en la base de datos, acude con tu profesor.");
+				}
+			});
+		}else{
+      $("#nombre").prop("disabled", true);
+      $("#apellido").prop("disabled", true);
+      $("#numero_usuario").prop("disabled", true);
+      $("#email").prop("disabled", true);
+      $("#paquete").prop("disabled", true);
+      $("#reglamento").prop("disabled", true);
+      $("#firma").prop("disabled", true);
+			$("#botonEnviar").prop("disabled", true);
+			$("#resultado").text("");
+		}
+	});
+});
+
+	</script>
+
    </head>
    
 <body>
@@ -101,15 +145,14 @@ mysqli_close($conn);
             include_once "registro.php";
          ?>
 
-    <h5>¿Has apartado tu lugar en la clase? Antes de realizar el pago, asegúrate de apartar tu lugar con el profesor:  <p style="color:#3e2093";><?php echo $profesor; ?></p></h5>
-    
-        <div class="input-field">
-        <select name="apartado" id="apartado" required><br>
-              <option disabled selected>Selecciona un opción</option>
-    					<option value="Sí">Sí</option>
-    					<option value="No">No</option>
-  					</select>
+      <h5>Ingresa la matricula que te proporciono tu profesor para poder continuar:</h5>
+        <div class="input-box">
+        
+        <input id="numero" name="numero" type="text" placeholder="Matricula" required>
       </div>
+
+      <div id="resultado"></div>
+
 
         <div id="mi-elemento">
             <input type="text" id="academia" name="academia" value="<?=$academia?>" placeholder="" readonly hidden>
@@ -134,9 +177,9 @@ mysqli_close($conn);
          <!-- <h5>Folio:</h5> -->
          <div id="mi-elemento">
         <?php
-    					$numero_aleatorio = rand(10000, 99999);
-    					echo '<input type="text" id="folio" name="folio" value="'. $numero_aleatorio . '" placeholder="" readonly hidden>';
-  					?><br>
+              $numero_aleatorio = rand(10000, 99999);
+              echo '<input type="text" id="folio" name="folio" value="'. $numero_aleatorio . '" placeholder="" readonly hidden>';
+            ?><br>
         </div>
 
         <div id="mi-elemento">
@@ -146,19 +189,19 @@ mysqli_close($conn);
         <h5>Primer nombre del niño o niña:</h5>
         <div class="input-box">
         
-        <input id="nombre" name="nombre" type="text" placeholder="Primer nombre" required>
+        <input id="nombre" name="nombre" type="text" placeholder="Primer nombre" required disabled>
         </div>
 
         <h5>Primer apellido del niño o niña:</h5>
         <div class="input-box">
         
-        <input id="apellido" name="apellido" type="text" placeholder="Primer apellido" required>
+        <input id="apellido" name="apellido" type="text" placeholder="Primer apellido" required disabled>
         </div>
 
         <h5>Número de usuario del niño o niña:</h5>
         <div class="input-box">
         
-        <input id="numero_usuario" name="numero_usuario" type="text" placeholder="Número de usuario del niño o niña" required>
+        <input id="numero_usuario" name="numero_usuario" type="text" placeholder="Número de usuario del niño o niña" required disabled>
         </div>
 
         <!-- ELMINAR ESPACIOS EN BLANCO EN ESTOS TRES CAMPOS -->
@@ -204,25 +247,25 @@ mysqli_close($conn);
         <h5>Correo electrónico:</h5>
         <div class="input-box">
         
-        <input id="email" name="email" type="email" placeholder="Correo electrónico" required>
+        <input id="email" name="email" type="email" placeholder="Correo electrónico" required disabled>
         </div>
 
         <h5>Paquetes:</h5>
         
         <div class="input-field">
-        <select name="paquete" id="paquete" onchange="actualizarPrecio()" required><br>
+        <select name="paquete" id="paquete" onchange="actualizarPrecio()" required disabled><br>
               <option disabled selected>Selecciona un paquete</option>
-    					<option value="Una Clase">Una Clase</option>
-    					<option value="Paquete 1 (Una hora a la semana)">Paquete 1 (Una hora a la semana)</option>
-    					<option value="Paquete 2 (Dos horas a la semana)">Paquete 2 (Dos horas a la semana)</option>
-    					<option value="Paquete 3 (Tres horas a la semana)">Paquete 3 (Tres horas a la semana)</option>
-    					<option value="Paquete 4 (Cuatro horas a la semana)">Paquete 4 (Cuatro horas a la semana)</option>
-    					<option value="Paquete 5 (Cinco horas a la semana)">Paquete 5 (Cinco horas a la semana)</option>
+              <option value="Una Clase">Una Clase</option>
+              <option value="Paquete 1 (Una hora a la semana)">Paquete 1 (Una hora a la semana)</option>
+              <option value="Paquete 2 (Dos horas a la semana)">Paquete 2 (Dos horas a la semana)</option>
+              <option value="Paquete 3 (Tres horas a la semana)">Paquete 3 (Tres horas a la semana)</option>
+              <option value="Paquete 4 (Cuatro horas a la semana)">Paquete 4 (Cuatro horas a la semana)</option>
+              <option value="Paquete 5 (Cinco horas a la semana)">Paquete 5 (Cinco horas a la semana)</option>
               <option value="Paquete 6 (Seis horas a la semana)">Paquete 6 (Seis horas a la semana)</option>
               <option value="Paquete 7 (Ocho horas a la semana)">Paquete 7 (Ocho horas a la semana)</option>
               <option value="Paquete 8 (Doce horas a la semana)">Paquete 8 (Doce horas a la semana)</option>
               <option value="Paquete 9 (Alto rendimiento)">Paquete 9 (Alto rendimiento)</option>
-  					</select>
+            </select>
       </div><br>
 
       <h5>Precio:</h5>
@@ -237,7 +280,7 @@ mysqli_close($conn);
         <div class="col-md-12">
           <div class="form-group">
           <div class="custom-control custom-checkbox">
-              <input type="checkbox" class="custom-control-input" id="reglamento" name="reglamento" value="Sí" required >
+              <input type="checkbox" class="custom-control-input" id="reglamento" name="reglamento" value="Sí" required disabled>
               <label class="custom-control-label" for="aviso">He Leído y Acepto el <a href="" target="_blank" class="text-danger">Reglamento</a></label>
               <div class="valid-feedback" >Campo Ok!</div>
               <div class="invalid-feedback" >Debes aceptar los términos</div>
@@ -254,13 +297,13 @@ mysqli_close($conn);
 
       <h5>Firma:</h5>
           <div class="input-box">
-          <input type="text" id="firma" name="firma" value="" placeholder="Nombre completo del tutor">
+          <input type="text" id="firma" name="firma" value="" placeholder="Nombre completo del tutor" disabled>
       </div>
 
       <br>
     
       <div class="d-grid gap-2">
-       <button type="submit" class="btn btn-primary" name="btnregistrar" value="ok">Pagar</button>
+       <button id="btnregistrar" type="submit" class="btn btn-primary" name="btnregistrar" value="ok" disabled>Pagar</button>
       </div>
       
      <br>
@@ -359,27 +402,27 @@ mysqli_close($conn);
 </script>
 
 <script> // Right click disbled
-		function disableIE() {
-		if (document.all) {
-			return false;
-		}}
-		function disableNS(e) {
-			if (document.layers || (document.getElementById && !document.all)) {
-				if (e.which==2 || e.which==3) {
-					return false;
-				}
-			}
-		}
-		if (document.layers) {
-			document.captureEvents(Event.MOUSEDOWN);
-			document.onmousedown = disableNS;
-		} 
-		else {
-			document.onmouseup = disableNS;
-			document.oncontextmenu = disableIE;
-		}
-		document.oncontextmenu=new Function("return false");
-	</script>
+    function disableIE() {
+    if (document.all) {
+      return false;
+    }}
+    function disableNS(e) {
+      if (document.layers || (document.getElementById && !document.all)) {
+        if (e.which==2 || e.which==3) {
+          return false;
+        }
+      }
+    }
+    if (document.layers) {
+      document.captureEvents(Event.MOUSEDOWN);
+      document.onmousedown = disableNS;
+    } 
+    else {
+      document.onmouseup = disableNS;
+      document.oncontextmenu = disableIE;
+    }
+    document.oncontextmenu=new Function("return false");
+  </script>
 
 
 </body>
