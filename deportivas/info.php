@@ -81,10 +81,10 @@ mysqli_close($conn);
 
 ?>
 </p>
-                            <br>
+                            <!-- <br>
                             <a href="https://clubfrance.org.mx/actividades/deportivas/ninos/badminton.php">
                             <button class="btn btn-primary">Comprar</button>
-                            </a>
+                            </a> -->
                         </div>
                     </div>
                     <br>
@@ -149,10 +149,10 @@ mysqli_close($conn);
 
 ?>
 </p>
-                            <br>
+                            <!-- <br>
                             <a href="https://clubfrance.org.mx/actividades/deportivas/ninos/ballet.php">
                             <button class="btn btn-primary">Comprar</button>
-                            </a>
+                            </a> -->
                         </div>
                     </div>
                     <br>
@@ -219,10 +219,10 @@ mysqli_close($conn);
 
 ?>
 </p>
-                            <br>
+                            <!-- <br>
                             <a href="https://clubfrance.org.mx/actividades/deportivas/ninos/basquetbolinfantil.php">
                             <button class="btn btn-primary">Comprar</button>
-                            </a>
+                            </a> -->
                         </div>
                     </div>
                     <br>
@@ -288,10 +288,10 @@ mysqli_close($conn);
 
 ?>
 </p>
-                            <br>
+                            <!-- <br>
                             <a href="https://clubfrance.org.mx/actividades/deportivas/ninos/boxinfantil.php">
                             <button class="btn btn-primary">Comprar</button>
-                            </a>
+                            </a> -->
                         </div>
                     </div>
                     <br>
@@ -356,10 +356,10 @@ mysqli_close($conn);
 
 ?>
 </p>
-                            <br>
+                            <!-- <br>
                             <a href="https://clubfrance.org.mx/actividades/deportivas/ninos/danzaaerea.php">
                             <button class="btn btn-primary">Comprar</button>
-                            </a>
+                            </a> -->
                         </div>
                     </div>
                     <br>
@@ -424,10 +424,10 @@ mysqli_close($conn);
 
 ?>
 </p>
-                            <br>
+                            <!-- <br>
                             <a href="https://clubfrance.org.mx/actividades/deportivas/ninos/escalada.php">
                             <button class="btn btn-primary">Comprar</button>
-                            </a>
+                            </a> -->
                         </div>
                     </div>
                     <br>
@@ -497,10 +497,10 @@ mysqli_close($conn);
 
 ?>
 </p>
-                            <br>
+                            <!-- <br>
                             <a href="https://clubfrance.org.mx/actividades/deportivas/ninos/gimnasia.php">
                             <button class="btn btn-primary">Comprar</button>
-                            </a>
+                            </a> -->
                         </div>
                     </div>
                     <br>
@@ -568,10 +568,10 @@ mysqli_close($conn);
 
 ?>
 </p>
-                            <br>
+                            <!-- <br>
                             <a href="https://clubfrance.org.mx/actividades/deportivas/ninos/natacion.php">
                             <button class="btn btn-primary">Comprar</button>
-                            </a>
+                            </a> -->
                         </div>
                     </div>
                     <br>
@@ -636,10 +636,10 @@ mysqli_close($conn);
 
 ?>
 </p>
-                            <br>
+                            <!-- <br>
                             <a href="https://clubfrance.org.mx/actividades/deportivas/ninos/tenis.php">
                             <button class="btn btn-primary">Comprar</button>
-                            </a>
+                            </a> -->
                         </div>
                     </div>
                     <br>
@@ -714,10 +714,10 @@ mysqli_close($conn);
 
 ?>
 </p>
-                            <br>
+                            <!-- <br>
                             <a href="https://clubfrance.org.mx/actividades/deportivas/adultos/fitnessclub.php">
                             <button class="btn btn-primary">Comprar</button>
-                            </a>
+                            </a> -->
                         </div>
                     </div>
                     <br>
@@ -782,10 +782,10 @@ mysqli_close($conn);
 
 ?>
 </p>
-                            <br>
+                            <!-- <br>
                             <a href="https://clubfrance.org.mx/actividades/deportivas/adultos/fitnessclubsenior.php">
                             <button class="btn btn-primary">Comprar</button>
-                            </a>
+                            </a> -->
                         </div>
                     </div>
                     <br>
