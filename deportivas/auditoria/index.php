@@ -61,7 +61,7 @@
                         src="./img/1.jpg" 
                         alt="Card image cap" 
                         />
-                        <a href="deportivas/ninos/badminton.php">
+                        <a href="infantiles/badminton.php">
                             <div class="mask rgba-white-slight"></div>
                         </a>
                     </div>
@@ -75,7 +75,7 @@
                            <!--Some quick example text to build on the card title and make up the bulk of the card´s content.->> 
                         </p>
                         <!-- Button -->
-                        <a href="deportivas/ninos/badminton.php" class="btn blue-gradient">Ver</a>
+                        <a href="infantiles/badminton.php" class="btn blue-gradient">Ver</a>
                     </div>
                     </div>
                     </div>
