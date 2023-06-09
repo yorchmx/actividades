@@ -138,6 +138,8 @@ $result = $conn->query($sql);
             <th>Nombre</th>
             <th>Apellido</th>
             <th>Paquete</th>
+            <th>Mes</th>
+            <th>Año</th>
             <th>Acciones</th>
         </tr>
     </thead>
@@ -149,6 +151,8 @@ $result = $conn->query($sql);
                 echo "<td>" . $row["nombre"] . "</td>";
                 echo "<td>" . $row["apellido"] . "</td>";
                 echo "<td>" . $row["paquete"] . "</td>";
+                echo "<td>" . $row["mes"] . "</td>";
+                echo "<td>" . $row["ano"] . "</td>";
                 echo "<td><a href='editar_registro.php?id=" . $row["id"] . "' class='btn btn-primary'>Editar</a></td>";
                 echo "</tr>";
             }
